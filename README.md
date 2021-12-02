@@ -13,6 +13,10 @@
 * [git常用命令](./docs/git/dailygit.md)
 * [Python版本管理神器-pyenv](./python/pyenv.md)
 
+## MYSql
+
+* [mysql临时关闭安全更新](./docs/mysql/mysql_common_use.md)
+
 
 ## 好用的在线工具
 

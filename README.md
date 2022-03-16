@@ -12,6 +12,7 @@
 * [windows下git的使用](./docs/git/win-git-use.md)
 * [git常用命令](./docs/git/dailygit.md)
 * [Python版本管理神器-pyenv](./python/pyenv.md)
+* [Windows命令行乱码问题解决](./docs/windows/cmd.md)
 
 ## MYSql
 

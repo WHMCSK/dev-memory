@@ -33,3 +33,18 @@ ssh-keygen -t rsa -C "这里换上你的邮箱"
 在指定的保存路径下会生成2个名为id_rsa和id_rsa.pub的文件，到此git就可以使用ssh连接了
 
 
+## 问题一：Unable to negotiate with 47.98.**.** port 22: no matching host key type found. Their offer: ssh-rsa
+
+环境 window10 + GIT  
+用Git远程拉去项目  
+报错Unable to negotiate with xx.xx.xx.xx port 22: no matching key exchange method found.  
+Their offer:diffie-hellman-group1-sha1  
+
+解决办法：  
+在生成公钥的~/.ssh文件夹下，新建一个config文件（config文件没有后缀），文件中添加如下内容：  
+Host *  
+HostkeyAlgorithms +ssh-rsa  
+PubkeyAcceptedKeyTypes +ssh-rsa  
+
+然后保存即可。  
+注意：xx.xx.xx.xx为服务器ip；+前面有一个空格！  

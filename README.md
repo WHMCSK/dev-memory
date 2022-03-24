@@ -1,5 +1,9 @@
 # 美宸时科开发者笔记
 
+## 踩坑记
+
+* [Windows中使用C#写打印程序踩坑记](./docs/windows/print.md)
+
 ## 工具 
 
 * [npm淘宝镜像与官方源切换](./docs/npm/npm-registry.md)
@@ -25,4 +29,4 @@
 
 ## 好用的在线工具
 
-Json查看工具：[https://www.json.cn](https://www.json.cn)
+Json查看工具：[https://www.json.cn](https://www.json.cn)  

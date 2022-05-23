@@ -24,7 +24,11 @@
 
 ## 加密解密
 
-* [go语言和java语言加密解密对比](./docs/encrypt/go-java-encrypt.md)
+* [go语言和java语言加密解密对比](./docs/encrypt/go-java-encrypt.md)  
+
+## 系统设计  
+
+* [设备管控中间件设计](./docs//device-check/device-check.md)  
 
 
 ## 好用的在线工具

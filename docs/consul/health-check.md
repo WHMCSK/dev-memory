@@ -5,15 +5,11 @@
 
 网上关于consul健康检查的说明有很多，基本都是根据官方文档的说明来的，基本上就是一下几种。
 
-Script+ Interval
-
-HTTP+ Interval
-
-TCP+ Interval
-
-Timeto Live（TTL）
-
-Docker+ interval
+* Script+ Interval
+* HTTP+ Interval
+* TCP+ Interval
+* Timeto Live（TTL）
+* Docker+ interval
 
 本文根据consul源码来分析整个过程，来看一下具体的是怎么实现的。
 是用的源码为consul-1.9.5的源码

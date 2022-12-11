@@ -99,3 +99,14 @@ make install
 如果没有执行 make install 命令或者执行失败，则使用该库的程序在运行时，可能无法链接到相应的库，会出现error while loading shared libraries: libjpeg.so.8 Not found之类的错误！！
 
 用直接安装的方法，装哪个版本，程序识别到的就是哪个版本，自此问题解决。
+
+#### 坑
+
+找不到mmod_human_face_detector.dat
+
+rec, err := face.NewRecognizer(dataDir), 创建Recognizer需要在指定的文件夹下面包含dlib_face_recognition_resnet_model_v1.dat, shape_predictor_5_face_landmarks.dat, mmod_human_face_detector.dat三个文件，而从https://github.com/TutorialEdge/go-face-recognition-tutorial.git下载的包缺少mmod_human_face_detector.dat文件。
+
+mmod_human_face_detector.dat是训练好的模型，可以从这里下载：
+
+http://dlib.net/files/mmod_human_face_detector.dat.bz2
+

@@ -3,6 +3,7 @@
 ## 踩坑记
 
 * [Windows中使用C#写打印程序踩坑记](./docs/windows/print.md)
+* [go-face人脸识别踩坑记](./docs/face/go-face-tour.md)  
 
 ## 工具 
 

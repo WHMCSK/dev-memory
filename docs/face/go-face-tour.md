@@ -110,3 +110,17 @@ mmod_human_face_detector.dat是训练好的模型，可以从这里下载：
 
 http://dlib.net/files/mmod_human_face_detector.dat.bz2
 
+
+### 人脸识别
+
+使用kagami/go-face包做基础的人脸识别，首先要将要识别的对象的样例图片识别结果所得到的人脸描述符的数组（samples）传给Recognizer。
+```
+// Pass samples to the recognizer.
+rec.SetSamples(samples, avengers)
+```
+
+然后对要进行识别的目标照片进行识别
+```
+face, err := rec.RecognizeSingleFile(testTonyStark)
+```
+然后通过将目标照片的人脸描述符通过rec.Classify(face.Descriptor)方法进行分类，可以获得一个从样例图片中从左到右识别到的人脸描述符数组中的序号，如果序号小于0则识别的目标照片在样例照片中不存在，不是我们要寻找的目标人脸，如果序号大于0，则找到目标。

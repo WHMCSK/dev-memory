@@ -31,6 +31,10 @@
 
 * [设备管控中间件设计](./docs//device-check/device-check.md)  
 
+## 系统配置
+
+* [Mac 中显示资源库（Library）文件夹目录的几种方法](./docs/sys-settings/mac-library.md)
+
 
 ## 好用的在线工具
 

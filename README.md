@@ -36,6 +36,7 @@
 * [Mac 中显示资源库（Library）文件夹目录的几种方法](./docs/sys-settings/mac-library.md)
 
 
-## 好用的在线工具
+## 安卓
 
-Json查看工具：[https://www.json.cn](https://www.json.cn)  
+* [安卓中一个进程如何在转入后台后不被系统杀死](./docs/android-service-forever.md)  
+

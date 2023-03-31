@@ -16,7 +16,7 @@
 * [git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了](./docs/git/git_use_issue.md)
 * [windows下git的使用](./docs/git/win-git-use.md)
 * [git常用命令](./docs/git/dailygit.md)
-* [Python版本管理神器-pyenv](./python/pyenv.md)
+* [Python版本管理神器-pyenv](./docs/python/pyenv.md)
 * [Windows命令行乱码问题解决](./docs/windows/cmd.md)
 
 ## MYSql

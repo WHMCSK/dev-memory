@@ -38,5 +38,5 @@
 
 ## 安卓
 
-* [安卓中一个进程如何在转入后台后不被系统杀死](./docs/android-service-forever.md)  
+* [安卓中一个进程如何在转入后台后不被系统杀死](./docs/android/android-service-forever.md)  
 

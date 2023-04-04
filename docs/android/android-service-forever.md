@@ -14,10 +14,11 @@
 最关键的几行代码：
 
 ```
+Intent intent = new Intent(this, MainActivity.class);
 PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
 AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
 long triggerAtTime = SystemClock.elapsedRealtime() + Minutes;
 manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTime, pendingIntent);
 ```
 
-如上代码，借助PendingIntent和AlarmManager，其实就是暴力的定时启动DMac。而在Pico中，系统杀死进程有一个能确定的缺省等待时间，所以在等待时间到来之前启动一下DMac，又重新进入了等待计时。
+如上代码，借助PendingIntent和AlarmManager，将本App，也就是想要保持在后台一直存活的App用PendingIntent包装一下，再用AlarmManager定时启动这个PendingIntent，其实就是暴力的定时启动DMac。而在Pico中，系统杀死进程有一个能确定的缺省等待时间，所以在等待时间到来之前启动一下DMac，又重新进入了等待计时。

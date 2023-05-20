@@ -23,6 +23,10 @@
 
 * [mysql临时关闭安全更新](./docs/mysql/mysql_common_use.md)
 
+## Redis
+
+* [Redis从小白到大白笔记](./docs/redis/Redis.md)
+
 ## 加密解密
 
 * [go语言和java语言加密解密对比](./docs/encrypt/go-java-encrypt.md)  

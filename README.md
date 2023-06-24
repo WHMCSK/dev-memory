@@ -18,6 +18,7 @@
 * [git常用命令](./docs/git/dailygit.md)
 * [Python版本管理神器-pyenv](./docs/python/pyenv.md)
 * [Windows命令行乱码问题解决](./docs/windows/cmd.md)
+* [go mod版本管理](./docs/go/gomod.md)
 
 ## grpc
 

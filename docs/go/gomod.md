@@ -251,3 +251,8 @@ This project is the second major revision of the Go protocol buffer API implemen
 
 ## Tips
 若库包包含多版本，则最好使用vx方式单独维护分支，这是常见的一种方式，例如：github.com/go-redis/redis库维护了多个分支。
+
+## 引用
+
+* [Go Modules Reference](https://go.dev/ref/mod)
+* [浅谈Go Modules原理](https://duyanghao.github.io/golang-module/)

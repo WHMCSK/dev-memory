@@ -237,7 +237,7 @@ the new package must be backwards compatible with the old package.
 github.com/golang/protobuf: 支持先前的protobuf go,目前最高版本v1.5.2   
 google.golang.org/protobuf: 新版本的module path,目前最高版本v1.27.0，初始版本v1.20.0   
 
-官方的说法是：
+[官方的说法](https://github.com/protocolbuffers/protobuf-go)是：
 ```
 This project is the second major revision of the Go protocol buffer API implemented by the google.golang.org/protobuf module. The first major version is implemented by the github.com/golang/protobuf module.
 ```

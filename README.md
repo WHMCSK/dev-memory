@@ -32,6 +32,9 @@
 
 * [Redis从小白到大白笔记](./docs/redis/Redis.md)
 
+## java
+* [java tools](./docs/java/tools.md)
+
 ## 加密解密
 
 * [go语言和java语言加密解密对比](./docs/encrypt/go-java-encrypt.md)  
@@ -48,4 +51,7 @@
 ## 安卓
 
 * [安卓中一个进程如何在转入后台后不被系统杀死](./docs/android/android-service-forever.md)  
+
+## 大数据
+* [常用命令](./docs/hadoop/common-use-command.md)
 

@@ -21,6 +21,7 @@
 * [go mod版本管理](./docs/go/gomod.md)
 * [gitbook的使用](./docs/gitbook/gitbook-use.md)
 * [mdBook](./docs/mdbook/mdbook-use.md)
+* [Makefile编写规则](./docs/makefile/makefile.md)
 
 ## grpc
 

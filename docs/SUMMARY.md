@@ -1,6 +1,6 @@
 # Summary
 
-- [介绍](README.md)
+- [介绍](../README.md)
 - [踩坑记](./pit.md)
     - [Windows中使用C#写打印程序踩坑记](./windows/print.md)
     - [go-face人脸识别踩坑记](./face/go-face-tour.md)  
@@ -18,6 +18,8 @@
     - [Windows命令行乱码问题解决](./windows/cmd.md)
     - [go mod版本管理](./go/gomod.md)
     - [gitbook的使用](./gitbook/gitbook-use.md)
+    - [mdBook](./docs/mdbook/mdbook-use.md)
+    - [Makefile编写规则](./docs/makefile/makefile.md)
 - [grpc](./grpc/index.md)
     - [go grpc](./grpc/grpc-go.md)
 - [MYSql](./mysql/index.md)

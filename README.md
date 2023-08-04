@@ -19,6 +19,8 @@
 * [Python版本管理神器-pyenv](./docs/python/pyenv.md)
 * [Windows命令行乱码问题解决](./docs/windows/cmd.md)
 * [go mod版本管理](./docs/go/gomod.md)
+* [gitbook的使用](./docs/gitbook/gitbook-use.md)
+* [mdBook](./docs/mdbook/mdbook-use.md)
 
 ## grpc
 

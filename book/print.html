@@ -1,0 +1,2088 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>test</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 介绍</a></li><li class="chapter-item expanded "><a href="pit.html"><strong aria-hidden="true">2.</strong> 踩坑记</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="windows/print.html"><strong aria-hidden="true">2.1.</strong> Windows中使用C#写打印程序踩坑记</a></li><li class="chapter-item expanded "><a href="face/go-face-tour.html"><strong aria-hidden="true">2.2.</strong> go-face人脸识别踩坑记</a></li></ol></li><li class="chapter-item expanded "><a href="tools/index.html"><strong aria-hidden="true">3.</strong> 工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="npm/npm-registry.html"><strong aria-hidden="true">3.1.</strong> npm淘宝镜像与官方源切换</a></li><li class="chapter-item expanded "><a href="java/java-env.html"><strong aria-hidden="true">3.2.</strong> java环境管理工具jenv和sdk</a></li><li class="chapter-item expanded "><a href="go/gvm.html"><strong aria-hidden="true">3.3.</strong> GoLang语言多版本管理工具--GVM</a></li><li class="chapter-item expanded "><a href="text/text-corner-mark.html"><strong aria-hidden="true">3.4.</strong> 文字角标</a></li><li class="chapter-item expanded "><a href="frp/frp-common-use.html"><strong aria-hidden="true">3.5.</strong> go-frp内网穿透</a></li><li class="chapter-item expanded "><a href="git/centos源码安装git.html"><strong aria-hidden="true">3.6.</strong> Centos下源码安装git</a></li><li class="chapter-item expanded "><a href="git/git_use_issue.html"><strong aria-hidden="true">3.7.</strong> git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了</a></li><li class="chapter-item expanded "><a href="git/win-git-use.html"><strong aria-hidden="true">3.8.</strong> windows下git的使用</a></li><li class="chapter-item expanded "><a href="git/dailygit.html"><strong aria-hidden="true">3.9.</strong> git常用命令</a></li><li class="chapter-item expanded "><a href="python/pyenv.html"><strong aria-hidden="true">3.10.</strong> Python版本管理神器-pyenv</a></li><li class="chapter-item expanded "><a href="windows/cmd.html"><strong aria-hidden="true">3.11.</strong> Windows命令行乱码问题解决</a></li><li class="chapter-item expanded "><a href="go/gomod.html"><strong aria-hidden="true">3.12.</strong> go mod版本管理</a></li><li class="chapter-item expanded "><a href="gitbook/gitbook-use.html"><strong aria-hidden="true">3.13.</strong> gitbook的使用</a></li></ol></li><li class="chapter-item expanded "><a href="grpc/index.html"><strong aria-hidden="true">4.</strong> grpc</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="grpc/grpc-go.html"><strong aria-hidden="true">4.1.</strong> go grpc</a></li></ol></li><li class="chapter-item expanded "><a href="mysql/index.html"><strong aria-hidden="true">5.</strong> MYSql</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="mysql/mysql_common_use.html"><strong aria-hidden="true">5.1.</strong> mysql临时关闭安全更新</a></li></ol></li><li class="chapter-item expanded "><a href="redis/index.html"><strong aria-hidden="true">6.</strong> Redis</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="redis/Redis.html"><strong aria-hidden="true">6.1.</strong> Redis从小白到大白笔记</a></li></ol></li><li class="chapter-item expanded "><a href="java/index.html"><strong aria-hidden="true">7.</strong> java</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="java/tools.html"><strong aria-hidden="true">7.1.</strong> java tools</a></li></ol></li><li class="chapter-item expanded "><a href="encrypt/index.html"><strong aria-hidden="true">8.</strong> 加密解密</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="encrypt/go-java-encrypt.html"><strong aria-hidden="true">8.1.</strong> go语言和java语言加密解密对比</a></li></ol></li><li class="chapter-item expanded "><a href="device-check/index.html"><strong aria-hidden="true">9.</strong> 系统设计</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="device-check/device-check.html"><strong aria-hidden="true">9.1.</strong> 设备管控中间件设计</a></li></ol></li><li class="chapter-item expanded "><a href="sys-settings/index.html"><strong aria-hidden="true">10.</strong> 系统配置</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="sys-settings/mac-library.html"><strong aria-hidden="true">10.1.</strong> Mac 中显示资源库（Library）文件夹目录的几种方法</a></li></ol></li><li class="chapter-item expanded "><a href="android/index.html"><strong aria-hidden="true">11.</strong> 安卓</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="android/android-service-forever.html"><strong aria-hidden="true">11.1.</strong> 安卓中一个进程如何在转入后台后不被系统杀死</a></li></ol></li><li class="chapter-item expanded "><a href="hadoop/index.html"><strong aria-hidden="true">12.</strong> 大数据</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="hadoop/common-use-command.html"><strong aria-hidden="true">12.1.</strong> 常用命令</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">test</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="介绍"><a class="header" href="#介绍">介绍</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="踩坑记"><a class="header" href="#踩坑记">踩坑记</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="windows中使用c写打印程序踩坑记"><a class="header" href="#windows中使用c写打印程序踩坑记">Windows中使用C#写打印程序踩坑记</a></h1>
+<h3 id="为什么打印网页的时候网页生成的图片末尾多处接近一半的空白为什么图片大小设置正确绘图区域设置正确结果打印出来全是空白"><a class="header" href="#为什么打印网页的时候网页生成的图片末尾多处接近一半的空白为什么图片大小设置正确绘图区域设置正确结果打印出来全是空白">为什么打印网页的时候网页生成的图片末尾多处接近一半的空白？为什么图片大小设置正确，绘图区域设置正确，结果打印出来全是空白？</a></h3>
+<p>这个问题很背？首先将为什么图片和打印尺寸设置无可挑剔，但是打印出来是空白。那是因为正好，我选择了一个现成的很长的网页进行打印，一共40多页，后面十几页全部是空白，并且起初没想到打印是从最后一页开始。可是为什么后面十几页全部是空白呢，内容全部在前半部分呢？</p>
+<p>这个问题查了接近一天，一次次尝试，确认了打印设置和打印尺寸以及图片尺寸，绘图尺寸全部正确后，有经过了半天的尝试和思考，终于发现，原来浏览器组件的窗体尺寸没有设置。</p>
+<p>因此，浏览器组件的窗体没有设置，会导致默认尺寸，默认尺寸宽度小于图片设置的宽度，就会导致末尾留出大量空白，又因为打印是从末尾开始，所以，开始打印的十几页都会是空白，所以，不等打印超过页就永远看不到内容，误以为是出了什么问题。</p>
+<p>没有设置窗体尺寸生成的坑爹图如下：</p>
+<p><img src="windows/./assets//(20220323034134).jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="go-face人脸识别踩坑记"><a class="header" href="#go-face人脸识别踩坑记">go-face人脸识别踩坑记</a></h1>
+<p>使用封装了 dlib 机器学习工具包的 kagami/go-face 包，极大简化了我们进行人脸识别的过程。</p>
+<h3 id="dlib-工具包"><a class="header" href="#dlib-工具包">dlib 工具包</a></h3>
+<p>它是用 C++ 构建的，它在面部识别与检测方面都令人惊奇。根据它的文档，在 Wild 基准测试中检测标记面部的准确度约为 99.4%，这难以置信，也是为什么许多第三方库将其作为基础的原因</p>
+<h4 id="安装"><a class="header" href="#安装">安装</a></h4>
+<p>我不想撒谎，让它启动并运行起来比用标准的 Go 包更痛苦一些，你需要在计算机上安装 pkg-config 和 dlib。如果你在 MacOS 上运行，命令如下：</p>
+<pre><code>$ brew install pkg-config dlib
+$ sed -i '' 's/^Libs: .*/&amp; -lblas -llapack/' /usr/local/lib/pkgconfig/dlib-1.pc
+</code></pre>
+<h3 id="开始"><a class="header" href="#开始">开始</a></h3>
+<p>我们首先需要下载 kagami/go-face 包，可以使用如下 go get 命令：</p>
+<pre><code>$ go get -u github.com/Kagami/go-face
+</code></pre>
+<p>在你的 GOPATH 目录中创建一个名为 go-face-recognition 的新目录。在此目录中创建一个名为 main.go 的文件，这是我们所有源码所在位置。</p>
+<p>完成操作后，你需要从 TutorialEdge/ go-face-recognition-tutorial repo 的 image/ 目录中获取文件。最简单的方法是 clone repo 到另一个目录，只需复制图片目录到当前的工作目录</p>
+<pre><code>$ git clone https://github.com/TutorialEdge/go-face-recognition-tutorial.git
+</code></pre>
+<p>一旦成功 clone 后，我们就有了启动人脸识别的所需的 .dat 文件。你应该还看到一些其他包含复仇者联盟面孔的 .jpg 文件列表。</p>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+
+    &quot;github.com/Kagami/go-face&quot;
+)
+
+const dataDir = &quot;testdata&quot;
+
+func main() {
+    fmt.Println(&quot;Facial Recognition System v0.01&quot;)
+
+    rec, err := face.NewRecognizer(dataDir)
+    if err != nil {
+        fmt.Println(&quot;Cannot INItialize recognizer&quot;)
+    }
+    defer rec.Close()
+
+    fmt.Println(&quot;Recognizer Initialized&quot;)
+}
+</code></pre>
+<p>好的，如果我们尝试在这时候运行程序，应该会在我们程序的输出中看到 Facial Recognition System v0.01 和 Recognizer Initialized. 我们已经成功的设置了所需的一切，为了做一些很酷的高级人脸识别！</p>
+<h4 id="坑"><a class="header" href="#坑">坑</a></h4>
+<p>当你运行了go run .之后，出现如下画面：</p>
+<p><img src="face/./assets/WeChat10ae1958378403184cdd5758d9ff3298.png" alt="" /></p>
+<pre><code>2022/12/11 01:38:57 Can't recognize: jpeg_mem_loader: decode error: Wrong JPEG library version: library is 80, caller expects 90
+</code></pre>
+<p>翻译过来就是识别到系统中安装的库为80，但是程序需要90的库。</p>
+<p>在网上搜了一下别人的解决方法，还发现有人振振有词的翻译反了，说是要80但是系统中是90。。。</p>
+<p>在Mac中最简单的安装libmpeg的方法如下：</p>
+<pre><code>brew install libjpeg
+</code></pre>
+<p>但是像这样安装之后，并不能改变程序识别到的libjpeg为90。</p>
+<p>于是多样尝试之后，决定直接安装libjpeg。</p>
+<ol>
+<li>下载http://www.ijg.org/files/jpegsrc.v9e.tar.gz</li>
+<li>解压后，从终端进入到 libjpeg 所在目录，用常规方法既可安装，命令如下：</li>
+</ol>
+<pre><code>./configure
+make
+make install
+＃make test
+</code></pre>
+<p>最后一条命令make test是用来测试这个库是否安装成功的，执行这个命令后，你会看到 libjpeg 解压后所在目录下多了几张图片等，就是这个命令生成的。最后还可以用 make clean 来清理一些临时文件。</p>
+<p>说明</p>
+<p>如果没有执行 make install 命令或者执行失败，则使用该库的程序在运行时，可能无法链接到相应的库，会出现error while loading shared libraries: libjpeg.so.8 Not found之类的错误！！</p>
+<p>用直接安装的方法，装哪个版本，程序识别到的就是哪个版本，自此问题解决。</p>
+<h4 id="坑-1"><a class="header" href="#坑-1">坑</a></h4>
+<p>找不到mmod_human_face_detector.dat</p>
+<p>rec, err := face.NewRecognizer(dataDir), 创建Recognizer需要在指定的文件夹下面包含dlib_face_recognition_resnet_model_v1.dat, shape_predictor_5_face_landmarks.dat, mmod_human_face_detector.dat三个文件，而从https://github.com/TutorialEdge/go-face-recognition-tutorial.git下载的包缺少mmod_human_face_detector.dat文件。</p>
+<p>mmod_human_face_detector.dat是训练好的模型，可以从这里下载：</p>
+<p>http://dlib.net/files/mmod_human_face_detector.dat.bz2</p>
+<h3 id="人脸识别"><a class="header" href="#人脸识别">人脸识别</a></h3>
+<p>使用kagami/go-face包做基础的人脸识别，首先要将要识别的对象的样例图片识别结果所得到的人脸描述符的数组（samples）传给Recognizer。</p>
+<pre><code>// Pass samples to the recognizer.
+rec.SetSamples(samples, avengers)
+</code></pre>
+<p>然后对要进行识别的目标照片进行识别</p>
+<pre><code>face, err := rec.RecognizeSingleFile(testTonyStark)
+</code></pre>
+<p>然后通过将目标照片的人脸描述符通过rec.Classify(face.Descriptor)方法进行分类，可以获得一个从样例图片中从左到右识别到的人脸描述符数组中的序号，如果序号小于0则识别的目标照片在样例照片中不存在，不是我们要寻找的目标人脸，如果序号大于0，则找到目标。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="工具"><a class="header" href="#工具">工具</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="npm淘宝镜像与官方源切换"><a class="header" href="#npm淘宝镜像与官方源切换">npm淘宝镜像与官方源切换</a></h1>
+<p>1.临时使用</p>
+<pre><code>npm --registry https://registry.npm.taobao.org install 包名
+</code></pre>
+<p>2.永久设置为淘宝镜像</p>
+<pre><code>npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<p>3.换回国外官方源 </p>
+<pre><code>npm config set registry https://registry.npmjs.org
+</code></pre>
+<p>4.查看使用的源地址</p>
+<pre><code>npm config get registry
+</code></pre>
+<p>5.使用淘宝的cnpm</p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="java环境管理工具jenv和sdk"><a class="header" href="#java环境管理工具jenv和sdk">java环境管理工具jenv和sdk</a></h1>
+<p>重要提示：Mac下查看已安装的jdk版本及其安装目录,打开终端，输入：/usr/libexec/java_home -V</p>
+<p>sdk工具可用，但是没怎么用，最常用的方式是在官网下载需要版本的jdk安装包，安装一次jdk，然后加入到jenv管理，然后就可以使用jenv进行全局java版本的随意切换了。</p>
+<p>安装jenv</p>
+<p>Linux / OS X</p>
+<pre><code>$ git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+</code></pre>
+<p>Mac OS X via Homebrew</p>
+<pre><code>brew install jenv
+</code></pre>
+<p>jenv的不同shell配置：
+Bash</p>
+<pre><code>$ echo 'export PATH=&quot;$HOME/.jenv/bin:$PATH&quot;' &gt;&gt; ~/.bash_profile
+$ echo 'eval &quot;$(jenv init -)&quot;' &gt;&gt; ~/.bash_profile
+</code></pre>
+<p>Zsh</p>
+<pre><code>$ echo 'export PATH=&quot;$HOME/.jenv/bin:$PATH&quot;' &gt;&gt; ~/.zshrc
+$ echo 'eval &quot;$(jenv init -)&quot;' &gt;&gt; ~/.zshrc
+</code></pre>
+<p>注意 jenv 不能自动的安装不同版本jdk ，需要你 自行下载 不同版本jdk 安装</p>
+<p>然后 把路径 添加到jenv</p>
+<p>命令如下：</p>
+<pre><code>$ jenv add /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+  oracle64-1.6.0.39 added
+$ jenv add /Library/Java/JavaVirtualMachines/jdk17011.jdk/Contents/Home
+  oracle64-1.7.0.11 added
+</code></pre>
+<p>不想自己下载jdk 可以 使用sdkman 下载不同版本jdk 
+方法 参考 sdkman 官网：http://sdkman.io/</p>
+<p>常用命令</p>
+<pre><code>$ jenv versions
+  system
+  oracle64-1.6.0.39
+* oracle64-1.7.0.11 (set by /Users/hikage/.jenv/version)
+</code></pre>
+<p>把jdk加入到jenv</p>
+<pre><code>$ jenv add /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+  oracle64-1.6.0.39 added
+</code></pre>
+<p>Configure global version</p>
+<pre><code>$ jenv global oracle64-1.6.0.39
+</code></pre>
+<p>Configure local version (per directory)</p>
+<pre><code>$ jenv local oracle64-1.6.0.39
+</code></pre>
+<p>Configure shell instance version</p>
+<pre><code>$ jenv shell oracle64-1.6.0.39
+</code></pre>
+<p>其中
+优先级 jenv shell &gt; jenv local &gt; jenv global</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="golang语言多版本管理工具--gvm"><a class="header" href="#golang语言多版本管理工具--gvm">GoLang语言多版本管理工具--GVM</a></h1>
+<p>GVM由Josh Bussdieker（jbuss，jaja，jbussdieker）在Moovweb工作期间</p>
+<p>GVM提供了一个管理Go版本的界面。</p>
+<p>开源项目：https://github.com/moovweb/gvm</p>
+<p>特征</p>
+<ul>
+<li>安装/卸载Go gvm install [tag]标签为“60.3”，“go1”，“weekly.2011-11-08”或“tip”的版本</li>
+<li>列出GOROOT中添加/删除的文件 gvm diff</li>
+<li>使用管理GOPATH gvm pkgset [create/use/delete] [name]。使用--local如name在本地路径管理信息库（/path/to/repo/.gvm_local）。</li>
+<li>列出最新发布标签gvm listall。使用--all列出每周为好。</li>
+<li>为多个版本安装缓存最新Go源的干净副本。</li>
+<li>将项目目录链接到GOPATH</li>
+</ul>
+<p>背景</p>
+<p>当我们开始使用Go不匹配的依赖项开发时，API的变化会影响我们的构建过程，并且很难与其他人的变化合并。</p>
+<p>经过几次整理GOROOT并重建后，我决定拿出一个工具来监督这个过程。它最终演变成今天的gvm。</p>
+<p>安装</p>
+<pre><code>bash &lt; &lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+
+</code></pre>
+<p>Or if you are using zsh just change bash with zsh</p>
+<p>Installing Go</p>
+<pre><code>gvm install go1.4
+gvm use go1.4 [--default]
+</code></pre>
+<p>一旦完成，Go将在路径中并准备使用。$ GOROOT和$ GOPATH自动设置。</p>
+<p>安装Go时可以指定其他选项</p>
+<pre><code>Usage: gvm install [version] [options]
+    -s,  --source=SOURCE      Install Go from specified source.
+    -n,  --name=NAME          Override the default name for this version.
+    -pb, --with-protobuf      Install Go protocol buffers.
+    -b,  --with-build-tools   Install package build tools.
+    -B,  --binary             Only install from binary.
+         --prefer-binary      Attempt a binary install, falling back to source.
+    -h,  --help               Display this message.
+</code></pre>
+<p>关于编译Go 1.5+的注意事项</p>
+<p>Go 1.5+从工具链中删除了C编译器，并将其替换为Go中编写的编译器。显然，如果您还没有可用的Go安装，这会产生引导问题。为了编译Go 1.5+，请确保首先安装Go 1.4。</p>
+<pre><code>gvm install go1.4 -B
+gvm use go1.4
+export GOROOT_BOOTSTRAP=$GOROOT
+gvm install go1.5
+</code></pre>
+<p>列出所有已安装的Go版本（当前版本的前缀为“=&gt;”）：</p>
+<pre><code>gvm list
+</code></pre>
+<p>列出可供下载的所有Go版本：</p>
+<pre><code>gvm listall
+</code></pre>
+<p>卸载</p>
+<p>要完全删除gvm和所有已安装的Go版本和包：</p>
+<pre><code>gvm implode
+</code></pre>
+<p>如果不起作用，请参阅本页底部的故障排除步骤。</p>
+<p>故障排除</p>
+<p>有时特别是在升级期间，gvm文件的状态可能会混淆。对于从旧版本升级到0.0.8以上的情况，这种情况最为正确。变化正在放缓，LTR迫在眉睫。但是现在rm -rf ~/.gvm将永远删除gvm。敬请关注！</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="文字角标"><a class="header" href="#文字角标">文字角标</a></h2>
+<h3 id="文字角标-1"><a class="header" href="#文字角标-1">文字角标</a></h3>
+<p>常用上标 ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ º ˙</p>
+<p>常用下标₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₊ ₋ ₌ ₍ ₎ ₐ ₑ ₒ ₓ ₔ ₕ ₖ ₗ ₘ ₙ ₚ ₛ ₜ</p>
+<p>更多上标 ᵃ ᵇ ᶜ ᵈ ᵉ ᵍ ʰ ⁱ ʲ ᵏ ˡ ᵐ ⁿ ᵒ ᵖ ᵒ⃒ ʳ ˢ ᵗ ᵘ ᵛ ʷ ˣ ʸ ᙆ ᴬ ᴮ ᒼ ᴰ ᴱ ᴳ ᴴ ᴵ ᴶ ᴷ ᴸ ᴹ ᴺ ᴼ ᴾ ᴼ̴ ᴿ ˢ ᵀ ᵁ ᵂ ˣ ᵞ ᙆ ꝰ ˀ ˁ ˤ ꟸ ꭜ ʱ ꭝ ꭞ ʴ ʵ ʶ ꭟ ˠ ꟹ ᴭ ᴯ ᴲ ᴻ ᴽ ᵄ ᵅ ᵆ ᵊ ᵋ ᵌ ᵑ ᵓ ᵚ ᵝ ᵞ ᵟ ᵠ ᵡ ᵎ ᵔ ᵕ ᵙ ᵜ ᶛ ᶜ ᶝ ᶞ ᶟ ᶡ ᶣ ᶤ ᶥ ᶦ ᶧ ᶨ ᶩ ᶪ ᶫ ᶬ ᶭ ᶮ ᶯ ᶰ ᶱ ᶲ ᶳ ᶴ ᶵ ᶶ ᶷ ᶸ ᶹ ᶺ ᶼ ᶽ ᶾ ᶿ ꚜ ꚝ ჼ ᒃ ᕻ ᑦ ᒄ ᕪ ᑋ ᑊ ᔿ ᐢ ᣕ ᐤ ᣖ ᣴ ᣗ ᔆ ᙚ ᐡ ᘁ ᐜ ᕽ ᙆ ᙇ ᒼ ᣳ ᒢ ᒻ ᔿ ᐤ ᣖ ᣵ ᙚ ᐪ ᓑ ᘁ ᐜ ᕽ ᙆ ᙇ ⁰ ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ˂ ˃ ⁽ ⁾ ˙ * º</p>
+<p>更多下标 ₐ ₔ ₑ ₕ ᵢ ⱼ ₖ ₗ ₘ ₙ ₒ ₚ ᵣ ₛ ₜ ᵤ ᵥ ₓ ᙮ ᵤ ᵩ ᵦ ₗ ˪ ៳ ៷ ₒ ᵨ ₛ ៴ ᵤ ᵪ ᵧ</p>
+<p>中文上标 ㆒㆓㆔㆕㆖㆗㆘㆙㆚㆛㆜㆝㆞㆟</p>
+<h3 id="html角标"><a class="header" href="#html角标">html角标</a></h3>
+<pre><code>&lt;sup&gt;上标 
+
+&lt;sub&gt;下标
+
+&lt;small&gt;小号字
+
+&lt;del&gt; 删除线
+</code></pre>
+<p><img src="text/./assets/804017-20161205173815897-148454305.png" alt="" />
+结果
+<img src="text/./assets/804017-20161205173846147-69703677.png" alt="" /></p>
+<p>对应的 js </p>
+<p>stringObj.sup()  上标</p>
+<p>stringObj.sub()  下标</p>
+<p>stringObj.sub()  使用小字号显示</p>
+<p>stringObj.strike() 使用删除线</p>
+<p>彩蛋：</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            var txt = &quot;z-one&quot;
+ 
+            document.write(&quot;&lt;p&gt;1、Big--大号字体: &quot; + txt.big() + &quot;&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;2、Small--小号字体: &quot; + txt.small() + &quot;&lt;/p&gt;&quot;)
+ 
+            document.write(&quot;&lt;p&gt;3、Bold--粗体: &quot; + txt.bold() + &quot;&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;4、Italic--斜体: &quot; + txt.italics() + &quot;&lt;/p&gt;&quot;)
+ 
+            document.write(&quot;&lt;p&gt;5、Blink--字符串闪动: &quot; + txt.blink() + &quot; (does not work in IE)&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;6、Fixed--以打印机文本显示: &quot; + txt.fixed() + &quot;&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;7、Strike--删除线: &quot; + txt.strike() + &quot;&lt;/p&gt;&quot;)
+ 
+            document.write(&quot;&lt;p&gt;8、Fontcolor--字体颜色: &quot; + txt.fontcolor(&quot;Red&quot;) + &quot;&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;9、Fontsize--字体大小: &quot; + txt.fontsize(16) + &quot;&lt;/p&gt;&quot;)
+ 
+            document.write(&quot;&lt;p&gt;10、Lowercase--转换为小写: &quot; + txt.toLowerCase() + &quot;&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;11、Uppercase--转换为大写: &quot; + txt.toUpperCase() + &quot;&lt;/p&gt;&quot;)
+ 
+            document.write(&quot;&lt;p&gt;12、Subscript--下标: &quot; + txt+txt.sub() + &quot;&lt;/p&gt;&quot;)
+            document.write(&quot;&lt;p&gt;13、Superscript--上标: &quot; +txt+ txt.sup() + &quot;&lt;/p&gt;&quot;)
+ 
+            document.write(&quot;&lt;p&gt;14、Link--链接: &quot; + txt.link(&quot;http://www.cnblogs.com/z-one&quot;) + &quot;&lt;/p&gt;&quot;)
+        &lt;/script&gt;
+ 
+    &lt;/body&gt;
+ 
+&lt;/html&gt;
+</code></pre>
+<p><img src="text/./assets/804017-20161205182248819-363837146.png" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="frp"><a class="header" href="#frp">frp</a></h1>
+<h2 id="一个泛域名内网穿透用来做微信小程序开发的例子"><a class="header" href="#一个泛域名内网穿透用来做微信小程序开发的例子">一个泛域名内网穿透用来做微信小程序开发的例子</a></h2>
+<p>frps配置：</p>
+<pre><code>[common]
+bind_port = 5002
+vhost_https_port = 443
+subdomain_host = bgenius.cn
+</code></pre>
+<p>frpc配置：</p>
+<pre><code>[common]
+server_addr = *.*.*.*
+server_port = 5002
+
+[web]
+type = https
+#local_port = 19821
+subdomain = test
+
+plugin = https2http
+plugin_local_addr = 127.0.0.1:19821
+
+# HTTPS 证书相关的配置
+plugin_crt_path = ./ca/test.bgenius.cn.crt
+plugin_key_path = ./ca/test.bgenius.cn.key
+plugin_host_header_rewrite = 127.0.0.1
+plugin_header_X-From-Where = frp
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="centos-源码安装git"><a class="header" href="#centos-源码安装git">Centos 源码安装git</a></h1>
+<p>1.安装编译git时需要的包</p>
+<pre><code># yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+
+# yum install  gcc perl-ExtUtils-MakeMaker
+</code></pre>
+<p>2.删除已有的git</p>
+<pre><code># yum remove git
+</code></pre>
+<p>3.下载git源码，我自己下载的是2.0.0版本的下载地址：http://pan.baidu.com/s/1qXFnOxI</p>
+<pre><code># cd /usr/src
+# wget https://www.kernel.org/pub/software/scm/git/git-2.0.5.tar.gz
+# tar xzf git-2.0.5.tar.gz
+</code></pre>
+<p>4.编译安装</p>
+<pre><code># cd git-2.0.5
+# make prefix=/usr/local/git all
+# make prefix=/usr/local/git install
+# echo &quot;export PATH=$PATH:/usr/local/git/bin&quot; &gt;&gt; /etc/bashrc
+# source /etc/bashrc
+</code></pre>
+<p>5.检查一下版本号</p>
+<pre><code># git --version
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="git-push-到total-2406-delta-379-reused-0-delta-0就不动了"><a class="header" href="#git-push-到total-2406-delta-379-reused-0-delta-0就不动了">git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了</a></h2>
+<p>git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了，许久之后可能出现Git: fatal: The remote end hung up unexpectedly 解决方法</p>
+<h3 id="尝试1"><a class="header" href="#尝试1">尝试1</a></h3>
+<p>因为提交的文件过大造成的错误；尝试修改一下postBuffer的参数：</p>
+<pre><code>git config –global http.postBuffer 52428800
+git config --global https.postBuffer 1048576000
+</code></pre>
+<h3 id="尝试2"><a class="header" href="#尝试2">尝试2</a></h3>
+<p>windows的git工具，甭管是gui还是command tool，统统是基于msysgit的。而msysgit在实现上，有一点儿小瑕疵，查了万千资料，发现这个问题，由于开源的贡献者们太少太忙太不容易，耽误了4年没解决。据说是对什么side-bind-64bit的支持不好导致的。what the hell! 谁晓得那是个啥。。。</p>
+<p>搜遍了各种solution，有牛人在server端修改git的binary文件，据说可以糊弄过关。但我不是在linux里面搭建的git server，而是mac；也没在binary文件里面找到那个要修改的string。</p>
+<p>最后终于发现开源大牛们给出了一个解决办法（为毛早没发现啊，足足两天啊。。。），在msysgit的最新版本1.9.4里，可以通过一个设置来摆平：</p>
+<p>在git的config里面添加：</p>
+<pre><code>git config --global sendpack.sideband false
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="windows下git的使用"><a class="header" href="#windows下git的使用">windows下git的使用</a></h1>
+<p>首先介绍一下如何配置git的ssh key，以便我们可以用git方式下载源码</p>
+<p>首先打开gitbash，如下都是在gitbash里面完成</p>
+<p>首先用如下命令（如未特别说明，所有命令均默认在Git Bash工具下执行）检查一下用户名和邮箱是否配置（github支持我们用用户名或邮箱登录）：</p>
+<pre><code>git config --global  --list 
+</code></pre>
+<p>如未配置，则执行以下命令进行配置：</p>
+<pre><code>git config --global  user.name &quot;这里换上你的用户名&quot;
+git config --global user.email &quot;这里换上你的邮箱&quot;
+</code></pre>
+<p>然后执行以下命令生成秘钥：</p>
+<pre><code>ssh-keygen -t rsa -C &quot;这里换上你的邮箱&quot;
+</code></pre>
+<p>执行命令后需要进行3次或4次确认：</p>
+<ol>
+<li>确认秘钥的保存路径（如果不需要改路径则直接回车）；</li>
+<li>如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆盖）；</li>
+<li>创建密码（如果不需要密码则直接回车）；</li>
+<li>确认密码；</li>
+</ol>
+<p>在指定的保存路径下会生成2个名为id_rsa和id_rsa.pub的文件，到此git就可以使用ssh连接了</p>
+<h2 id="问题一unable-to-negotiate-with-4798-port-22-no-matching-host-key-type-found-their-offer-ssh-rsa"><a class="header" href="#问题一unable-to-negotiate-with-4798-port-22-no-matching-host-key-type-found-their-offer-ssh-rsa">问题一：Unable to negotiate with 47.98.<strong>.</strong> port 22: no matching host key type found. Their offer: ssh-rsa</a></h2>
+<p>环境 window10 + GIT<br />
+用Git远程拉去项目<br />
+报错Unable to negotiate with xx.xx.xx.xx port 22: no matching key exchange method found.<br />
+Their offer:diffie-hellman-group1-sha1</p>
+<p>解决办法：<br />
+在生成公钥的~/.ssh文件夹下，新建一个config文件（config文件没有后缀），文件中添加如下内容：<br />
+Host *<br />
+HostkeyAlgorithms +ssh-rsa<br />
+PubkeyAcceptedKeyTypes +ssh-rsa</p>
+<p>然后保存即可。<br />
+注意：xx.xx.xx.xx为服务器ip；+前面有一个空格！</p>
+<div style="break-before: page; page-break-before: always;"></div><p>git tag -d v2016062101 删除本地tag</p>
+<p>git push origin --delete tag v2016062101 删除远程tag</p>
+<p>git branch -r 查看所有远程分支</p>
+<p>拉取远程分支并创建本地分支<br />
+方法一：<br />
+git checkout -b 本地分支名x origin/远程分支名x<br />
+方法二：<br />
+git fetch origin 远程分支名x:本地分支名x</p>
+<h2 id="git如何删除远程tag"><a class="header" href="#git如何删除远程tag">git如何删除远程tag？</a></h2>
+<p>分为两步:</p>
+<ol>
+<li>删除本地tag</li>
+</ol>
+<pre><code>git tag -d tag-name
+</code></pre>
+<ol start="2">
+<li>删除远程tag</li>
+</ol>
+<pre><code>git push origin :refs/tags/tag-name
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="python版本管理神器-pyenv"><a class="header" href="#python版本管理神器-pyenv">Python版本管理神器-pyenv</a></h1>
+<h2 id="一问题情景"><a class="header" href="#一问题情景">一、问题情景:</a></h2>
+<ol>
+<li>Python解释器版本混乱, 2和3差别巨大, 而且细分版本也不尽相同, 难以选择和管理.</li>
+<li>不同Linux发行版自带Python不同, 如ubuntu16自带2.7和3.5版本, 其中系统许多组件依赖于自带解释器, 一旦删除或者更改都可能会造成系统出问题.</li>
+<li>不同的Python解释器软件包管理也是问题, 如pip和ipython等必备包组件, 而且在项目开发中如何保证不同的包环境互不干扰也是一个问题.</li>
+</ol>
+<p>那么有没有一个终极的解决办法能在管理不同解释器版本的同时控制不同的包环境呢? 有的, 就是pyenv.</p>
+<h2 id="二pyenv是什么-能干什么"><a class="header" href="#二pyenv是什么-能干什么">二、pyenv是什么? 能干什么?</a></h2>
+<p>pyenv是一个forked自ruby社区的简单、低调、遵循UNIX哲学的Python环境管理工具, 它可以轻松切换全局解释器版本, 同时结合vitualenv插件可以方便的管理对应的包源.
+我们知道, 在terminal中输入一个命令比如‘ls’时, shell会从当前环境的PATH中的各个目录里看是不是有ls这个可执行文件, 如果找到就执行, 否则就会报‘command no found’ 的错误, 同理, 只要控制PATH变量就能够做到python版本的切换, pyenv通过在PATH头部插入shims路径来实现对python版本的控制.</p>
+<h3 id="pyenv和流行的pipenvvirtualenv的关系"><a class="header" href="#pyenv和流行的pipenvvirtualenv的关系">pyenv和流行的pipenv、virtualenv的关系</a></h3>
+<p>pipenv是requests 作者 Kenneth Reitz大神写的一个python虚拟环境管理工具, 结合了pip和virtualenv的功能, 侧重点还是在包环境管理上, 使用思路是先创建一个指定python版本的环境, 然后在此环境上安装相应的包, 好评不错, 看到很多大牛都在推荐.</p>
+<p>virtualenv是一个比较传统成熟的虚拟环境管理工具了, 用的人也比较多, 思路也是创建虚拟环境, 然后安装相应的包, 要进入环境就source一下activate脚本激活一下, 尽管成熟, 但是我个人不太喜欢用, 在部署项目的时候老是容易出现一些环境问题.</p>
+<p>pyenv相对来说知名度就差很多了, 不过也很稳定, 这三个环境管理工具我都用过, 我个人更喜欢pyenv, 理由如下:</p>
+<p>相对于其他两个工具, pyenv更侧重在python 解释器版本管理上, 比包管理更大一个层级, 使用pyenv我可以方便的下载指定版本的python解释器, pypy, anaconda等, 可以随时自由的在shell环境中本地、全局切换python解释器
+开发的时候不需要限定某个版本的虚拟环境, 只需要在部署的时候用pyenv指定某个版本就好了
+pyenv切换解释器版本的时候, pip和ipython以及对应的包环境都是一起切换的, 所以如果你要同时运行ipython2.x和ipython3.x多个解释器验证一些代码时就很方便
+pyenv也可以创建好指定的虚拟环境, 但不需要指定具体目录, 自由度更高, 使用也简单</p>
+<h2 id="三安装pyenv"><a class="header" href="#三安装pyenv">三、安装pyenv</a></h2>
+<ol>
+<li>在家目录里clone项目:</li>
+</ol>
+<pre><code> $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+# MacOS的话可以直接用homebrew安装
+$ brew update
+$ brew install pyenv 
+</code></pre>
+<ol start="2">
+<li>添加shell配置文件中追加如下: (如zshrc)</li>
+</ol>
+<pre><code>export PYENV_ROOR=&quot;$HOME/.pyenv&quot;
+export PATH=$PYENV_ROOT/shims:$PATH
+eval &quot;$(pyenv init -)&quot;
+eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre>
+<ol start="3">
+<li>source一下配置文件, 输入pyenv --version测试一下</li>
+</ol>
+<h2 id="四简单使用"><a class="header" href="#四简单使用">四、简单使用</a></h2>
+<pre><code># 查看当前版本
+pyenv version
+
+# 查看所有版本
+pyenv versions
+
+# 查看所有可安装的版本
+pyenv install --list
+
+# 安装指定版本
+pyenv install 3.6.5
+# 安装新版本后rehash一下
+pyenv rehash
+
+# 删除指定版本
+pyenv uninstall 3.5.2
+
+# 指定全局版本
+pyenv global 3.6.5
+
+# 指定多个全局版本, 3版本优先
+pyenv global 3.6.5 2.7.14
+
+# 实际上当你切换版本后, 相应的pip和包仓库都是会自动切换过去的
+</code></pre>
+<h2 id="五包管理插件pyenv-virtualenv"><a class="header" href="#五包管理插件pyenv-virtualenv">五、包管理插件pyenv-virtualenv</a></h2>
+<p>首先下载:</p>
+<pre><code>$ git clone https://github.com/pyenv/pyenv-virtualenv.git $.pyenv/plugins/pyenv-virtualenv
+</code></pre>
+<p>克隆完成后添加如下到shell配置文件(mac的话是.zshrc)</p>
+<pre><code>$ echo 'eval &quot;$(pyenv virtualenv-init -)&quot;' &gt;&gt; ~/.bash_profile
+</code></pre>
+<p>实际上mac用户直接brew安装就可以了...</p>
+<pre><code>$ brew install pyenv-virtualenv
+$ eval &quot;$(pyenv init -)&quot;
+$ eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre>
+<p>使用:</p>
+<pre><code># 创建一个3.6.5版本的虚拟环境, 命名为v365env, 然后激活虚拟环境
+$ pyenv virtualenv 3.6.5 v365env
+$ pyenv activate v365env
+# 关闭虚拟环境
+$ pyenv deactivate v365env
+</code></pre>
+<p>当切换python解释器的时候对应的pip和包库也会一并切换过去, 而且可以为指定版本的解释器创建项目所需的虚拟环境, 切换的时候也异常简单, 个人常用的做法是为每个项目创建不同的虚拟环境, 当进入该环境的时候就可以随便浪而不用担心影响到其它项目, 搭配Pycharm使用效果更佳.</p>
+<h2 id="六了解更多使用姿势"><a class="header" href="#六了解更多使用姿势">六、了解更多使用姿势</a></h2>
+<p>pyenv项目地址:</p>
+<p>pyenv/pyenv
+​github.com/pyenv/pyenv.git</p>
+<p>pyenv-vitualenv插件地址:</p>
+<p>pyenv/pyenv-virtualenv
+​github.com/pyenv/pyenv-virtualenv.git</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="windows命令行乱码问题解决"><a class="header" href="#windows命令行乱码问题解决">Windows命令行乱码问题解决</a></h1>
+<p>命令 chcp<br />
+功能：<br />
+显示或设置活动代码页编号</p>
+<pre><code>　　CHCP [nnn] 
+　　nnn 指定代码页编号。 
+　　不加参数键入 CHCP 显示活动代码页编号。 
+　　nnn指定一已有的系统字符集，该字符集在CONFIG.SYS文件中由COUNTRY命令定义。 
+　　在DOS下可以通过mode命令来设置代码页。 
+　　选定代码页:　MODE CON[:] CP SELECT=yyy 
+　　代码页状态:　MODE CON[:] CP [/STATUS] 
+　　按Windows+R组合键，然后输入cmd或者command打开命令提示符。 
+　　比如输入：mode con cp select=936，则表示显示简体中文。如果输入mode con cp select=437，则表示显示MS-DOS 美国英语，而中文显示将会是?。 
+　　MS-DOS为以下国家和语言提供字符集： 
+　　代码页描述 
+　　1258 越南语 
+　　1257 波罗的语 
+　　1256 阿拉伯语 
+　　1255 希伯来语 
+　　1254 土耳其语 
+　　1253 希腊语 
+　　1252 拉丁 1 字符 (ANSI) 
+　　1251 西里尔语 
+　　1250 中欧语言 
+　　950 繁体中文 
+　　949 朝鲜语 
+　　936 简体中文（默认） 
+　　932 日语 
+　　874 泰国语 
+　　850 多语种 (MS-DOS Latin1) 
+　　437 MS-DOS 美国英语
+
+</code></pre>
+<p>dos指令:<br />
+chcp 65001 就是换成UTF-8代码页<br />
+chcp 936 可以换回默认的GBK<br />
+chcp 437 是美国英语<br />
+如何在DOS窗口中显示UTF-8字符<br />
+在中文Windows系统中，如果一个文本文件是UTF-8编码的，那么在CMD.exe命令行窗口（所谓的DOS窗口）中不能正确显示文件中的内容。在默认情况下，命令行窗口中使用的代码页是中文或者美国的，即编码是中文字符集或者西文字符集。</p>
+<p>如果想正确显示UTF-8字符，可以按照以下步骤操作：<br />
+1、打开CMD.exe命令行窗口<br />
+2、通过 chcp命令改变代码页，UTF-8的代码页为65001<br />
+chcp 65001<br />
+执行该操作后，代码页就被变成UTF-8了。但是，在窗口中仍旧不能正确显示UTF-8字符。<br />
+3、修改窗口属性，改变字体<br />
+在命令行标题栏上点击右键，选择&quot;属性&quot;-&gt;&quot;字体&quot;，将字体修改为True Type字体&quot;Lucida Console&quot;，然后点击确定将属性应用到当前窗口。<br />
+这时使用type命令就可以显示UTF-8文本文件的内容了：<br />
+type filename.txt<br />
+4、通过以上操作并不能完全解决问题，因为显示出来的内容有可能不完全。可以先最小化，然后最大化命令行窗口，文件的内容就完整的显示出来了。  </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="go-mod版本管理"><a class="header" href="#go-mod版本管理">go mod版本管理</a></h1>
+<h2 id="操作过程"><a class="header" href="#操作过程">操作过程</a></h2>
+<ol>
+<li>新建git源码分支</li>
+</ol>
+<pre><code>git branch v2
+git checkout v2
+git branch
+</code></pre>
+<ol start="2">
+<li>修改gomod版本号</li>
+</ol>
+<p>假设当前模块名称为github.com/ascode/common-sdk</p>
+<pre><code>go mod edit --module=github.com/ascode/common-sdk/v2 go.mod
+</code></pre>
+<p>该命令后会修改go.mod文件第一行为</p>
+<pre><code>module github.com/ascode/common-sdk/v2
+</code></pre>
+<ol start="2">
+<li>推送新分支到服务器</li>
+</ol>
+<pre><code>git push -u origin v2
+</code></pre>
+<ol start="3">
+<li>给当前新分支代码打一个tag，并推送tag到服务器</li>
+</ol>
+<pre><code>git tag v2.0.0
+git push origin v2.0.0
+</code></pre>
+<ol start="5">
+<li>go get模块</li>
+</ol>
+<p>经过如上的步骤后，在其他项目中go get github.com/ascode/common-sdk/v2，则go.mod中的引用会变成</p>
+<pre><code>require (
+	github.com/ascode/common-sdk/v2 v2.0.0
+)
+</code></pre>
+<ol start="6">
+<li>如何变成github.com/ascode/common-sdk/v2 v2.0.1</li>
+</ol>
+<p>修改代码之后有如下操作：</p>
+<pre><code>git add .
+git commit -m &quot;&quot;
+git push origin v2
+git tag v2.0.1
+git push origin v2.0.1
+</code></pre>
+<p>然后再次go get github.com/ascode/common-sdk/v2，则go.mod中的引用就会变成</p>
+<pre><code>require (
+	github.com/ascode/common-sdk/v2 v2.0.1
+)
+</code></pre>
+<h2 id="相关原理说明"><a class="header" href="#相关原理说明">相关原理说明</a></h2>
+<h3 id="介绍-1"><a class="header" href="#介绍-1">介绍</a></h3>
+<p>go mod 是go对包管理支持，在go1.11版本添加的，在go1.13版本默认开启GO111MODULE=&quot;on&quot;，且不会受到GOPATH影响。在项目下通常会生成一个go.mod文件。</p>
+<p>go mod文件内容如下：</p>
+<pre><code>module github.com/ascode/common-sdk/v2
+ 
+go 1.20
+</code></pre>
+<h3 id="模块路径"><a class="header" href="#模块路径">模块路径</a></h3>
+<p>我们在应用中通常引用第三方库包时需要使用go get {项目地址}，这里的{项目地址}称为模块路径，模块的路径是包内的公共前缀，它由存储库根路径、存储库目录和主要版本后缀构成。其中存储库根路径是开发中版本控制存储库的根目录。存储库目录是模块下包含的子包，该包提供独立功能。主要版本后缀则是Go modules中对于v2及以上版本需要在模块名中申明。</p>
+<p>举个例子：在github.com中我创建了一个common-sdk库，该库也称为模块，模块的版本为v2。而common-sdk库下的一个目录例如http则称为包，而github.com/ascode/common-sdk/v2是common-sdk模块路径，github.com/ascode/common-sdk也叫做存储库根路径，v2是版本后缀（非必须），http是存储库目录（也是个目录）。</p>
+<p>引入github.com/ascode/common-sdk/v2模块路径下的http包如下：</p>
+<pre><code>import (
+ &quot;github.com/ascode/common-sdk/v2/http&quot;
+)
+</code></pre>
+<h3 id="版本类别"><a class="header" href="#版本类别">版本类别</a></h3>
+<ul>
+<li>通用版本</li>
+</ul>
+<p>对于打了版本tag的会在末尾追加最新版本例如v2.0.1</p>
+<pre><code>require (
+	github.com/ascode/common-sdk/v2 v2.0.1
+)
+</code></pre>
+<p>对于在代码中没被引用的会在 后面加indirect。</p>
+<pre><code>require (
+	github.com/ascode/common-sdk/v2 v2.0.1 // indirect
+)
+</code></pre>
+<ul>
+<li>伪版本</li>
+</ul>
+<p>对于没有打tag的版本返回类似下面形式v0.0.0-20220708160210-fc5e318e30f7，v0.0.0是最近提交的版本号，20220708160210时间戳，fc5e318e30f7随机字符串。</p>
+<pre><code>module github.com/ascode/horde
+ 
+go 1.20
+ 
+require github.com/ascode/common-sdk/v2 v0.0.0-20220708160210-fc5e318e30f7
+</code></pre>
+<ul>
+<li>主版本后缀</li>
+</ul>
+<p>对于2.0及以上的版本需要在mod文件中的module后加上v2。</p>
+<pre><code>module github.com/ascode/common-sdk/v2
+ 
+go 1.20
+</code></pre>
+<p>使用时go.mod文件中添加</p>
+<pre><code>github.com/ascode/common-sdk/v2 v2.0.1
+</code></pre>
+<ul>
+<li>兼容版本</li>
+</ul>
+<p>对于在以前没有go.mod时（例如：旧版本go1.9），却使用了v2.0.0及以上版本表示，在下载包时会出现v2.0.0+incompatible类型如下所示。</p>
+<pre><code>github.com/seanshenhy/go-mod-demo v2.0.0+incompatible
+</code></pre>
+<h3 id="模块路径后面为什么会有v2"><a class="header" href="#模块路径后面为什么会有v2">模块路径后面为什么会有v2</a></h3>
+<p>go mod 要求每个module从大版本2开始，模块路径必须有类似 /v2 版本号的后缀，假如module example.com/mod 从 v1.0.0发展到v2.0.0，这时它的go.mod中的模块路径应该修改为 example.com/mod/v2。go mod 认为如果一个module的两个不同版本之间引入路径相同，则它们必须是相互兼容的，而不同的大版本通常意味着是不兼容的，所以引入路径也不该相同，通过在模块路径上加上大版本后缀，这样就可以同时使用同一个模块的多个不同大版本。</p>
+<p>对于 v0 和 v1 两个大版本，go mod不允许存在版本后缀，这是因为 v0 版本通常是不稳定版本，不提供兼容性保证，并且通常 v1 版本兼容最新的 v0 版本，所以从 v0 版本迭代到 v1 版本，不需要修改module 路径 。</p>
+<p>作为特殊情况，以 gopkg.in 打头的module 不管是 v0、v1 还是其他大版本都必须存在版本后缀，且它的的版本后缀是用 ‘.’ 而不是 ‘/’，比如：</p>
+<pre><code>require (
+    get gopkg.in/yaml.v1 v1.0.0-20140924161607-99df34309c0
+    get gopkg.in/yaml.v2 v2.4.0
+    get gopkg.in/yaml.v3 v3.0.1
+)
+</code></pre>
+<p>对于一些比较老的项目可能当时go mod还没出现，但版本早已经迭代到v2 以上，或者有些项目没有遵循以上的原则，go mod为了能够正常使用它们，会在引入 v2 以上的版本后加上 +incompatible 以示提醒，比如 github.com/docker/docker</p>
+<pre><code>require github.com/docker/docker v20.10.17+incompatible
+</code></pre>
+<p>且这样的项目根目录下不允许存在 go.mod 文件，如果项目添加了go.mod且又不遵循module path后缀原则，则将无法拉取到 v2 以上版本，如果手动指定v2 以上版本强制拉取则会报错：</p>
+<pre><code>192:incomptible zy$ go get github.com/zhyee/Ranking-of-Internet-Corp-By-Go@v2.1.1 go: github.com/zhyee/Ranking-of-Internet-Corp-By-Go@v2.1.1: invalid version: module contains a go
+mod file, so module path must match major version (&quot;github.com/zhyee/Ranking-of-Internet-Corp-By
+- Go/v2&quot;)
+</code></pre>
+<p>对于那些比较老的go 模块，如果大版本已经达到 v2 以上，但不存在向后兼容问题，这时不建议添加 go.mod 文件，以便使用该模块的人能正常更新到最新版本，如果后续迭代出现大的变动已经无法向后兼容，这时应该升级一个大版本，并添加 go.mod 文件，同时模块path也要加上新的大版本后缀，使用者要使用该新版本则需要像引入一个新的模块一样使用带有后缀的module path。</p>
+<h3 id="语义化版本规范-200"><a class="header" href="#语义化版本规范-200">语义化版本规范 2.0.0</a></h3>
+<p><a href="https://semver.org/lang/zh-CN/">语义化版本 2.0.0</a>摘要</p>
+<pre><code>版本格式：主版本号.次版本号.修订号，版本号递增规则如下：
+
+主版本号：当你做了不兼容的 API 修改，
+次版本号：当你做了向下兼容的功能性新增，
+修订号：当你做了向下兼容的问题修正。
+先行版本号及版本编译信息可以加到“主版本号.次版本号.修订号”的后面，作为延伸。
+</code></pre>
+<p>Go module不但遵循语义化版本规范 2.0.0,而且还更进一步，对语义化版本中的major还还赋予了更深的意义。</p>
+<ul>
+<li>v0.X.X: 对于主版本号(major)是0的情况，隐含你当前的API还处于不稳定的状态，新的小版本可能不向下兼容</li>
+<li>v1.X.X: 当前的API处于稳定状态，minor的增加只意味着新的feature的增加，API还是向下兼容的</li>
+<li>v2.X.X: major的增加意味着API已经不向下兼容了</li>
+</ul>
+<p>你知道在go module中，哪些版本号隐含当前API是不稳定的？</p>
+<p>但是go module与众不同鹤立鸡群卓然不群的是，一旦你的major大于等于2, 你的module path必须加上v2后缀(如果tag是v3.X.X,那就是v3后缀，以此类推)。</p>
+<p>而且，包引用路径也要加上v2，比如 go.etcd.io/etcd/client/v3。</p>
+<p>这是一个怪异的写法，相当于在正常的易于理解的module path上加了一个狗屁膏药，以提示这个引入的库是哪个版本的？</p>
+<p>为什么要加上这个v2、v2后缀的，肯定有一定的考虑。</p>
+<p>最主要的，Go的开发者(这里指Russ Cox)在import compatibility rule指出:</p>
+<pre><code>If an old package and a new package have the same import path,
+the new package must be backwards compatible with the old package.
+</code></pre>
+<p>也就是相同module path应该保证新的版本向下兼容。</p>
+<p>这种想法是好的。比如你在你的项目中可以使用同一个库的多个版本， v1版本处理以前遗留的逻辑，v2版本处理新的逻辑，v3版本试验未来的版本，同一套库的不同版本可以共存，并不会出现版本冲突的地方。</p>
+<p>而且程序员看到这些module path,也很清楚的知道版本不兼容了，谁是更新的版本。</p>
+<p>但是这种方式也是很有争议的，在实践中中也带来了很多问题，我在开发某模块深受其害,你可以看它的v3.4.X的版本，就是因为没有加上v3的后缀，导致go命令下载或者导入(get)这些package的时候根本就下载不了。</p>
+<h3 id="摘自某博客"><a class="header" href="#摘自某博客">摘自某博客</a></h3>
+<ul>
+<li>vX后缀污染了package path
+本来正常的package path一般是仓库路径+package name,或者go module下 module path + package的方式，可是一旦版本大于等于2,就不得不加上一个后缀v2,v3等，将package path的含义改变了。</li>
+</ul>
+<p>当然忍一忍我们还能接受，大不了闭着眼睛用呗，最痛苦的很多Go的初学者并不了解这种设置，不知道导入新的库的版本要加v2后缀，一脸茫然。</p>
+<ul>
+<li>v0, v1和v2数据类型不兼容</li>
+</ul>
+<p>在module path中增加了v2,v3等后缀后，也就以为着这些package都是不同的package，虽然它们中大部分的数据类型并没有做改变，还是向下兼容的，也不能直接赋值，还是需要强转一下。</p>
+<p>比如你的项目依赖Auth 1.0.0, 也依赖Auth 2.0.0,那么即使A.Config在两个版本中没做任何改变，你也不能把Auth.Config赋值给Auth/v2.Config,而是需要在代码中加上强转的逻辑，两两互转。一旦发布了v3,那就得三三互转，很长的一个switch分支处理这种情况，如果发布v4，那么逻辑更复杂了。</p>
+<ul>
+<li>给第三方库的开发者带来了很大的负担</li>
+</ul>
+<p>虽然你觉得我也就发布v2,v3,v4等几个版本，版本路线很清晰，管理起来也不复杂，没什么大不了的。</p>
+<p>但是，如果你的库是一个非常流行的库，很多开发者基于你的库开发了第三方的库的话，就非常痛苦了。</p>
+<p>这意味着一旦你发布了一个新的版本，这些第三方的开发者就必须及时的更新他们的库，基于你的新的版本发布他们新的v2，v3版本。这就像病毒一样，初步扩展开来。给广大的开发者带来的很大的负担。</p>
+<p>当然，见仁见智，这些情况可能你不会遇到，或者也不会给你带来困扰，所以它不是一个问题。而我，在开发rpcx，或者解答一些网友的问题的时候，深深被v2伤害到了,小小的心灵无法承受v2之重。</p>
+<p>一些开源项目，为了避免版本号跳到v2,采用了其它的一些办法，比如protobuf-go, 正在做新的版本的重构，改动非常大，不和以前的版本兼容了，可以以前的版本都v1.X.X了，那怎么办呢？换module path名称。</p>
+<p>github.com/golang/protobuf: 支持先前的protobuf go,目前最高版本v1.5.2<br />
+google.golang.org/protobuf: 新版本的module path,目前最高版本v1.27.0，初始版本v1.20.0</p>
+<p><a href="https://github.com/protocolbuffers/protobuf-go">官方的说法</a>是：</p>
+<pre><code>This project is the second major revision of the Go protocol buffer API implemented by the google.golang.org/protobuf module. The first major version is implemented by the github.com/golang/protobuf module.
+</code></pre>
+<p>对于我开发的rpcx项目，因为在go module出来之前版本号已经发布到了v6.X.X。 我想回到从前，貌似回不去了。所以我采用了一个极端的做法，把tag重建，所有的版本号都定义在v1.X.X内。还好影响的用户比较少，所以也没有用户抱怨。</p>
+<p>我这种做法比较极端，没造成用户抱怨的原因是我一直坚持go module和GOPATH并存的方式。发版的时候采用go module发版，master开发分支上采用GOPATH方式，绝大部分用户都使用master分支，或者自己fork了一个新的版本，所以造成的影响很小。</p>
+<h2 id="总结"><a class="header" href="#总结">总结</a></h2>
+<p>对于go modules我们在开发中只需要知道两点即可，一是go.mod文件引用库包的含义（v0.x.x和v1.x.x区别，版本后带// indirect的含义，版本类型为v0.0.0-20220708160210-fc5e318e30f7含义， 版本类型为v2.0.0+incompatible含义），二 v2以下与v2及以上版本库模块名称定义和引用区别，库包定义时，v2以前的版本在go.mod文件中modules后没有/vx，v2及以上则必须带上/vx；使用时，v2以前版本 直接go get {库包}即可，v2及以上则需要使用go get {库包/vx}方式。</p>
+<h2 id="tips"><a class="header" href="#tips">Tips</a></h2>
+<p>若库包包含多版本，则最好使用vx方式单独维护分支，这是常见的一种方式，例如：github.com/go-redis/redis库维护了多个分支。</p>
+<h2 id="引用"><a class="header" href="#引用">引用</a></h2>
+<ul>
+<li><a href="https://go.dev/ref/mod">Go Modules Reference</a></li>
+<li><a href="https://duyanghao.github.io/golang-module/">浅谈Go Modules原理</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gitbook的使用"><a class="header" href="#gitbook的使用">gitbook的使用</a></h1>
+<p>gitbook-cli是一个在同一系统上安装和使用多个版本的GitBook的实用程序。它将自动安装所需版本的GitBook来构建一本书。</p>
+<p>打开终端输入npm install gitbook-cli -g命令进行全局安装：</p>
+<pre><code>npm install gitbook-cli -g
+
+npm http fetch GET 304 https://registry.npm.taobao.org/os-tmpdir 100ms (from cache)
+npm http fetch GET 304 https://registry.npm.taobao.org/os-homedir 113ms (from cache)
+/usr/local/bin/gitbook -&gt; /usr/local/lib/node_modules/gitbook-cli/bin/gitbook.js
++ gitbook-cli@2.3.2
+added 578 packages from 672 contributors in 17.806s
+</code></pre>
+<p>安装成功后可使用gitbook --version来查看是否安装成功：</p>
+<pre><code>gitbook --version
+CLI version: 2.3.2
+GitBook version: 3.2.3
+</code></pre>
+<p>注意：终端第一次运行gitbook命令，可能会自动安装gitbook，因为刚才安装的是CLI，此时CLI会自动安装gitbook。</p>
+<p>如果想卸载CLI，可使用npm uninstall gitbook-cli -g来删除。</p>
+<h3 id="初始化一本书"><a class="header" href="#初始化一本书">初始化一本书</a></h3>
+<p>初始化一本书的命令是gitbook init,</p>
+<p>首先在终端创建一个项目目录，并进入这个目录：</p>
+<pre><code>mkdir book
+cd book
+</code></pre>
+<p>然后使用gitbook init来初始化一本书：</p>
+<pre><code>~ gitbook init
+
+warn: no summary file in this book 
+info: create README.md 
+info: create SUMMARY.md 
+info: initialization is finished
+</code></pre>
+<p>gitbook init会在空项目中创建README.md和SUMMARY.md两个文件：<br />
+README.md文件是项目的介绍文件。<br />
+SUMMARY.md是gitbook书籍的目录。</p>
+<p>如果SUMMARY.md文件里面有如下内容：</p>
+<pre><code>* [项目介绍](README.md)
+* http
+    * [http说明](doc/http/http解析.md)
+        * [tcp说明](doc/http/tcp/tcp说明.md)
+            * [udp说明](doc/http/tcp/udp/udp说明.md)
+* HTML
+    * [HTML5-特性说明](doc/html/HTML5-特性说明.md)
+</code></pre>
+<p>那么在使用gitbook init时，如果目录里面的文件不存在，则会创建目录中的文件：</p>
+<pre><code>~ gitbook init
+
+info: create doc/http/http解析.md 
+info: create doc/http/tcp/tcp说明.md 
+info: create doc/http/tcp/udp/udp说明.md 
+info: create doc/html/HTML5-特性说明.md 
+info: create SUMMARY.md 
+info: initialization is finished 
+</code></pre>
+<h3 id="本地启动服务编写书籍"><a class="header" href="#本地启动服务编写书籍">本地启动服务编写书籍</a></h3>
+<p>终端打开项目目录，使用gitbook serve启动服务：</p>
+<pre><code>~ gitbook serve
+
+Live reload server started on port: 35729
+Press CTRL+C to quit ...
+
+info: 7 plugins are installed 
+info: loading plugin &quot;livereload&quot;... OK 
+……
+info: loading plugin &quot;theme-default&quot;... OK 
+info: found 5 pages 
+info: found 0 asset files 
+info: &gt;&gt; generation finished with success in 2.1s ! 
+
+Starting server ...
+Serving book on http://localhost:4000
+</code></pre>
+<p>然后根据终端的提示，在浏览器中打开http://localhost:4000查看书籍</p>
+<h3 id="文档打包"><a class="header" href="#文档打包">文档打包</a></h3>
+<p>可使用gitbook build命令来生成最终的项目：</p>
+<pre><code>~ gitbook build
+
+info: 7 plugins are installed 
+info: 6 explicitly listed 
+info: loading plugin &quot;highlight&quot;... OK 
+info: loading plugin &quot;search&quot;... OK 
+info: loading plugin &quot;lunr&quot;... OK 
+info: loading plugin &quot;sharing&quot;... OK 
+info: loading plugin &quot;fontsettings&quot;... OK 
+info: loading plugin &quot;theme-default&quot;... OK 
+info: found 5 pages 
+info: found 0 asset files 
+info: &gt;&gt; generation finished with success in 1.0s !
+</code></pre>
+<p>命令执行结束后，会在项目下生成_book的文件夹,此文件夹就是最终生成的项目。</p>
+<p>在_book文件夹里有一个index.html文件，这个文件就是文档网站的HTM入口，把_book文件夹复制到服务器，然后把web服务的入口引向index.html即可完成文档网站的部署。</p>
+<p>如果你想查看输出目录详细的记录，可使用gitbook build ./ --log=debug --debug来构建查看。</p>
+<h3 id="生成电子书"><a class="header" href="#生成电子书">生成电子书</a></h3>
+<p>这里本人试了，没有成功，你可以尝试一下</p>
+<p>GitBook 可以生成一个网站，但也可以输出内容作为电子书（ePub，Mobi，PDF）。</p>
+<pre><code># Generate a PDF file
+$ gitbook pdf ./ ./mybook.pdf
+
+# Generate an ePub file
+$ gitbook epub ./ ./mybook.epub
+
+# Generate a Mobi file
+$ gitbook mobi ./ ./mybook.mobi
+</code></pre>
+<p>我还在网上找了一个包：<a href="https://link.segmentfault.com/?enc=qz2PfAT36FMlnqn4qNJ63w%3D%3D.JsJCeUdls%2BuMW9HX%2F3OggufHaQFzJAipr17P6Mg99IezALbTYbKDr0MlP%2Bj%2FkZg6">https://link.segmentfault.com/?enc=qz2PfAT36FMlnqn4qNJ63w%3D%3D.JsJCeUdls%2BuMW9HX%2F3OggufHaQFzJAipr17P6Mg99IezALbTYbKDr0MlP%2Bj%2FkZg6</a>，可以试一下</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="grpc"><a class="header" href="#grpc">grpc</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="go-grpc"><a class="header" href="#go-grpc">go grpc</a></h1>
+<h2 id="官网"><a class="header" href="#官网">官网</a></h2>
+<h3 id="文档"><a class="header" href="#文档">文档</a></h3>
+<p><a href="https://grpc.io">grpc官网： https://grpc.io</a><br />
+<a href="https://protobuf.dev/programming-guides/proto3/">Language Guide (proto 3) https://protobuf.dev/programming-guides/proto3/</a><br />
+<a href="https://grpc.io/docs/protoc-installation/">Protocol Buffer Compiler Installation https://grpc.io/docs/protoc-installation/</a></p>
+<h3 id="代码生成"><a class="header" href="#代码生成">代码生成</a></h3>
+<p><a href="https://github.com/protocolbuffers/protobuf">protoc文件: Go support for Protocol Buffers https://github.com/protocolbuffers/protobuf</a><br />
+<a href="https://github.com/protocolbuffers/protobuf-go">protoc-gen-go文件: Go support for Protocol Buffers https://github.com/protocolbuffers/protobuf-go</a><br />
+<a href="https://pkg.go.dev/google.golang.org/protobuf/cmd/protoc-gen-go">protoc-gen-go-grpc文件: gRPC-Go https://pkg.go.dev/google.golang.org/protobuf/cmd/protoc-gen-go</a></p>
+<h3 id="go-grpc依赖框架包"><a class="header" href="#go-grpc依赖框架包">go gRPC依赖框架包</a></h3>
+<p><a href="https://github.com/grpc/grpc-go">go gRPC依赖框架包 https://github.com/grpc/grpc-go</a></p>
+<h2 id="检查版本"><a class="header" href="#检查版本">检查版本</a></h2>
+<p>如果已安装可以检查版本</p>
+<pre><code>protoc --version  // 检查Protocol Buffer Compiler的版本
+protoc-gen-go --version // 检查Go support for Protocol Buffers版本
+protoc-gen-go-grpc --version // 检查go grpc代码生成插件版本
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mysql"><a class="header" href="#mysql">MYSql</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mysql常用"><a class="header" href="#mysql常用">mysql常用</a></h1>
+<h3 id="临时关闭安全更新"><a class="header" href="#临时关闭安全更新">临时关闭安全更新</a></h3>
+<p>记得用完之后一定要SET SQL_SAFE_UPDATES = 1;</p>
+<pre><code>SET SQL_SAFE_UPDATES = 0;
+update mckt.todo set iteration = 'iteration1';
+SET SQL_SAFE_UPDATES = 1;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="redis"><a class="header" href="#redis">Redis</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="redis从小白到大白笔记"><a class="header" href="#redis从小白到大白笔记">Redis从小白到大白笔记</a></h1>
+<p><img src="redis/images/redis.jpg" alt="img" /></p>
+<h2 id="教学目标"><a class="header" href="#教学目标">教学目标</a></h2>
+<p>1&gt;了解NoSQL概念</p>
+<p>2&gt;了解Redis概念，定位，优点，缺点</p>
+<p>3&gt;掌握Redis常用五大类型</p>
+<p>4&gt;掌握Redis Key 与Value值设计</p>
+<p>5&gt;掌握Redis全局命令</p>
+<p>6&gt;掌握Redis 安全与事务操作</p>
+<p>7&gt;了解Redis持久化策略</p>
+<p>8&gt;了解Redis内存淘汰机制与过期Key清理</p>
+<p>9&gt;掌握Java集成Redis操作</p>
+<p>10&gt;完成综合案例设计与实现</p>
+<h2 id="认识-redis"><a class="header" href="#认识-redis">认识 Redis</a></h2>
+<h3 id="数据库分类"><a class="header" href="#数据库分类">数据库分类</a></h3>
+<p>老师说：</p>
+<ol>
+<li>硬盘的io读写速度以ms计算，内存操作以ns计算</li>
+<li>一般的电脑单机的mysql，一秒钟处理的sql语句2000-4000左右。</li>
+<li>Redis读达到11万次/秒，写达到8万次/秒</li>
+</ol>
+<p>目前数据库分：关系型数据库与非关系型数据库</p>
+<p>常用的关系型数据库： Oracle，<strong>MySQL</strong>，SqlServer，DB2</p>
+<p>常用的非关系数据库：<strong>Redis</strong>，MongoDB，ElasticSearch， Hbase，Neo4j</p>
+<p>那啥是非关系数据库呢？此处涉及到新名词：NoSQL</p>
+<p><strong>NoSQL</strong>最常见的解释是“non-relational”， “Not Only SQL”也被很多人接受。NoSQL仅仅是一个概念，泛指非关系型的数据库，区别于关系数据库，它们不保证关系数据的ACID特性。详情见：百度百科：https://baike.baidu.com/item/NoSQL/8828247?fr=aladdin</p>
+<p>经典案例</p>
+<p><img src="redis/images/%E9%98%BF%E9%87%8C%E5%B9%B6%E5%8F%91.jpg" alt="阿里并发" />*</p>
+<h3 id="nosql分类"><a class="header" href="#nosql分类">NoSQL分类</a></h3>
+<p><img src="redis/images/image-20220829191301206.png" alt="image-20220829191301206" />*</p>
+<h3 id="什么是redis"><a class="header" href="#什么是redis">什么是Redis</a></h3>
+<h4 id="redis简介"><a class="header" href="#redis简介">Redis简介</a></h4>
+<p>是以key-value形式存储,和传统的关系型数据库不一样.不一定遵循传统数据库的一些基本要求.(非关系型的,分布式的,开源的,水平可拓展的)</p>
+<p>优点:
+<strong>对数据高并发读写</strong>(直接是内存中进行读写的)
+对海量数据的高效率存储和访问
+对数据的可拓展性和高可用性.
+<strong>单线程操作</strong>,每个操作都是原子操作,没有并发相关问题(redis 6)</p>
+<p>缺点:
+redis(ACID处理非常简单) 
+无法做太复杂的关系数据库模型</p>
+<p><img src="redis/images/image-20220829191453155.png" alt="image-20220829191453155" />*</p>
+<p>老师说：Redis不建议存储敏感数据.</p>
+<h4 id="谁在用redis"><a class="header" href="#谁在用redis">谁在用Redis</a></h4>
+<p>比较著名的公司有：
+github、blizzard、stackoverflow、flickr</p>
+<p>国内
+新浪微博（全球最大的redis集群）【2017】
+2200+亿 commands/day 5000亿Read/day 500亿Write/day
+18TB+ Memory
+500+ Servers in 6 IDC 2000+instances
+淘宝
+腾讯微博</p>
+<h4 id="怎么学redis"><a class="header" href="#怎么学redis">怎么学redis</a></h4>
+<p>redis在线入门 ： http://try.redis.io/
+redis 中文资料站： http://www.redis.cn/
+https://www.runoob.com/redis/redis-tutorial.html</p>
+<h4 id="redis的安装"><a class="header" href="#redis的安装">Redis的安装</a></h4>
+<p>题外话：</p>
+<p>Redis是使用C写的程序，目前主流在Linux操作系统，官方不提供Window版，最新的Redis版：Redis7.x</p>
+<p>官网下载：https://redis.io/download/</p>
+<p>Redis 的Window版是微软公司自行移植的，目前最新版：Redis-x64-3.2.100</p>
+<p>window版：https://github.com/microsoftarchive/redis/releases/tag/win-3.2.100</p>
+<p>新版控的同学：</p>
+<p>1&gt;购买阿里云Redis</p>
+<p>https://www.aliyun.com/minisite/goods?taskPkg=amb618all&amp;pkgSid=442814&amp;recordId=4183761&amp;userCode=sd4xtwwm</p>
+<p>2&gt;购买阿里云ECS</p>
+<p>购买服务器，自己搭建最新版的Redis</p>
+<p>3&gt;安装虚拟机：Linux，再安装最新版Redis</p>
+<p>这个，项目三讲Linux操作系统时再教。</p>
+<h5 id="服务端"><a class="header" href="#服务端"><strong>服务端</strong></a></h5>
+<p>版本：Redis-x64-3.2.100.msi</p>
+<p>傻瓜式安装,下一步,下一步就可以了</p>
+<p><strong>注意：添加到环境变量中</strong></p>
+<p><img src="redis/images/32fe25ef354f50b88cb9ec6edc4afa32929c18dc.jpg" alt="img" />*</p>
+<p><strong>注意：默认端口</strong></p>
+<p><img src="redis/images/1f9feadca039131f886b976ce275f2c4ed990adc.jpg" alt="Windowsä¸å®è£Redisæå¡" />*</p>
+<p><strong>注意：最大内存</strong></p>
+<p><img src="redis/images/486884883913e8e5b969e909352f477047187ddc.jpg" alt="Windowsä¸å®è£Redisæå¡" />*</p>
+<p><strong>测试是否成功</strong></p>
+<p><img src="redis/images/image-20220829193133720.png" alt="image-20220829193133720" />*</p>
+<p><img src="redis/images/image-20220829193150712.png" alt="image-20220829193150712" />*</p>
+<h5 id="客户端--redisclient"><a class="header" href="#客户端--redisclient"><strong>客户端</strong>--redisclient</a></h5>
+<p>打开CMD命令框，输入命令：<strong>java -jar  redisclient.jar</strong></p>
+<p><img src="redis/images/image-20220829192445744.png" alt="image-20220829192445744" /></p>
+<h5 id="客户端--redisdesktopclient"><a class="header" href="#客户端--redisdesktopclient"><strong>客户端</strong>--RedisDesktopClient</a></h5>
+<p><img src="redis/images/image-20220829192521886.png" alt="image-20220829192521886" /></p>
+<h5 id="客户端--rdm"><a class="header" href="#客户端--rdm"><strong>客户端</strong>--rdm</a></h5>
+<p><img src="redis/images/image-20220829192607349.png" alt="image-20220829192607349" /></p>
+<h2 id="数据类型"><a class="header" href="#数据类型">数据类型</a></h2>
+<h3 id="概况"><a class="header" href="#概况">概况</a></h3>
+<p>Redis支持的存储数据类型有很多：</p>
+<p>常用：<strong>string</strong>（字符串），<strong>hash</strong>（哈希），<strong>list</strong>（列表），<strong>set</strong>（集合）及<strong>zset</strong>(sorted set：有序集合)</p>
+<p>不常用：HyperLogLog，Bitmap(位图)，Bloom Filter(布隆过滤器)，Geospatial(地理位置) ，Module(模块)， Streams(流信息)</p>
+<p>此处重点讲解常用的类型。</p>
+<p><strong>命令格式</strong></p>
+<p>类型命令    key       参数数据</p>
+<p>set           name    dafei</p>
+<p><strong>操作建议</strong></p>
+<p>Redis操作有点类似Java的Map集合，都是key-value形式存储数据，在学习过程中，可以进行类比。</p>
+<p>另外Redis中的key大部分为String类型，value值根据缓存数据结构可以选用：string，hash，list，set，zset等类型。</p>
+<p><strong>注意：下面讲的各种类型，表述的是缓存数据的value类型。</strong></p>
+<h3 id="string类型"><a class="header" href="#string类型">String类型</a></h3>
+<p>String类型包含多种类型的特殊类型，并且是二进制安全的，其值可以是数值，可以是字符串，也可以是二进制数据。</p>
+<p>类似Java中：<strong>Map&lt;String,  String/Number&gt;  map</strong></p>
+<p>在Redis内容数据存储结构：</p>
+<p><img src="redis/images/image-20220829195054925.png" alt="image-20220829195054925" />*</p>
+<h4 id="常用的命令"><a class="header" href="#常用的命令"><strong>常用的命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>set key value</td><td>将key-value缓存redis中</td><td>set name dafei</td></tr>
+<tr><td>get key</td><td>从redis中获取key对应value值</td><td>get name</td></tr>
+<tr><td>incr key</td><td>将key对应value值 + 1</td><td>incr age</td></tr>
+<tr><td>decr key</td><td>将key对应value值-1</td><td>decr age</td></tr>
+<tr><td>setex key seconds value</td><td>将key-value缓存到redis中，seconds 秒后失效</td><td>setex  sex  10  man</td></tr>
+<tr><td>ttl key</td><td>查看key存活时间</td><td>ttl sex</td></tr>
+<tr><td>del  key</td><td>从redis中删除key</td><td>del name</td></tr>
+<tr><td>setnx key value</td><td>如果key已经存，不做任何操作，如果key不存，直接添加</td><td>setnx  name xiaofei</td></tr>
+</tbody></table>
+</div>
+<p>注意： 使用ttl查看存活时间，缓存有过期时间的key，过期之后返回-2，而永久存储的key返回的是-1。</p>
+<h4 id="非常用命令"><a class="header" href="#非常用命令"><strong>非常用命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>incrby key increment</td><td>给key对应值加increment</td><td>incrby age 10</td></tr>
+<tr><td>mset k1 v1 k2 v2....</td><td>批量添加k1v1 k2v2 key value对</td><td>mset name dafei age 18</td></tr>
+<tr><td>mget k1  k2....</td><td>批量获取k1, k2的值</td><td>mget name  age</td></tr>
+<tr><td>append key  value</td><td>在key对应的value值中拼+value</td><td>append name yes</td></tr>
+<tr><td>setrange key  offset  value</td><td>修改key对应的value值,替换为指定value,冲offset索引位置开始</td><td>setrange name 2   xx</td></tr>
+</tbody></table>
+</div>
+<h4 id="应用场景"><a class="header" href="#应用场景">应用场景</a></h4>
+<p>1&gt;计数器</p>
+<p>如：视频播放数系统就是使用redis作为视频播放数计数的基础组件。</p>
+<p><strong>incr  viewnum 1</strong></p>
+<p>2&gt;共享session</p>
+<p>出于负载均衡的考虑，分布式服务会将用户信息的访问均衡到不同服务器上，用户刷新一次访问可能会需要重新登录，为避免这个问题可以用redis将用户session集中管理，  在这种模式下只要保证redis的高可用和扩展性的，每次获取用户更新或查询登录信息都直接从redis中集中获取。</p>
+<p><img src="redis/images%5Cimage-20220831190303396.png" alt="image-20220831190303396" /></p>
+<p><strong>user_login_info:uid----&gt;{&quot;id&quot;:1, &quot;name&quot;:&quot;dafei&quot;, &quot;age&quot;:18}</strong></p>
+<p>老师说：普通的电脑上装一个tomcat，最佳处理线程在200到400。</p>
+<h3 id="hash类型"><a class="header" href="#hash类型">Hash类型</a></h3>
+<p>Hash类型是String类型的field和value的映射表，或者说是一个String集合。它特别适合存储对象，相比较而言，将一个对象存储在Hash类型里要比存储在String类型里占用更少的内存空间。</p>
+<p>类似Java中：<strong>Map&lt;String, Map&lt;String, ?&gt;&gt; map</strong></p>
+<p><img src="redis/images/image-20220831190853799.png" alt="image-20220831190853799" />*</p>
+<h4 id="常用的命令-1"><a class="header" href="#常用的命令-1"><strong>常用的命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>hset key field  value</td><td>将field  value对缓存到redis中hash中，键值为key</td><td>hset user name dafei</td></tr>
+<tr><td>hget key field</td><td>从key对应hash列表中获取field字段</td><td>hget user  name</td></tr>
+<tr><td>hexists key  field</td><td>判断key对应的hash列表是否存在 field字段</td><td>hexists user age</td></tr>
+<tr><td>hdel key  field</td><td>删除key对应hash列表中field字段</td><td>hdel user age</td></tr>
+<tr><td>hincrby  key  field  increment</td><td>给key对应hash列表中field字段 + increment</td><td>hincrby user  age 10</td></tr>
+<tr><td>hlen key</td><td>查看key对应的hash列表field的数量</td><td>hlen user</td></tr>
+<tr><td>hkeys  key</td><td>获取key对应的hash列表所有的field值</td><td>hkeys  user</td></tr>
+<tr><td>hvals  key</td><td>获取key对应的hash列表所有的field对应的value值</td><td>kvals  user</td></tr>
+<tr><td>hgetall key</td><td>获取key对应的hash列表中所有的field及其对应的value值</td><td>hgetall user</td></tr>
+</tbody></table>
+</div>
+<h4 id="应用场景-1"><a class="header" href="#应用场景-1">应用场景</a></h4>
+<p>Hash结构相对于字符串序列化缓存信息更加直观，并且在更新操作上更加便捷。</p>
+<p><strong>共享session设计</strong></p>
+<pre><code class="language-java">public class User{
+	private String userame;
+	private String password;
+	private  int age;
+}
+</code></pre>
+<p>登录用户：</p>
+<pre><code class="language-java">User user = new User(&quot;dafei&quot;, &quot;666&quot;, 18);
+</code></pre>
+<p>登录缓存：</p>
+<p>key：<strong>user_token</strong>                value：<strong>new User(&quot;dafei&quot;, &quot;666&quot;, 18)</strong></p>
+<p>----------------------------------------------------------------------------------------------</p>
+<p>方案1： 将user对象转换json格式字符串存redis  【侧重于查， 改非常麻烦】</p>
+<p>key                            value</p>
+<p>---------------------------------------------------------------------------------------------</p>
+<p><strong>user_token</strong>   ：   <strong>&quot;{name:dafei, age:18, password:666}&quot;</strong></p>
+<p>方案2： 将user对象转换hash对象存redis【侧重于改，查询相对麻烦】</p>
+<p>key                            value</p>
+<p>---------------------------------------------------------------------------------------------</p>
+<p><strong>user_token</strong>   ：  <strong>{</strong></p>
+<p>​                                    <strong>name：ddafei</strong></p>
+<p>​                                    <strong>age ：    18</strong></p>
+<p>​                                    <strong>password： 666</strong></p>
+<p>​                                 <strong>}</strong></p>
+<h3 id="list类型"><a class="header" href="#list类型">List类型</a></h3>
+<p>Redis中的List类似Java中的Queue,也可以当做List来用.</p>
+<p>List类型是一个链表结构的集合，其主要功能有push、pop、获取元素等，更详细的说,List类型是一个双端链表的结构，我们可以通过相关操作进行集合的头部或者尾部添加删除元素，List的设计非常简单精巧，即可以作为栈,又可以作为队列，满足绝大多数需求.</p>
+<p>类似Java中：<strong>Map&lt;String, List&gt;  map</strong></p>
+<p><img src="redis/images/image-20220831194916914.png" alt="image-20220831194916914" />*</p>
+<h4 id="常用的命令-2"><a class="header" href="#常用的命令-2"><strong>常用的命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>rpush  key  value</td><td>从右边往key集合中添加value值</td><td>rpush hobby java</td></tr>
+<tr><td>lrange key start stop</td><td>从左边开始列表key集合，从start位置开始，stop位置结束</td><td>lrange hobby 0 -1</td></tr>
+<tr><td>lpush key value</td><td>从左边往key集合中添加value值</td><td>lpush hobby c++</td></tr>
+<tr><td>lpop key</td><td>弹出key集合中最左边的数据</td><td>lpop hobby</td></tr>
+<tr><td>rpop key</td><td>弹出key集合中最右边的数据</td><td>rpop hobby</td></tr>
+<tr><td>llen key</td><td>获取列表长度</td><td>llen hooby</td></tr>
+</tbody></table>
+</div>
+<h4 id="非常用命令-1"><a class="header" href="#非常用命令-1"><strong>非常用命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>linsert key before pivot value</td><td>操作key集合，在pivot值之前插入value</td><td>linsert hobby before java  c#</td></tr>
+<tr><td>linsert key  after  pivot value</td><td>操作key集合，在pivot值之后插入value</td><td>linsert hobby after  java  c#</td></tr>
+<tr><td>lset key  index  value</td><td>操作key集合，更新索引index位置值为value</td><td>lset hobby 1  go</td></tr>
+<tr><td>lrem key count  value</td><td>操作key集合，删除 count个 value值</td><td>lrem hobby 3   go</td></tr>
+<tr><td>ltrim   key  start stop</td><td>操作key集合，从start到stop截取自列表</td><td>ltrim  hobby 2   4</td></tr>
+<tr><td>lindex  key  index</td><td>操作key集合，获取索引为index位置的数据</td><td>lindex  hobby 1</td></tr>
+</tbody></table>
+</div>
+<p>注意：List是可以塞重复数据的</p>
+<h4 id="应用场景-2"><a class="header" href="#应用场景-2">应用场景</a></h4>
+<p>1&gt;用户收藏文章列表：</p>
+<p>key：user_favor_article_list</p>
+<p>value: [aid1, aid2, aid3......]</p>
+<h3 id="set类型"><a class="header" href="#set类型">Set类型</a></h3>
+<p>Set集合是String类型的无序集合,set是通过HashTable实现的，对集合我们可以取<strong>交集、并集、差集。</strong></p>
+<p>类似Java中：<strong>Map&lt;String, Set&gt;  map</strong></p>
+<p>注意： List可以塞重复数据，但是Set不能塞重复数据。</p>
+<p><img src="redis/images/image-20220901191547262.png" alt="image-20220901191547262" />*</p>
+<h4 id="常用的命令-3"><a class="header" href="#常用的命令-3"><strong>常用的命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>sadd key  members [....]</td><td>往key 集合中添加member元素</td><td>sadd myset a  b  c</td></tr>
+<tr><td>smembers key</td><td>遍历key集合中所有的元素</td><td>smembers myset</td></tr>
+<tr><td>srem  key members [....]</td><td>删除key集合中members元素</td><td>srem myset a</td></tr>
+<tr><td>spop key count</td><td>从key集合中随机弹出count个元素</td><td>spop myset 1</td></tr>
+</tbody></table>
+</div>
+<h4 id="非常用命令-2"><a class="header" href="#非常用命令-2"><strong>非常用命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td><strong>sdiff key1   key2</strong></td><td><strong>返回key1中特有的元素(差集)</strong></td><td><strong>sdiff key1 key2</strong></td></tr>
+<tr><td>sidiffstore  dest  key1 key2</td><td>返回key1中特有的元素，并将返回值缓存到dest集合中</td><td>sidiffstore  dest  key1 key2</td></tr>
+<tr><td><strong>sinter key1 key2</strong></td><td><strong>返回key1跟key2集合的交集</strong></td><td><strong>sinter key1 key2</strong></td></tr>
+<tr><td>sinterstore  dest key1 key2</td><td>返回key1跟key2集合的交集，并将返回值缓存到dest集合中</td><td>sinterstore  dest key1 key2</td></tr>
+<tr><td><strong>sunion key1  key2</strong></td><td><strong>返回key1跟key2集合的并集</strong></td><td><strong>sunion key1  key2</strong></td></tr>
+<tr><td>sunionstore dest key1  key2</td><td>返回key1跟key2集合的并集，并将返回值缓存到dest集合中</td><td>sunionstore dest key1  key2</td></tr>
+<tr><td>smove source destination member</td><td>将source集合中member元素移动到destination集合中</td><td>smove key1  key2 aa</td></tr>
+<tr><td>sismember key member</td><td>判断member元素是否在key集合中</td><td>sismember key1   aa</td></tr>
+<tr><td>srandmember  key  count</td><td>随机获取set集合中count 个元素</td><td>srandmember key1 1</td></tr>
+</tbody></table>
+</div>
+<h4 id="应用场景-3"><a class="header" href="#应用场景-3">应用场景</a></h4>
+<p>1，去重；</p>
+<p>2，抽奖;</p>
+<p>​           1：准备一个抽奖池:sadd luckydraw 1 2 3 4 5 6 7 8 9 10 11 12 13</p>
+<p>​           2：抽3个三等奖:spop luckydraw 3</p>
+<p>​           3：抽2个二等奖:spop luckydraw 2</p>
+<p>​		   4：抽1个:一等奖:spop luckydraw 1</p>
+<h3 id="sorted-set-类型"><a class="header" href="#sorted-set-类型">Sorted set 类型</a></h3>
+<p>Sorted set 也称Zset类型，是一种具有排序效果的set集合。它跟set集合一样也是 string 类型元素的集合，且不允许重复的成员。并且要求每个元素都会关联一个double 类型的分数。后续可以通过分数来为集合中的成员进行从小到大的排序。</p>
+<p>Sorted set集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。 集合中最大的成员数为 232 - 1 (4294967295, 每个集合可存储40多亿个成员)。</p>
+<p>数据缓存结构：</p>
+<p><img src="redis/images/image-20220901200221440.png" alt="image-20220901200221440" />*</p>
+<h4 id="常用的命令-4"><a class="header" href="#常用的命令-4"><strong>常用的命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>zadd key score member</td><td>往key集合中添加member元素，分数为score</td><td>zadd players 100  a</td></tr>
+<tr><td>zincrby  key increment  member</td><td>将key集合中的member元素 分数 + increment</td><td>zadd players 100  a</td></tr>
+<tr><td>zrange  key  start  stop [withscores]</td><td>将key集合中的元素按分数升序排列 [显式分数]</td><td>zrange players 0 -1  withscores</td></tr>
+<tr><td>zrevrange key  start  stop [withscores]</td><td>将key集合中的元素按分数降序排列 [显式分数]</td><td>zrevrange players 0 -1  withscores</td></tr>
+<tr><td>zrank  key  member</td><td>返回member元素在key结合中的正序排名</td><td>zrank players  a</td></tr>
+<tr><td>zrevrank key  member</td><td>返回member元素在key结合中的倒序排名</td><td>zrevrank players  a</td></tr>
+<tr><td>zcard  key</td><td>返回key集合元素个数</td><td>zcard  players</td></tr>
+</tbody></table>
+</div>
+<h4 id="非常用命令-3"><a class="header" href="#非常用命令-3"><strong>非常用命令</strong></a></h4>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>zrangebyscore  key  min  max  [withscores]</td><td>按[min, max) 分数范围返回key集合中元素(正序)</td><td>zrangebyscore players  200 300  withscores</td></tr>
+<tr><td>zrevrangebyscore key  min  max  [withscores]</td><td>按[min, max) 分数范围返回key集合中元素(倒序)</td><td>zrevrangebyscore players  200 300  withscores</td></tr>
+<tr><td>zrem key member</td><td>删除key集合中member元素与分数</td><td>zrem players  a</td></tr>
+<tr><td>zremrangebyscore  key min max  withscores</td><td>按[min, max) 分数范围删除key集合中元素</td><td>zremrangebyscore  players  200 300  withscores</td></tr>
+<tr><td>zremrangebyrank  key start  stop</td><td>删除key集合正序排名落在[start, stop) 范围元素</td><td>zremrangebyrank  players  10  20</td></tr>
+<tr><td>zcount key min max</td><td>按照分数范围[min, max]统计key集合中元素个数</td><td>zcount  players  100 300</td></tr>
+</tbody></table>
+</div>
+<h4 id="应用场景-4"><a class="header" href="#应用场景-4">应用场景</a></h4>
+<p>排行榜：有序集合经典使用场景。例如视频网站需要对用户上传的视频做排行榜，榜单维护可能是多方面：按照时间、按照播放量、按照获得的赞数等。</p>
+<h3 id="类型总结"><a class="header" href="#类型总结">类型总结</a></h3>
+<p>一个问题，Redis在项目中如何使用？</p>
+<p>思考点：</p>
+<p>1&gt;项目是否需要使用到缓存？使用</p>
+<p>2&gt;使用缓存是否选用Redis？选用</p>
+<p>3&gt;使用Redis那该怎么设计Key-Value值？</p>
+<p>这里重点讨论Redis的KV对的设计。</p>
+<h4 id="value设计"><a class="header" href="#value设计">Value设计</a></h4>
+<p>先说value值的设计其实就是value类型选用： String， Hash， List， Set， Sort Set</p>
+<p>一般考虑：</p>
+<ul>
+<li>是否需要排序？要使用Sort Set</li>
+<li>缓存的数据是多个值还是单个值，</li>
+<li>多个值：允许重复选List  不允许重复选择Set</li>
+<li>单个值：简单值选择String， 对象值选择Hash</li>
+</ul>
+<p>一种取巧的方式：</p>
+<ul>
+<li>是否需要排序？要使用Sort Set</li>
+<li>剩下使用String</li>
+</ul>
+<p>操作方式：</p>
+<p>所有value之后都转换成json格式字符串，然后缓存到Redis，原因：Java操作方便，减少泛型操作麻烦</p>
+<p>比如：</p>
+<pre><code class="language-java">List&lt;String&gt;list = ...
+Set&lt;String&gt; set = ....
+Map&lt;String, Object&gt; map = ....
+
+
+List&lt;Object&gt;  list = redis对象.getList
+Set&lt;Object&gt; set =redis对象.getSet   
+Map&lt;Object, Object&gt; map  =  redis对象.getMap
+</code></pre>
+<p>不管存放啥数据类型，从reds中获取出来都是Object类型，后续对象强制转换麻烦，干脆直接使用字符串。</p>
+<h4 id="key设计"><a class="header" href="#key设计">Key设计</a></h4>
+<p>Redis 的key 设计讲究4个性：</p>
+<h5 id="唯一性"><a class="header" href="#唯一性"><strong>唯一性</strong></a></h5>
+<p>Redis 类似Map集合，key必须保证唯一，缓存同一个key时，后者会覆盖前者，所有必须要求唯一，那如何保证唯一呢？</p>
+<p>最常用的方式：<strong>使用缓存数据的主键作为key</strong>。</p>
+<p>比如：缓存员工信息</p>
+<p>key                             value</p>
+<p>----------------------------------------------------------------</p>
+<p>1           					 员工1</p>
+<p>2            					员工2</p>
+<p>其中的1， 2 是员工的id</p>
+<h5 id="可读性"><a class="header" href="#可读性"><strong>可读性</strong></a></h5>
+<p>可读性是保证Redis的key能做到见名知意，上面的员工id1， 员工id2 虽说能保证key唯一，但可读性非常差，维护key时，无法从， 1， 2中快速判断该key对应value值。所以一一般在保证key唯一的前提下，给key加上前缀：</p>
+<p>key                                       value</p>
+<p>----------------------------------------------------------------</p>
+<p>employee_info:id1            员工1</p>
+<p>employee_info:id2            员工2</p>
+<p>employee_info:id1     employee_info:id2  这样子设计key，可读性就好多了。</p>
+<p>可读性前缀的设计规范千奇百怪，我个人比较推崇的：</p>
+<ul>
+<li>
+<p>普通单值</p>
+<p>key                                       value</p>
+<p>----------------------------------------------------------------</p>
+<p>employe_info:id1              员工对象信息</p>
+</li>
+<li>
+<p>类似关系型数据库设计</p>
+<p><strong>表名:主键名:主键值:列名</strong></p>
+<p>key                                       value</p>
+<p>----------------------------------------------------------------</p>
+<p>employee : id : 1:info        员工对象信息</p>
+</li>
+<li>
+<p>通用玩法</p>
+<p><strong>业务模块名:业务逻辑含义:其他:value类型</strong></p>
+<p>key                                                        value</p>
+<p>-----------------------------------------------------------------------</p>
+<p>employee :base.info:id1:hash         员工对象信息</p>
+<p><strong>业务模块名</strong>：表示该key属于哪个功能模块</p>
+<p><strong>业务逻辑含义段</strong>：这里可以使用  <strong>.</strong>  分开， 具体业务逻辑表示</p>
+<p>​	比如：缓存员工权限</p>
+<p>​    employee:auth.permission:id1:set     员工权限集合</p>
+<p><strong>其他</strong>：一般设置唯一标识，比如主键</p>
+<p><strong>value类型</strong>：key对应value类型值，提高可读性。</p>
+</li>
+</ul>
+<h5 id="灵活性--项目二重点讲"><a class="header" href="#灵活性--项目二重点讲"><strong>灵活性</strong>--项目二重点讲</a></h5>
+<p>这个难介绍，一般key保证唯一时，可以使用主键，有的使用，一个主键不能表达出全部意思，可以使用联合主键。</p>
+<p>比如：</p>
+<p>id为1的朋友圈下id为A的评论。</p>
+<p>key                                                        value</p>
+<p>-----------------------------------------------------------------------</p>
+<p>post:1:reply:A                                    评论内容</p>
+<p>post:1:reply:B                                    评论内容</p>
+<h5 id="时效性"><a class="header" href="#时效性"><strong>时效性</strong></a></h5>
+<p>Redis key一定要设置过期时间。要跟自己的业务场景，需要对key设置合理的过期时间。可以在写入key时，就要追加过期时间；也可以在按照需要动态设置。</p>
+<p>这里要注意：</p>
+<ul>
+<li>不设置过期时间，这种key为永久key，会一直占用内存不释放，时间久了，数量一多，就容易达到服务器的内存上限，导致宕机，开发时一般配合Key过期策略使用哦。</li>
+<li>key的时效性设置，必须根据业务场景进行评估，设置合理有效期；</li>
+</ul>
+<h2 id="redis全局命令"><a class="header" href="#redis全局命令">Redis全局命令</a></h2>
+<p>注意： 在生产环境中尽量不要用keys命令，即使要用也绝对不要用keys *命令，为什么？因为redis是单线程的，使用keys *，花费时间太长，其他命令都会等待keys *命令执行完成，这可能是个灾难。</p>
+<p>全局命令针对的是所有的key，大部分用来做运维，做管理的</p>
+<p>常用的全局key</p>
+<div class="table-wrapper"><table><thead><tr><th>命令格式</th><th>功能</th><th>案例</th></tr></thead><tbody>
+<tr><td>keys  pattern</td><td>按照pattern 匹配规则，列表redis中所有的key</td><td>keys xxx:*</td></tr>
+<tr><td>exists  key</td><td>判断key是否存在</td><td>exists name</td></tr>
+<tr><td>expire key  seconds</td><td>给key设置过期时间，超时：seconds</td><td>expire name 10</td></tr>
+<tr><td>persist key</td><td>取消key过期时间</td><td>persist  name</td></tr>
+<tr><td>select  index</td><td>切换数据库，默认是第0个，共有【0,15】个</td><td>select 0</td></tr>
+<tr><td>move key   db</td><td>从当前数据库将key移动到指定db库</td><td>move name 1</td></tr>
+<tr><td>randomkey</td><td>随机返回一个key</td><td>randomkey</td></tr>
+<tr><td>rename key newkey</td><td>将key改名为newkey</td><td>rename name  newname</td></tr>
+<tr><td>echo message</td><td>打印message信息</td><td>echo  message</td></tr>
+<tr><td>dbsize</td><td>查看key个数</td><td>dbsize</td></tr>
+<tr><td>info</td><td>查看redis数据库信息</td><td>info</td></tr>
+<tr><td>config get  *</td><td>查看所有redis配置信息</td><td>config get *</td></tr>
+<tr><td>flushdb</td><td>清空当前数据库</td><td>flushdb</td></tr>
+<tr><td>flushall</td><td>清空所有数据库</td><td>flushall</td></tr>
+</tbody></table>
+</div>
+<h2 id="redis安全性"><a class="header" href="#redis安全性">Redis安全性</a></h2>
+<p>因为Redis速度非常快，所以在一台比较好的服务器下,一个外部用户在一秒内可以进行15w次的密码尝试，这意味你需要设定非常强大的密码来方式暴力破解。此时就需要对Redis进行密码设置啦。</p>
+<p><strong>Linux系统</strong></p>
+<p>编辑 redis.conf文件，找到下面进行保存修改
+<strong>requirepass 自定义密码</strong></p>
+<p>重启Redis服务，访问时，使用带密码的命令：</p>
+<p><strong>redis-cli -a 自定义密码</strong></p>
+<p>否则会提示： (error)NOAUTH Authentication required.</p>
+<p>Window系统</p>
+<p>跟Linux系统一样，区别是，window系统的文件是</p>
+<p><strong>redis.window-service.config</strong></p>
+<h2 id="redis事务拓展"><a class="header" href="#redis事务拓展">Redis事务[拓展]</a></h2>
+<p>一个事务从开始到执行会经历以下三个阶段：</p>
+<ul>
+<li>开始事务。</li>
+<li>命令入队。</li>
+<li>执行事务。</li>
+</ul>
+<p>借用：菜鸟教程中例子</p>
+<p>它先以 <strong>MULTI</strong> 开始一个事务， 然后将多个命令入队到事务中， 最后由 <strong>EXEC</strong> 命令触发事务， 一并执行事务中的所有命令：</p>
+<pre><code class="language-bash">redis 127.0.0.1:6379&gt; MULTI
+OK
+
+redis 127.0.0.1:6379&gt; SET book-name &quot;Mastering C++ in 21 days&quot;
+QUEUED
+
+redis 127.0.0.1:6379&gt; GET book-name
+QUEUED
+
+redis 127.0.0.1:6379&gt; SADD tag &quot;C++&quot; &quot;Programming&quot; &quot;Mastering Series&quot;
+QUEUED
+
+redis 127.0.0.1:6379&gt; SMEMBERS tag
+QUEUED
+
+redis 127.0.0.1:6379&gt; EXEC
+1) OK
+2) &quot;Mastering C++ in 21 days&quot;
+3) (integer) 3
+4) 1) &quot;Mastering Series&quot;
+   2) &quot;C++&quot;
+   3) &quot;Programming&quot;
+</code></pre>
+<p>单个 Redis 命令的执行是原子性的，但 Redis 没有在事务上增加任何维持原子性的机制，所以 Redis 事务的执行并不是原子性的。</p>
+<p>Redis事务可以理解为一个<strong>打包的批量执行脚本</strong>，但批量指令并非原子化的操作，中间某条指令的失败不会导致前面已做指令的回滚，也不会造成后续的指令不做。</p>
+<pre><code class="language-bash">127.0.0.1:6379&gt; multi
+OK
+127.0.0.1:6379(TX)&gt; set name dafei
+QUEUED
+127.0.0.1:6379(TX)&gt; set age 18
+QUEUED
+127.0.0.1:6379(TX)&gt; incr age 
+QUEUED
+127.0.0.1:6379(TX)&gt; incr name
+QUEUED
+127.0.0.1:6379(TX)&gt; get age
+QUEUED
+127.0.0.1:6379(TX)&gt; get name
+QUEUED
+127.0.0.1:6379(TX)&gt; exec
+1) OK
+2) OK
+3) (integer) 19
+4) (error) ERR value is not an integer or out of range
+5) &quot;19&quot;
+6) &quot;dafei&quot;
+127.0.0.1:6379&gt; 
+</code></pre>
+<p>Redis 事务可以一次执行多个命令， 并且带有以下三个重要的保证：</p>
+<ul>
+<li>批量操作在发送 EXEC 命令前被放入队列缓存。</li>
+<li>收到 EXEC 命令后进入事务执行，事务中任意命令执行失败，其余的命令依然被执行。</li>
+<li>在事务执行过程，其他客户端提交的命令请求不会插入到事务执行命令序列中。</li>
+</ul>
+<h2 id="redis持久化机制拓展"><a class="header" href="#redis持久化机制拓展">Redis持久化机制[拓展]</a></h2>
+<h3 id="引言"><a class="header" href="#引言">引言</a></h3>
+<p>先来一个小实验，大家可以一起实现一下</p>
+<p>步骤1：在Redis中添加2个key-value对</p>
+<pre><code class="language-bash">127.0.0.1:6379&gt; set aa aa
+OK
+127.0.0.1:6379&gt; set bb bb
+OK
+127.0.0.1:6379&gt; keys *
+</code></pre>
+<p>步骤2：重启Redis 服务器，在执行keys * 观察数据</p>
+<p>步骤3：分析结果</p>
+<p>会出现一下几种结果：</p>
+<ul>
+<li>之前的key在，aa  bb 都在（最理想的结果）</li>
+<li>之前的key在，aa也在，bb不见了</li>
+<li>之前的key在，aa， bb 不在</li>
+<li>之前的key， aa， bb 都不在了（最坏的结果）</li>
+</ul>
+<p>思考：</p>
+<p>为啥会这样？以我们对内存的操作理解，按道理重启之后数据应该全丢失了，为啥Redis 可能丢失，也可能不丢失，为何？</p>
+<p>这里就涉及到Redis的持久化机制了。</p>
+<p><img src="redis/images/image-20220902113153504.png" alt="image-20220902113153504" />*</p>
+<p>Redis持久化机制目前以后3种，分别为：</p>
+<p>1&gt;<strong>快照方式</strong>（RDB, Redis DataBase）</p>
+<p>2&gt;<strong>文件追加方式</strong>（AOF, Append Only File）</p>
+<p>3&gt;<strong>混合持久化方式</strong>（Redis4版本之后）</p>
+<h3 id="rdb方式"><a class="header" href="#rdb方式">RDB方式</a></h3>
+<p>Snapshotting(快照)默认方式，将内存数据中以快照的方式写入到二进制文件中，默认为dump.rdb。触发RDB持久化过程分手动触发与自动触发。</p>
+<h4 id="触发机制"><a class="header" href="#触发机制">触发机制</a></h4>
+<p><strong>手动触发</strong></p>
+<p>使用save命令：会阻塞当前Redis服务器，知道RDB过程完成为主，如果内存数据较多，会造成长时间阻塞，影响其他命令的使用，不建议轻易使用</p>
+<p>使用bgsave命令：Redis进程执行fork指令创建子进程，由子进程实现RDB持久化，有需要时建议使用bgsave命令。</p>
+<p><strong>自动触发</strong></p>
+<p>使用save相关配置，格式： save m n      表示m秒内数据集存在n次修改时会自动触发bgsave命令。</p>
+<pre><code class="language-java">save 900 1  #900秒内如果超过1个Key被修改则发起快照保存
+save 300 10 #300秒内如果超过10个key被修改,则发起快照保存
+save 60 10000
+</code></pre>
+<p><img src="redis/images/image-20220902151151422.png" alt="image-20220902151151422" />*</p>
+<h4 id="优点"><a class="header" href="#优点">优点</a></h4>
+<ul>
+<li>
+<p>RDB快照文件是一个紧凑压缩的二进制文件，非常使用用于备份，全量复制等场景。开发中可以按照每6小时执行一次bgsave备份，用于容灾备份。</p>
+</li>
+<li>
+<p>Redis加载RDB恢复数据远远快于AOF方式</p>
+</li>
+</ul>
+<h4 id="缺点"><a class="header" href="#缺点">缺点</a></h4>
+<ul>
+<li>RDB无法做到实时持久化/秒级持久化，每次bgsave时都需要fork子进程，频繁执行有时间成本。</li>
+<li>RDB快照文件不同版本格式不一样，容易引起兼容问题。</li>
+</ul>
+<h3 id="aof方式"><a class="header" href="#aof方式">AOF方式</a></h3>
+<p>AOF与RDB不一样，它是一独立日志的方式记录每次写命令，重启时再重新执行AOF文件中命令达到恢复数据的目的。解决了数据持久化的实时性的问题。</p>
+<p>Redis默认是不开启的，需要使用时，需要配置： <strong>appendonly yes</strong></p>
+<p>AOF 有3种文件同步策略</p>
+<div class="table-wrapper"><table><thead><tr><th>策略</th><th>解释</th></tr></thead><tbody>
+<tr><td>appendfsync always</td><td>收到命令就立即写到磁盘,效率最慢.但是能保证完全的持久化</td></tr>
+<tr><td>appendfsync everysec</td><td>每秒写入磁盘一次,在性能和持久化方面做了很好的折中</td></tr>
+<tr><td>appendfsync no</td><td>完全以依赖os，一般同步周期是30秒</td></tr>
+</tbody></table>
+</div>
+<p><img src="redis/images/image-20220902152951385.png" alt="image-20220902152951385" />*</p>
+<h4 id="优点-1"><a class="header" href="#优点-1">优点</a></h4>
+<ul>
+<li>
+<p>AOF方式数据安全性更高，配置得当，最多损失1秒的数据量</p>
+</li>
+<li>
+<p>在不小心执行flushall命令，也可以通过AOF方式恢复(删除最后一个命令即可)</p>
+</li>
+<li>
+<p>AOF 日志是一个增量日志文件，不会存在断电时出现损坏问题。即使出现问题，redis-check-aof 工具也能够轻松修复它。</p>
+</li>
+<li>
+<p>当 AOF 变得太大时，Redis 能够在后台自动重写 AOF</p>
+</li>
+</ul>
+<h4 id="缺点-1"><a class="header" href="#缺点-1">缺点</a></h4>
+<ul>
+<li>相同数据量来说，AOF文件体积通常大于RDB文件</li>
+<li>数据持久化性能上来说，AOF 比 RDB 慢</li>
+</ul>
+<h3 id="rdb-aof混合方式"><a class="header" href="#rdb-aof混合方式">RDB-AOF混合方式</a></h3>
+<p>混合持久化是结合了 RDB 和 AOF 的优点，在写入的时候，先把当前的数据以 RDB 的形式写入文件的开头，再将后续的操作命令以 AOF 的格式存入文件。即以 RDB 作为全量备份，AOF 作为增量备份，来提高备份效率。这样既能保证 Redis 重启时的速度，又能防止数据丢失的风险， 这就是 Redis 4.0 之后推出的 <strong>RDB-AOF 混合持久化模式，其作为默认配置来使用</strong>。</p>
+<h3 id="持久化机制选择"><a class="header" href="#持久化机制选择">持久化机制选择</a></h3>
+<ul>
+<li>
+<p>如果对数据安全性有非常高的要求，建议 RDB 和 AOF 同时启用。</p>
+</li>
+<li>
+<p>如果对数据安全性要求不是很高，能够容忍数据的丢失，建议单独使用 RDB。</p>
+</li>
+<li>
+<p>不推荐单独使用 AOF，因为对于进行数据库备份、更快重启以及 AOF 引擎中出现错误的情况来说，RDB 是更好的选择。</p>
+</li>
+<li>
+<p>如果没特殊要求，Redis又是4.x版本以上，可以选择RDB-AOF混合方式。</p>
+</li>
+</ul>
+<p>如果不是混合模式，而是普通的RDB与AOF一起启动时，Redis加载数据执行流程</p>
+<p><img src="redis/images/image-20220902153031549.png" alt="image-20220902153031549" />*</p>
+<h2 id="redis内存淘汰机制拓展"><a class="header" href="#redis内存淘汰机制拓展">Redis内存淘汰机制[拓展]</a></h2>
+<h3 id="引言-1"><a class="header" href="#引言-1">引言</a></h3>
+<p>Redis 启动会加载一个配置：</p>
+<pre><code class="language-bash">maxmemory &lt;byte&gt;   //内存上限
+</code></pre>
+<p>默认值为 0 (window版的限制为100M)，表示默认设置Redis内存上限。但是真实开发还是需要提前评估key的体量，提前设置好内容上限。</p>
+<p>此时思考一个问题，开发中，在设置完内存上限之后，如果Redis key达到上限了，该怎么办？这就设置到Redis的内存淘汰机制了。</p>
+<h3 id="内存淘汰算法"><a class="header" href="#内存淘汰算法">内存淘汰算法</a></h3>
+<p>Redis内存淘汰机制也可以称之为key内卷机制，当资源不足时，该如何选择？</p>
+<p>常见的内存淘汰机制分为四大类：</p>
+<ul>
+<li>**LRU：**LRU是Least recently used，最近最少使用的意思，简单的理解就是从数据库中删除最近最少访问的数据，该算法认为，你长期不用的数据，那么被再次访问的概率也就很小了，淘汰的数据为最长时间没有被使用，仅与时间相关。</li>
+</ul>
+<p><img src="redis/images/image-20220902161050652.png" alt="image-20220902161050652" /></p>
+<ul>
+<li>
+<p>**LFU：**LFU是Least Frequently Used，最不经常使用的意思，简单的理解就是淘汰一段时间内，使用次数最少的数据，这个与频次和时间相关。</p>
+<p><img src="redis/images/image-20220902161057116.png" alt="image-20220902161057116" /></p>
+</li>
+<li>
+<p>**TTL：**Redis中，有的数据是设置了过期时间的，而设置了过期时间的这部分数据，就是该算法要解决的对象。如果你快过期了，不好意思，我内存现在不够了，反正你也要退休了，提前送你一程，把你干掉吧。</p>
+</li>
+<li>
+<p>随机淘汰：生死有命，富贵在天，是否被干掉，全凭天意了。</p>
+</li>
+</ul>
+<h3 id="redis淘汰策略"><a class="header" href="#redis淘汰策略">Redis淘汰策略</a></h3>
+<p>Redis 通过配置</p>
+<pre><code class="language-bash">maxmemroy-policy  
+</code></pre>
+<p>来配置指定具体的淘汰机制，可供选择的值有：</p>
+<p>　通过maxmemroy-policy可以配置具体的淘汰机制，看了网上很多文章说只有6种，其实有8种，可以看Redis5.0的配置文件，上面有说明：</p>
+<ul>
+<li>
+<p>volatile-lru -&gt; 找出已经设置过期时间的数据集，将最近最少使用（被访问到）的数据干掉。</p>
+</li>
+<li>
+<p>volatile-ttl -&gt; 找出已经设置过期时间的数据集，将即将过期的数据干掉。</p>
+</li>
+<li>
+<p>volatile-random -&gt; 找出已经设置过期时间的数据集，进行无差别攻击，随机干掉数据。</p>
+</li>
+<li>
+<p>volatile-lfu -&gt; 找出已经设置过期时间的数据集，将一段时间内，使用次数最少的数据干掉。</p>
+</li>
+<li>
+<p>allkeys-lru -&gt;与第1个差不多，数据集从设置过期时间数据变为全体数据。</p>
+</li>
+<li>
+<p>allkeys-lfu -&gt; 与第4个差不多，数据集从设置过期时间数据变为全体数据。</p>
+</li>
+<li>
+<p>allkeys-random -&gt; 与第3个差不多，数据集从设置过期时间数据变为全体数据。</p>
+</li>
+<li>
+<p>no-enviction -&gt; 什么都不干，报错，告诉你内存不足，这样的好处是可以保证数据不丢失</p>
+</li>
+</ul>
+<p><strong>系统默认选择： noenviction</strong> </p>
+<h1 id="过期key处理拓展"><a class="header" href="#过期key处理拓展">过期Key处理[拓展]</a></h1>
+<p>接下讨论一个问题：Redis的key过期了，该如何清理问题。</p>
+<p>Redis给出3种实现方案：</p>
+<p><strong>惰性删除</strong>：当访问Key时，才去判断它是否过期，如果过期，直接干掉。这种方式对CPU很友好，但是一个key如果长期不用，一直存在内存里，会造成内存浪费。</p>
+<p><strong>定时删除</strong>：设置键的过期时间的同时，创建一个定时器，当到达过期时间点，立即执行对Key的删除操作，这种方式对CPU不友好，得额外让出CPU维护定时器。</p>
+<p><strong>定期删除</strong>：隔一段时间，对数据进行一次检查，删除里面的过期Key，至于要删除多少过期Key，检查多少数据，则由算法决定。</p>
+<p><strong>Redis服务器实际使用的是惰性删除和定期删除两种策略：通过配合使用这两种删除策略，可以很好地在合理使用CPU和避免浪费内存之间取得平衡。</strong></p>
+<h2 id="redis编程"><a class="header" href="#redis编程">Redis编程</a></h2>
+<h3 id="概况-1"><a class="header" href="#概况-1">概况</a></h3>
+<p>Redis编程就是使用编程方式操作Redis，当前Redis支持的编程语言有：https://redis.io/docs/clients/</p>
+<p><img src="redis/images/image-20220716145405471.png" alt="image-20220716145405471" /></p>
+<p>这里以Java为开发语言，选择Java点击进去</p>
+<p><img src="redis/images/image-20220716145807103.png" alt="image-20220716145807103" /></p>
+<p>java实现操作Redis的客户端有很多，其中名气最高的：<strong>Redisson</strong>，<strong>Jedis</strong>，<strong>lettuce</strong> 3个客户端，其中Jedis，lettuce侧重于单例Redis 数据库的 CRUD（增删改查），Redisson 侧重于分布式开发。当前重点讲解Jedis与lettuce的使用，后续有机会再重点讲解Redisson使用。</p>
+<h3 id="jedis"><a class="header" href="#jedis">Jedis</a></h3>
+<p>项目使用的SpringBoot，所以重点讲解SpringBoot继承Jedis</p>
+<p><strong>步骤1：建项目，导入依赖</strong></p>
+<pre><code class="language-xml">&lt;parent&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+    &lt;version&gt;2.4.3&lt;/version&gt;
+    &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
+&lt;/parent&gt;
+&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+    
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+        &lt;scope&gt;test&lt;/scope&gt;
+    &lt;/dependency&gt;
+
+    &lt;dependency&gt;
+        &lt;groupId&gt;redis.clients&lt;/groupId&gt;
+        &lt;artifactId&gt;jedis&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+        &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+</code></pre>
+<p><strong>步骤2：导入配置文件</strong></p>
+<pre><code class="language-yml">
+#redis配置--jedis版
+jedis:
+  pool:
+    #redis服务器的IP
+    host: localhost
+    #redis服务器的Port
+    port: 6379
+    #数据库密码
+    password:
+    #连接超时时间
+    timeout: 7200
+    #最大活动对象数
+    maxTotall: 100
+    #最大能够保持idel状态的对象数
+    maxIdle: 100
+    #最小能够保持idel状态的对象数
+    minIdle: 50
+    #当池内没有返回对象时，最大等待时间
+    maxWaitMillis: 10000
+    #当调用borrow Object方法时，是否进行有效性检查
+    testOnBorrow: true
+    #当调用return Object方法时，是否进行有效性检查
+    testOnReturn: true
+    #“空闲链接”检测线程，检测的周期，毫秒数。如果为负值，表示不运行“检测线程”。默认为-1.
+    timeBetweenEvictionRunsMillis: 30000
+    #向调用者输出“链接”对象时，是否检测它的空闲超时；
+    testWhileIdle: true
+    # 对于“空闲链接”检测线程而言，每次检测的链接资源的个数。默认为3.
+    numTestsPerEvictionRun: 50
+
+
+</code></pre>
+<p><strong>步骤3：加载配置文件</strong></p>
+<pre><code class="language-java">@Component
+@ConfigurationProperties(prefix = &quot;jedis.pool&quot;)
+@Getter
+@Setter
+public class JedisProperties {
+    private int  maxTotall;
+    private int  maxIdle;
+    private int  minIdle;
+    private int  maxWaitMillis;
+    private boolean  testOnBorrow;
+    private boolean  testOnReturn;
+    private int  timeBetweenEvictionRunsMillis;
+    private boolean  testWhileIdle;
+    private int  numTestsPerEvictionRun;
+
+    private String host;
+    private String password;
+    private int port;
+    private int timeout;
+}
+</code></pre>
+<p><strong>步骤4：编写Jedis配置类</strong></p>
+<pre><code class="language-java">@Configuration
+public class JedisConfig {
+    /**
+     * jedis连接池
+     * @param jedisProperties
+     * @return
+     */
+    @Bean
+    public JedisPool jedisPool(JedisProperties jedisProperties) {
+
+        JedisPoolConfig config = new JedisPoolConfig();
+        config.setMaxTotal(jedisProperties.getMaxTotall());
+        config.setMaxIdle(jedisProperties.getMaxIdle());
+        config.setMinIdle(jedisProperties.getMinIdle());
+        config.setMaxWait(Duration.ofMillis(jedisProperties.getMaxWaitMillis()));
+        config.setTestOnBorrow(jedisProperties.isTestOnBorrow());
+        config.setTestOnReturn(jedisProperties.isTestOnReturn());
+        config.setTimeBetweenEvictionRuns(Duration.ofMillis(jedisProperties.getTimeBetweenEvictionRunsMillis()));
+        config.setTestWhileIdle(jedisProperties.isTestWhileIdle());
+        config.setNumTestsPerEvictionRun(jedisProperties.getNumTestsPerEvictionRun());
+
+        if (StringUtils.hasText(jedisProperties.getPassword())) {
+            return new JedisPool(config, jedisProperties.getHost(), jedisProperties.getPort(),
+                    jedisProperties.getTimeout(), jedisProperties.getPassword());
+        }
+        return new JedisPool(config, jedisProperties.getHost(), jedisProperties.getPort(),
+                jedisProperties.getTimeout());
+    }
+}
+</code></pre>
+<p><strong>步骤5：编写测试类，实现测试</strong></p>
+<pre><code class="language-java">@SpringBootTest
+public class JedisTest {
+    @Autowired
+    private JedisPool jedisPool;
+    @Test
+    public void testConnection(){
+        System.out.println(jedisPool);
+        Jedis jedis = jedisPool.getResource();
+        //需求：往redis中添加kv对： name：dafei
+        jedis.set(&quot;name&quot;, &quot;dafei&quot;);
+        System.out.println(jedis.get(&quot;name&quot;));
+        jedis.close();
+    }
+}
+</code></pre>
+<p><strong>操作技巧：jedis中方法跟Redis中命令一样</strong></p>
+<h3 id="lettuce"><a class="header" href="#lettuce">Lettuce</a></h3>
+<p>Lettuce 之所以能流行，因为它抱了根好大腿-Spring-data。Spring-data-redis底层就封装了Lettuce，接下来看下Springboot版的lettuce实现。</p>
+<p><strong>步骤1：导入依赖</strong></p>
+<pre><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-data-redis&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</code></pre>
+<p><strong>步骤2：Redis配置</strong></p>
+<pre><code class="language-yml">spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: admin
+</code></pre>
+<p><strong>步骤3：编写测试类，实现测试</strong></p>
+<pre><code class="language-java">@SpringBootTest
+public class LettureTest {
+
+
+    @Autowired
+    //约定：
+    // 操作redis的key  是字符串
+    // value是字符串类型或字符串类型元素
+    private StringRedisTemplate template;
+
+    @Test
+    public void testRedis(){
+
+        //name：dafei
+        template.opsForValue().set(&quot;name&quot;, &quot;dafei&quot;);
+        System.out.println(template.opsForValue().get(&quot;name&quot;));
+
+        // 操作string
+        //template.opsForValue().xx();
+        // 操作hash
+        //template.opsForHash().xx();
+        // 操作list
+        //template.opsForList().xx();
+        // 操作set
+        //template.opsForSet().xx();
+        // 操作zset
+        //template.opsForZSet().xx();
+
+
+        //spring-data-redis  方法是redis 命令全称
+        //template.opsForList().rightPush()  //rpush
+
+        //全局命令在template类上
+        //template.keys(&quot;*&quot;);
+    }
+}
+
+</code></pre>
+<p><strong>操作技巧：Lettuce中方法跟Redis中命令全称</strong></p>
+<h2 id="小案例"><a class="header" href="#小案例">小案例</a></h2>
+<p>类似效果：https://www.mafengwo.cn/gonglve/ziyouxing/2339.html</p>
+<p><img src="redis/images/image-20220902213752150.png" alt="image-20220902213752150" />*</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="java"><a class="header" href="#java">java</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="java-tools"><a class="header" href="#java-tools">java tools</a></h1>
+<h3 id="jps-命令"><a class="header" href="#jps-命令">jps 命令</a></h3>
+<p>一、概述</p>
+<p>jps 是 Java Process Status Tool 的简称,它的作用是为了列出所有正在运行中的 Java 虚拟机进程</p>
+<p>每一个 Java 程序在启动的时候都会为之创建一个 Jvm 实例,通过 jps 可以查看这些进程的相关信息</p>
+<p>jps 是 Jdk 提供的一个工具,它安装在 JAVA_HOME/bin  下</p>
+<p>二、常用 jps 命令参数</p>
+<p>语法格式</p>
+<p>jps [ options ] [ hostid ]</p>
+<p>实际生产应用中不会去连接远程主机,hostid 这个一般不用</p>
+<p>options 是对应的参数</p>
+<div class="table-wrapper"><table><thead><tr><th>options 参数选项</th><th>作用</th></tr></thead><tbody>
+<tr><td>-q</td><td>只输出进程ID,省略主类的名称</td></tr>
+<tr><td>-m</td><td>输出虚拟机进程启动时传递给主类 main() 方法的参数</td></tr>
+<tr><td>-l</td><td>输出主类的名称,如果进程执行的是 JAR 包,则输出 JAR 文件的路径</td></tr>
+<tr><td>-v</td><td>输出虚拟机进程启动时的 JVM 参数</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="加密解密"><a class="header" href="#加密解密">加密解密</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="go语言和java语言加密解密对比"><a class="header" href="#go语言和java语言加密解密对比">go语言和java语言加密解密对比</a></h1>
+<h2 id="golang两种方法实现md5加密"><a class="header" href="#golang两种方法实现md5加密">Golang两种方法实现MD5加密</a></h2>
+<pre><code>package main
+
+import (
+    &quot;crypto/md5&quot;
+    &quot;fmt&quot;
+    &quot;io&quot;
+)
+
+func main() {
+    str := &quot;123456&quot;
+    //方法一
+    data := []byte(str)
+    has := md5.Sum(data)
+    md5str1 := fmt.Sprintf(&quot;%x&quot;, has) //将[]byte转成16进制
+    fmt.Println(md5str1)   
+    //方法二
+    w := md5.New()
+    io.WriteString(w, str)
+    //将str写入到w中
+    md5str2 := fmt.Sprintf(&quot;%x&quot;, w.Sum(nil))
+
+    fmt.Println(md5str2)
+
+
+
+
+
+//结果
+//e10adc3949ba59abbe56e057f20f883e
+//e10adc3949ba59abbe56e057f20f883e
+}
+</code></pre>
+<h2 id="java实现md5加密"><a class="header" href="#java实现md5加密">java实现MD5加密</a></h2>
+<pre><code>/*
+ * Copyright (c) 2021.  武汉美宸时科科技有限公司 www.fashiontech.top
+ */
+
+package top.fashiontech.device.biz;
+
+import org.apache.commons.codec.digest.DigestUtils;
+
+public class OperationApplication {
+    public static void main(String[] args) {
+        System.out.println(&quot;-----------------ooooo-------&quot; + DigestUtils.md5Hex(&quot;123456&quot;));
+    }
+}
+
+//结果
+//e10adc3949ba59abbe56e057f20f883e
+//e10adc3949ba59abbe56e057f20f883e
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="系统设计"><a class="header" href="#系统设计">系统设计</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="人机界面设备管控中间件设计"><a class="header" href="#人机界面设备管控中间件设计">人机界面设备管控中间件设计</a></h1>
+<h3 id="在线判断"><a class="header" href="#在线判断">在线判断</a></h3>
+<h4 id="分析"><a class="header" href="#分析">分析</a></h4>
+<h5 id="方式一"><a class="header" href="#方式一">方式一</a></h5>
+<p>简称：</p>
+<p>健康检查机制、consul的服务健康检查机制方式、设备端服务注册到中间件方式。</p>
+<p>参照：</p>
+<p>这里简单梳理一下consul的服务健康检查机制</p>
+<p>网上关于consul健康检查的说明有很多，基本都是根据官方文档的说明来的，基本上就是一下几种。</p>
+<ul>
+<li>Script+ Interval</li>
+<li>HTTP+ Interval</li>
+<li>TCP+ Interval</li>
+<li>Timeto Live（TTL）</li>
+<li>Docker+ interval</li>
+</ul>
+<p>因为这里是人对设备进行管控，所以基于http的健康检查机制足矣。这里只分析HTTP+ Interval方式。</p>
+<p><a href="device-check/../consul/health-check.html">consul源码分析</a></p>
+<p>consul的HTTP+ Interval方式，基本上就是，微服务把自身提供的用于健康检查的服务终结点url注册到数据中心，然后consul的agent会在启动的定时器里面在指定Interval对注册的微服务的健康检查url进行请求，根据http status返回码判断服务是否在线，如果不在线则会更新数据中心的服务在线状态信息。下面的步骤应该就是按照某种机制将在线的服务下发到客户端负载均衡模块的客户端，然后微服务发起服务间调用请求的时候，只会调用存活的服务。</p>
+<p>要点：</p>
+<ul>
+<li>终端设备程序需要编写http服务器，编写健康检查和接收下发的消息指令的终结点。</li>
+<li>中间件需要提供设备注册的终结点，设备注册信息包括设备识别号、健康检查终结点、接收指令终结点</li>
+<li>中间件固化存储设备注册信息</li>
+<li>中间件将所有设备注册信息维持到内存中</li>
+<li>中间件开启定时器，在设定的Interval对健康检查终结点发起健康检查，如果返回的http状态不是200，则判断设备离线，如果是200，则判断设备在线，并与内存中缓存的状态进行比较，相同则无需变更，不同则需要变更缓存和中间件提供给消费者的状态数据。（设备在线和离线给中间件消费方数据的更新时机）</li>
+</ul>
+<p>合理性分析： </p>
+<p>我们可以使用这种方式，但是这种方式用在设备上，每个设备将会开启一个http服务端口，由于不能预知是否能够允许在每个设备端开启端口，以及开启端口后，每秒接收健康检查的请求的开销，设备是否都能承受。所以这种方式，目前无法判断是否是最合适的。</p>
+<p>当然设备上开启了http服务，那么也能更加方便增加接收下发指令的终结点。这也算优势。</p>
+<h5 id="方式二"><a class="header" href="#方式二">方式二</a></h5>
+<p>简称：健康汇报机制</p>
+<p>要点：</p>
+<ul>
+<li>服务端需要在内存中维持一个数据集合，用来存储前一次健康汇报的信息，包括设备识别号和汇报时间</li>
+<li>服务端开启一个集中接收所有设备汇报健康的服务终结点，并在这个终结点的处理逻辑中判断是否有内存设备信息集合中不存在的设备汇报出现，如果有，则需要更新给中间件消费方查询的数据（设备上线给中间件消费方数据的更新时机）。</li>
+<li>服务端需要开启一个定时器，维持监测的Interval，在定时器中检查当前时间和健康汇报最新记录的时间间隔是否超过了Interval，如果超过了，则判断设备离线，这里数据操作无需加锁。如有设备离线，则更新数据库中的设备状态信息（设备离线给中间件消费方数据的更新时机）。</li>
+</ul>
+<p>合理性分析：</p>
+<p>当设备数量大的时候，服务端承载的压力变大。如果设备状态的消费是从数据库查询状态信息，那么状态的变化必然要及时的更新到数据库，这里假设200个设备同时离线，那么定时器中是在同一个线程中依次判断和写入数据库，貌似合理。</p>
+<p>合理性分析的方面：</p>
+<ol>
+<li>并发数量</li>
+<li>中间件和设备中资源占用</li>
+<li>状态获得的及时性，状态变更的反馈速度，和信息必达</li>
+<li>下发指令的通畅必达，下发指令执行结果反馈的必达和合理性</li>
+</ol>
+<h3 id="状态汇报"><a class="header" href="#状态汇报">状态汇报</a></h3>
+<h3 id="指令发送"><a class="header" href="#指令发送">指令发送</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="系统配置"><a class="header" href="#系统配置">系统配置</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mac-中显示资源库library文件夹目录的几种方法"><a class="header" href="#mac-中显示资源库library文件夹目录的几种方法">Mac 中显示资源库（Library）文件夹目录的几种方法</a></h1>
+<p>Mac中Library目录在10.6.7系统之后默认隐藏的，有时候通过窗口界面选择Library文件夹无法显示出来，要想找到此文件夹有如下几种方法：</p>
+<ol>
+<li>用命令可以使其显示：</li>
+</ol>
+<p>在终端中执行命令：</p>
+<pre><code>chflags nohidden ~/Library
+</code></pre>
+<p>可显示资源库文件夹</p>
+<p>如想隐藏，可以在终端中执行命令：</p>
+<pre><code>chflags hidden ~/Library
+</code></pre>
+<ol start="2">
+<li>在Finder菜单中的偏好设置中设置</li>
+</ol>
+<p>在Finder菜单中的偏好设置中选择边栏，勾选上设备中的硬盘。
+再打开Finder，Finder的左边栏会有设备显示，在这里可以找到用户下的资源库也可以找到系统下的资源库文件目录了。
+想要隐藏，去掉Finder偏好设置中边栏选项设备中的硬盘勾选或着直接在Finder的左边栏上设备出悬浮鼠标会出现隐藏，直接隐藏即可。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="安卓"><a class="header" href="#安卓">安卓</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="安卓中如何保持一个程序不在前台的时候不被系统杀掉"><a class="header" href="#安卓中如何保持一个程序不在前台的时候不被系统杀掉">安卓中如何保持一个程序不在前台的时候不被系统杀掉</a></h1>
+<h3 id="背景"><a class="header" href="#背景">背景</a></h3>
+<p>一个同事问我怎么在DMac中实现不被系统杀掉的，并且惊奇的告诉我说我们公司的DMac在Pico升级到4之后，仍然可以不被系统杀掉。</p>
+<p>其实严格意义上，可能没有这种办法吧。并且想要应用一直保持这种能力，严格上来说，系统升级就得重新测试调整代码。</p>
+<h3 id="解答一下"><a class="header" href="#解答一下">解答一下</a></h3>
+<p>为什么我们的DMac可以实现不被系统杀掉呢？</p>
+<p>其实我们的DMac并不能保持不被所有同版本安卓系统杀掉，只能保证在Pico头盔中实际上不被系统杀掉。</p>
+<p>最关键的几行代码：</p>
+<pre><code>Intent intent = new Intent(this, MainActivity.class);
+PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
+long triggerAtTime = SystemClock.elapsedRealtime() + Minutes;
+manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, triggerAtTime, pendingIntent);
+</code></pre>
+<p>如上代码，借助PendingIntent和AlarmManager，将本App，也就是想要保持在后台一直存活的App用PendingIntent包装一下，再用AlarmManager定时启动这个PendingIntent，其实就是暴力的定时启动DMac。而在Pico中，系统杀死进程有一个能确定的缺省等待时间，所以在等待时间到来之前启动一下DMac，又重新进入了等待计时。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="大数据"><a class="header" href="#大数据">大数据</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="大数据常用命令"><a class="header" href="#大数据常用命令">大数据常用命令</a></h1>
+<h3 id="hdfs"><a class="header" href="#hdfs">hdfs</a></h3>
+<pre><code>hdfs dfs -ls /
+</code></pre>
+<h3 id="hadoop"><a class="header" href="#hadoop">hadoop</a></h3>
+<pre><code>hadoop fs -ls /
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

@@ -41,3 +41,4 @@
     - [大数据组件自带管理界面](./bigdata/mgmt-pages.md)
 - [docker](./docker/index.md)
     - [docker试用手册](./docker/docker.md)
+    - [Docker Desktop 4.18 发布，带来了大量新特性](./docs/docker/Docker%20Desktop%204.18新特性.md)

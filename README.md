@@ -56,5 +56,5 @@
 * [安卓中一个进程如何在转入后台后不被系统杀死](./docs/android/android-service-forever.md)  
 
 ## 大数据
-* [常用命令](./docs/hadoop/common-use-command.md)
-
+* [常用命令](./docs/bigdata/common-use-command.md)
+* [大数据组件自带管理界面](./docs/bigdata/mgmt-pages.md)

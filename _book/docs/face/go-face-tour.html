@@ -1,0 +1,854 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>go-face人脸识别踩坑记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../windows/print.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    踩坑记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../windows/print.html">
+            
+                <a href="../windows/print.html">
+            
+                    
+                    Windows中使用C#写打印程序踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="go-face-tour.html">
+            
+                <a href="go-face-tour.html">
+            
+                    
+                    go-face人脸识别踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../npm/npm-registry.html">
+            
+                <a href="../npm/npm-registry.html">
+            
+                    
+                    npm淘宝镜像与官方源切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../java/java-env.html">
+            
+                <a href="../java/java-env.html">
+            
+                    
+                    java环境管理工具jenv和sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../go/gvm.html">
+            
+                <a href="../go/gvm.html">
+            
+                    
+                    GoLang语言多版本管理工具--GVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../text/text-corner-mark.html">
+            
+                <a href="../text/text-corner-mark.html">
+            
+                    
+                    文字角标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../frp/frp-common-use.html">
+            
+                <a href="../frp/frp-common-use.html">
+            
+                    
+                    go-frp内网穿透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../git/centos源码安装git.html">
+            
+                <a href="../git/centos源码安装git.html">
+            
+                    
+                    Centos下源码安装git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../git/git_use_issue.html">
+            
+                <a href="../git/git_use_issue.html">
+            
+                    
+                    git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../git/win-git-use.html">
+            
+                <a href="../git/win-git-use.html">
+            
+                    
+                    windows下git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../git/dailygit.html">
+            
+                <a href="../git/dailygit.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../python/pyenv.html">
+            
+                <a href="../python/pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../windows/cmd.html">
+            
+                <a href="../windows/cmd.html">
+            
+                    
+                    Windows命令行乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../go/gomod.html">
+            
+                <a href="../go/gomod.html">
+            
+                    
+                    go mod版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../gitbook/gitbook-use.html">
+            
+                <a href="../gitbook/gitbook-use.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../mdbook/mdbook-use.html">
+            
+                <a href="../mdbook/mdbook-use.html">
+            
+                    
+                    mdBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../makefile/makefile.html">
+            
+                <a href="../makefile/makefile.html">
+            
+                    
+                    Makefile编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    grpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../grpc/grpc-go.html">
+            
+                <a href="../grpc/grpc-go.html">
+            
+                    
+                    go grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    MYSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../mysql/mysql_common_use.html">
+            
+                <a href="../mysql/mysql_common_use.html">
+            
+                    
+                    mysql临时关闭安全更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../redis/Redis.html">
+            
+                <a href="../redis/Redis.html">
+            
+                    
+                    Redis从小白到大白笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../java/tools.html">
+            
+                <a href="../java/tools.html">
+            
+                    
+                    java tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    加密解密
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../encrypt/go-java-encrypt.html">
+            
+                <a href="../encrypt/go-java-encrypt.html">
+            
+                    
+                    go语言和java语言加密解密对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    系统设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../device-check/device-check.html">
+            
+                <a href="../device-check/device-check.html">
+            
+                    
+                    设备管控中间件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    系统配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../sys-settings/mac-library.html">
+            
+                <a href="../sys-settings/mac-library.html">
+            
+                    
+                    Mac 中显示资源库（Library）文件夹目录的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    安卓
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../android/android-service-forever.html">
+            
+                <a href="../android/android-service-forever.html">
+            
+                    
+                    安卓中一个进程如何在转入后台后不被系统杀死
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../bigdata/common-use-command.html">
+            
+                <a href="../bigdata/common-use-command.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../bigdata/mgmt-pages.html">
+            
+                <a href="../bigdata/mgmt-pages.html">
+            
+                    
+                    大数据组件自带管理界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >go-face人脸识别踩坑记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go-face&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x8E29;&#x5751;&#x8BB0;">go-face&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x8E29;&#x5751;&#x8BB0;</h1>
+<p>&#x4F7F;&#x7528;&#x5C01;&#x88C5;&#x4E86; dlib &#x673A;&#x5668;&#x5B66;&#x4E60;&#x5DE5;&#x5177;&#x5305;&#x7684; kagami/go-face &#x5305;&#xFF0C;&#x6781;&#x5927;&#x7B80;&#x5316;&#x4E86;&#x6211;&#x4EEC;&#x8FDB;&#x884C;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<h3 id="dlib-&#x5DE5;&#x5177;&#x5305;">dlib &#x5DE5;&#x5177;&#x5305;</h3>
+<p>&#x5B83;&#x662F;&#x7528; C++ &#x6784;&#x5EFA;&#x7684;&#xFF0C;&#x5B83;&#x5728;&#x9762;&#x90E8;&#x8BC6;&#x522B;&#x4E0E;&#x68C0;&#x6D4B;&#x65B9;&#x9762;&#x90FD;&#x4EE4;&#x4EBA;&#x60CA;&#x5947;&#x3002;&#x6839;&#x636E;&#x5B83;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x5728; Wild &#x57FA;&#x51C6;&#x6D4B;&#x8BD5;&#x4E2D;&#x68C0;&#x6D4B;&#x6807;&#x8BB0;&#x9762;&#x90E8;&#x7684;&#x51C6;&#x786E;&#x5EA6;&#x7EA6;&#x4E3A; 99.4%&#xFF0C;&#x8FD9;&#x96BE;&#x4EE5;&#x7F6E;&#x4FE1;&#xFF0C;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x8BB8;&#x591A;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x5C06;&#x5176;&#x4F5C;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x539F;&#x56E0;</p>
+<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
+<p>&#x6211;&#x4E0D;&#x60F3;&#x6492;&#x8C0E;&#xFF0C;&#x8BA9;&#x5B83;&#x542F;&#x52A8;&#x5E76;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#x6BD4;&#x7528;&#x6807;&#x51C6;&#x7684; Go &#x5305;&#x66F4;&#x75DB;&#x82E6;&#x4E00;&#x4E9B;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x5B89;&#x88C5; pkg-config &#x548C; dlib&#x3002;&#x5982;&#x679C;&#x4F60;&#x5728; MacOS &#x4E0A;&#x8FD0;&#x884C;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>$ brew install pkg-config dlib
+$ sed -i &apos;&apos; &apos;s/^Libs: .*/&amp; -lblas -llapack/&apos; /usr/local/lib/pkgconfig/dlib-1.pc
+</code></pre><h3 id="&#x5F00;&#x59CB;">&#x5F00;&#x59CB;</h3>
+<p>&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E0B;&#x8F7D; kagami/go-face &#x5305;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B; go get &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>$ go get -u github.com/Kagami/go-face
+</code></pre><p>&#x5728;&#x4F60;&#x7684; GOPATH &#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; go-face-recognition &#x7684;&#x65B0;&#x76EE;&#x5F55;&#x3002;&#x5728;&#x6B64;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; main.go &#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x6709;&#x6E90;&#x7801;&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x5B8C;&#x6210;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4ECE; TutorialEdge/ go-face-recognition-tutorial repo &#x7684; image/ &#x76EE;&#x5F55;&#x4E2D;&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x3002;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x662F; clone repo &#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x53EA;&#x9700;&#x590D;&#x5236;&#x56FE;&#x7247;&#x76EE;&#x5F55;&#x5230;&#x5F53;&#x524D;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</p>
+<pre><code>$ git clone https://github.com/TutorialEdge/go-face-recognition-tutorial.git
+</code></pre><p>&#x4E00;&#x65E6;&#x6210;&#x529F; clone &#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6709;&#x4E86;&#x542F;&#x52A8;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#x7684;&#x6240;&#x9700;&#x7684; .dat &#x6587;&#x4EF6;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x8FD8;&#x770B;&#x5230;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x5305;&#x542B;&#x590D;&#x4EC7;&#x8005;&#x8054;&#x76DF;&#x9762;&#x5B54;&#x7684; .jpg &#x6587;&#x4EF6;&#x5217;&#x8868;&#x3002;</p>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+
+    &quot;github.com/Kagami/go-face&quot;
+)
+
+const dataDir = &quot;testdata&quot;
+
+func main() {
+    fmt.Println(&quot;Facial Recognition System v0.01&quot;)
+
+    rec, err := face.NewRecognizer(dataDir)
+    if err != nil {
+        fmt.Println(&quot;Cannot INItialize recognizer&quot;)
+    }
+    defer rec.Close()
+
+    fmt.Println(&quot;Recognizer Initialized&quot;)
+}
+</code></pre><p>&#x597D;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C1D;&#x8BD5;&#x5728;&#x8FD9;&#x65F6;&#x5019;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5E94;&#x8BE5;&#x4F1A;&#x5728;&#x6211;&#x4EEC;&#x7A0B;&#x5E8F;&#x7684;&#x8F93;&#x51FA;&#x4E2D;&#x770B;&#x5230; Facial Recognition System v0.01 &#x548C; Recognizer Initialized. &#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x7684;&#x8BBE;&#x7F6E;&#x4E86;&#x6240;&#x9700;&#x7684;&#x4E00;&#x5207;&#xFF0C;&#x4E3A;&#x4E86;&#x505A;&#x4E00;&#x4E9B;&#x5F88;&#x9177;&#x7684;&#x9AD8;&#x7EA7;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#xFF01;</p>
+<h4 id="&#x5751;">&#x5751;</h4>
+<p>&#x5F53;&#x4F60;&#x8FD0;&#x884C;&#x4E86;go run .&#x4E4B;&#x540E;&#xFF0C;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x753B;&#x9762;&#xFF1A;</p>
+<p><img src="assets/WeChat10ae1958378403184cdd5758d9ff3298.png" alt=""></p>
+<pre><code>2022/12/11 01:38:57 Can&apos;t recognize: jpeg_mem_loader: decode error: Wrong JPEG library version: library is 80, caller expects 90
+</code></pre><p>&#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x5C31;&#x662F;&#x8BC6;&#x522B;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B89;&#x88C5;&#x7684;&#x5E93;&#x4E3A;80&#xFF0C;&#x4F46;&#x662F;&#x7A0B;&#x5E8F;&#x9700;&#x8981;90&#x7684;&#x5E93;&#x3002;</p>
+<p>&#x5728;&#x7F51;&#x4E0A;&#x641C;&#x4E86;&#x4E00;&#x4E0B;&#x522B;&#x4EBA;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD8;&#x53D1;&#x73B0;&#x6709;&#x4EBA;&#x632F;&#x632F;&#x6709;&#x8BCD;&#x7684;&#x7FFB;&#x8BD1;&#x53CD;&#x4E86;&#xFF0C;&#x8BF4;&#x662F;&#x8981;80&#x4F46;&#x662F;&#x7CFB;&#x7EDF;&#x4E2D;&#x662F;90&#x3002;&#x3002;&#x3002;</p>
+<p>&#x5728;Mac&#x4E2D;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5B89;&#x88C5;libmpeg&#x7684;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>brew install libjpeg
+</code></pre><p>&#x4F46;&#x662F;&#x50CF;&#x8FD9;&#x6837;&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x7A0B;&#x5E8F;&#x8BC6;&#x522B;&#x5230;&#x7684;libjpeg&#x4E3A;90&#x3002;</p>
+<p>&#x4E8E;&#x662F;&#x591A;&#x6837;&#x5C1D;&#x8BD5;&#x4E4B;&#x540E;&#xFF0C;&#x51B3;&#x5B9A;&#x76F4;&#x63A5;&#x5B89;&#x88C5;libjpeg&#x3002;</p>
+<ol>
+<li>&#x4E0B;&#x8F7D;<a href="http://www.ijg.org/files/jpegsrc.v9e.tar.gz" target="_blank">http://www.ijg.org/files/jpegsrc.v9e.tar.gz</a></li>
+<li>&#x89E3;&#x538B;&#x540E;&#xFF0C;&#x4ECE;&#x7EC8;&#x7AEF;&#x8FDB;&#x5165;&#x5230; libjpeg &#x6240;&#x5728;&#x76EE;&#x5F55;&#xFF0C;&#x7528;&#x5E38;&#x89C4;&#x65B9;&#x6CD5;&#x65E2;&#x53EF;&#x5B89;&#x88C5;&#xFF0C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ol>
+<pre><code>./configure
+make
+make install
+&#xFF03;make test
+</code></pre><p>&#x6700;&#x540E;&#x4E00;&#x6761;&#x547D;&#x4EE4;make test&#x662F;&#x7528;&#x6765;&#x6D4B;&#x8BD5;&#x8FD9;&#x4E2A;&#x5E93;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x7684;&#xFF0C;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230; libjpeg &#x89E3;&#x538B;&#x540E;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#x591A;&#x4E86;&#x51E0;&#x5F20;&#x56FE;&#x7247;&#x7B49;&#xFF0C;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x751F;&#x6210;&#x7684;&#x3002;&#x6700;&#x540E;&#x8FD8;&#x53EF;&#x4EE5;&#x7528; make clean &#x6765;&#x6E05;&#x7406;&#x4E00;&#x4E9B;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x8BF4;&#x660E;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6267;&#x884C; make install &#x547D;&#x4EE4;&#x6216;&#x8005;&#x6267;&#x884C;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x8BE5;&#x5E93;&#x7684;&#x7A0B;&#x5E8F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x94FE;&#x63A5;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x5E93;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;error while loading shared libraries: libjpeg.so.8 Not found&#x4E4B;&#x7C7B;&#x7684;&#x9519;&#x8BEF;&#xFF01;&#xFF01;</p>
+<p>&#x7528;&#x76F4;&#x63A5;&#x5B89;&#x88C5;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x88C5;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x7A0B;&#x5E8F;&#x8BC6;&#x522B;&#x5230;&#x7684;&#x5C31;&#x662F;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x81EA;&#x6B64;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x3002;</p>
+<h4 id="&#x5751;">&#x5751;</h4>
+<p>&#x627E;&#x4E0D;&#x5230;mmod_human_face_detector.dat</p>
+<p>rec, err := face.NewRecognizer(dataDir), &#x521B;&#x5EFA;Recognizer&#x9700;&#x8981;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x5305;&#x542B;dlib_face_recognition_resnet_model_v1.dat, shape_predictor_5_face_landmarks.dat, mmod_human_face_detector.dat&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x4ECE;<a href="https://github.com/TutorialEdge/go-face-recognition-tutorial.git&#x4E0B;&#x8F7D;&#x7684;&#x5305;&#x7F3A;&#x5C11;mmod_human_face_detector.dat&#x6587;&#x4EF6;&#x3002;" target="_blank">https://github.com/TutorialEdge/go-face-recognition-tutorial.git&#x4E0B;&#x8F7D;&#x7684;&#x5305;&#x7F3A;&#x5C11;mmod_human_face_detector.dat&#x6587;&#x4EF6;&#x3002;</a></p>
+<p>mmod_human_face_detector.dat&#x662F;&#x8BAD;&#x7EC3;&#x597D;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x8FD9;&#x91CC;&#x4E0B;&#x8F7D;&#xFF1A;</p>
+<p><a href="http://dlib.net/files/mmod_human_face_detector.dat.bz2" target="_blank">http://dlib.net/files/mmod_human_face_detector.dat.bz2</a></p>
+<h3 id="&#x4EBA;&#x8138;&#x8BC6;&#x522B;">&#x4EBA;&#x8138;&#x8BC6;&#x522B;</h3>
+<p>&#x4F7F;&#x7528;kagami/go-face&#x5305;&#x505A;&#x57FA;&#x7840;&#x7684;&#x4EBA;&#x8138;&#x8BC6;&#x522B;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x5C06;&#x8981;&#x8BC6;&#x522B;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x6837;&#x4F8B;&#x56FE;&#x7247;&#x8BC6;&#x522B;&#x7ED3;&#x679C;&#x6240;&#x5F97;&#x5230;&#x7684;&#x4EBA;&#x8138;&#x63CF;&#x8FF0;&#x7B26;&#x7684;&#x6570;&#x7EC4;&#xFF08;samples&#xFF09;&#x4F20;&#x7ED9;Recognizer&#x3002;</p>
+<pre><code>// Pass samples to the recognizer.
+rec.SetSamples(samples, avengers)
+</code></pre><p>&#x7136;&#x540E;&#x5BF9;&#x8981;&#x8FDB;&#x884C;&#x8BC6;&#x522B;&#x7684;&#x76EE;&#x6807;&#x7167;&#x7247;&#x8FDB;&#x884C;&#x8BC6;&#x522B;</p>
+<pre><code>face, err := rec.RecognizeSingleFile(testTonyStark)
+</code></pre><p>&#x7136;&#x540E;&#x901A;&#x8FC7;&#x5C06;&#x76EE;&#x6807;&#x7167;&#x7247;&#x7684;&#x4EBA;&#x8138;&#x63CF;&#x8FF0;&#x7B26;&#x901A;&#x8FC7;rec.Classify(face.Descriptor)&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5206;&#x7C7B;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x4ECE;&#x6837;&#x4F8B;&#x56FE;&#x7247;&#x4E2D;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x8BC6;&#x522B;&#x5230;&#x7684;&#x4EBA;&#x8138;&#x63CF;&#x8FF0;&#x7B26;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5E8F;&#x53F7;&#xFF0C;&#x5982;&#x679C;&#x5E8F;&#x53F7;&#x5C0F;&#x4E8E;0&#x5219;&#x8BC6;&#x522B;&#x7684;&#x76EE;&#x6807;&#x7167;&#x7247;&#x5728;&#x6837;&#x4F8B;&#x7167;&#x7247;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x5BFB;&#x627E;&#x7684;&#x76EE;&#x6807;&#x4EBA;&#x8138;&#xFF0C;&#x5982;&#x679C;&#x5E8F;&#x53F7;&#x5927;&#x4E8E;0&#xFF0C;&#x5219;&#x627E;&#x5230;&#x76EE;&#x6807;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../windows/print.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Windows中使用C#写打印程序踩坑记">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"go-face人脸识别踩坑记","level":"1.2.2","depth":2,"next":{"title":"工具","level":"1.3","depth":1,"ref":"","articles":[{"title":"npm淘宝镜像与官方源切换","level":"1.3.1","depth":2,"path":"docs/npm/npm-registry.md","ref":"./docs/npm/npm-registry.md","articles":[]},{"title":"java环境管理工具jenv和sdk","level":"1.3.2","depth":2,"path":"docs/java/java-env.md","ref":"./docs/java/java-env.md","articles":[]},{"title":"GoLang语言多版本管理工具--GVM","level":"1.3.3","depth":2,"path":"docs/go/gvm.md","ref":"./docs/go/gvm.md","articles":[]},{"title":"文字角标","level":"1.3.4","depth":2,"path":"docs/text/text-corner-mark.md","ref":"./docs/text/text-corner-mark.md","articles":[]},{"title":"go-frp内网穿透","level":"1.3.5","depth":2,"path":"docs/frp/frp-common-use.md","ref":"./docs/frp/frp-common-use.md","articles":[]},{"title":"Centos下源码安装git","level":"1.3.6","depth":2,"path":"docs/git/centos源码安装git.md","ref":"./docs/git/centos源码安装git.md","articles":[]},{"title":"git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了","level":"1.3.7","depth":2,"path":"docs/git/git_use_issue.md","ref":"./docs/git/git_use_issue.md","articles":[]},{"title":"windows下git的使用","level":"1.3.8","depth":2,"path":"docs/git/win-git-use.md","ref":"./docs/git/win-git-use.md","articles":[]},{"title":"git常用命令","level":"1.3.9","depth":2,"path":"docs/git/dailygit.md","ref":"./docs/git/dailygit.md","articles":[]},{"title":"Python版本管理神器-pyenv","level":"1.3.10","depth":2,"path":"docs/python/pyenv.md","ref":"./docs/python/pyenv.md","articles":[]},{"title":"Windows命令行乱码问题解决","level":"1.3.11","depth":2,"path":"docs/windows/cmd.md","ref":"./docs/windows/cmd.md","articles":[]},{"title":"go mod版本管理","level":"1.3.12","depth":2,"path":"docs/go/gomod.md","ref":"./docs/go/gomod.md","articles":[]},{"title":"gitbook的使用","level":"1.3.13","depth":2,"path":"docs/gitbook/gitbook-use.md","ref":"./docs/gitbook/gitbook-use.md","articles":[]},{"title":"mdBook","level":"1.3.14","depth":2,"path":"docs/mdbook/mdbook-use.md","ref":"./docs/mdbook/mdbook-use.md","articles":[]},{"title":"Makefile编写规则","level":"1.3.15","depth":2,"path":"docs/makefile/makefile.md","ref":"./docs/makefile/makefile.md","articles":[]}]},"previous":{"title":"Windows中使用C#写打印程序踩坑记","level":"1.2.1","depth":2,"path":"docs/windows/print.md","ref":"./docs/windows/print.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/face/go-face-tour.md","mtime":"2022-12-12T09:55:26.862Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-05T16:23:20.114Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

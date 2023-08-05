@@ -1,0 +1,875 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python版本管理神器-pyenv · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../windows/cmd.html" />
+    
+    
+    <link rel="prev" href="../git/dailygit.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    踩坑记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../windows/print.html">
+            
+                <a href="../windows/print.html">
+            
+                    
+                    Windows中使用C#写打印程序踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../face/go-face-tour.html">
+            
+                <a href="../face/go-face-tour.html">
+            
+                    
+                    go-face人脸识别踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../npm/npm-registry.html">
+            
+                <a href="../npm/npm-registry.html">
+            
+                    
+                    npm淘宝镜像与官方源切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../java/java-env.html">
+            
+                <a href="../java/java-env.html">
+            
+                    
+                    java环境管理工具jenv和sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../go/gvm.html">
+            
+                <a href="../go/gvm.html">
+            
+                    
+                    GoLang语言多版本管理工具--GVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../text/text-corner-mark.html">
+            
+                <a href="../text/text-corner-mark.html">
+            
+                    
+                    文字角标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../frp/frp-common-use.html">
+            
+                <a href="../frp/frp-common-use.html">
+            
+                    
+                    go-frp内网穿透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../git/centos源码安装git.html">
+            
+                <a href="../git/centos源码安装git.html">
+            
+                    
+                    Centos下源码安装git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../git/git_use_issue.html">
+            
+                <a href="../git/git_use_issue.html">
+            
+                    
+                    git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../git/win-git-use.html">
+            
+                <a href="../git/win-git-use.html">
+            
+                    
+                    windows下git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../git/dailygit.html">
+            
+                <a href="../git/dailygit.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.10" data-path="pyenv.html">
+            
+                <a href="pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../windows/cmd.html">
+            
+                <a href="../windows/cmd.html">
+            
+                    
+                    Windows命令行乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../go/gomod.html">
+            
+                <a href="../go/gomod.html">
+            
+                    
+                    go mod版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../gitbook/gitbook-use.html">
+            
+                <a href="../gitbook/gitbook-use.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../mdbook/mdbook-use.html">
+            
+                <a href="../mdbook/mdbook-use.html">
+            
+                    
+                    mdBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../makefile/makefile.html">
+            
+                <a href="../makefile/makefile.html">
+            
+                    
+                    Makefile编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    grpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../grpc/grpc-go.html">
+            
+                <a href="../grpc/grpc-go.html">
+            
+                    
+                    go grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    MYSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../mysql/mysql_common_use.html">
+            
+                <a href="../mysql/mysql_common_use.html">
+            
+                    
+                    mysql临时关闭安全更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../redis/Redis.html">
+            
+                <a href="../redis/Redis.html">
+            
+                    
+                    Redis从小白到大白笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../java/tools.html">
+            
+                <a href="../java/tools.html">
+            
+                    
+                    java tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    加密解密
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../encrypt/go-java-encrypt.html">
+            
+                <a href="../encrypt/go-java-encrypt.html">
+            
+                    
+                    go语言和java语言加密解密对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    系统设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../device-check/device-check.html">
+            
+                <a href="../device-check/device-check.html">
+            
+                    
+                    设备管控中间件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    系统配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../sys-settings/mac-library.html">
+            
+                <a href="../sys-settings/mac-library.html">
+            
+                    
+                    Mac 中显示资源库（Library）文件夹目录的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    安卓
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../android/android-service-forever.html">
+            
+                <a href="../android/android-service-forever.html">
+            
+                    
+                    安卓中一个进程如何在转入后台后不被系统杀死
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../bigdata/common-use-command.html">
+            
+                <a href="../bigdata/common-use-command.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../bigdata/mgmt-pages.html">
+            
+                <a href="../bigdata/mgmt-pages.html">
+            
+                    
+                    大数据组件自带管理界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Python版本管理神器-pyenv</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python&#x7248;&#x672C;&#x7BA1;&#x7406;&#x795E;&#x5668;-pyenv">Python&#x7248;&#x672C;&#x7BA1;&#x7406;&#x795E;&#x5668;-pyenv</h1>
+<h2 id="&#x4E00;&#x3001;&#x95EE;&#x9898;&#x60C5;&#x666F;">&#x4E00;&#x3001;&#x95EE;&#x9898;&#x60C5;&#x666F;:</h2>
+<ol>
+<li>Python&#x89E3;&#x91CA;&#x5668;&#x7248;&#x672C;&#x6DF7;&#x4E71;, 2&#x548C;3&#x5DEE;&#x522B;&#x5DE8;&#x5927;, &#x800C;&#x4E14;&#x7EC6;&#x5206;&#x7248;&#x672C;&#x4E5F;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;, &#x96BE;&#x4EE5;&#x9009;&#x62E9;&#x548C;&#x7BA1;&#x7406;.</li>
+<li>&#x4E0D;&#x540C;Linux&#x53D1;&#x884C;&#x7248;&#x81EA;&#x5E26;Python&#x4E0D;&#x540C;, &#x5982;ubuntu16&#x81EA;&#x5E26;2.7&#x548C;3.5&#x7248;&#x672C;, &#x5176;&#x4E2D;&#x7CFB;&#x7EDF;&#x8BB8;&#x591A;&#x7EC4;&#x4EF6;&#x4F9D;&#x8D56;&#x4E8E;&#x81EA;&#x5E26;&#x89E3;&#x91CA;&#x5668;, &#x4E00;&#x65E6;&#x5220;&#x9664;&#x6216;&#x8005;&#x66F4;&#x6539;&#x90FD;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x7CFB;&#x7EDF;&#x51FA;&#x95EE;&#x9898;.</li>
+<li>&#x4E0D;&#x540C;&#x7684;Python&#x89E3;&#x91CA;&#x5668;&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;&#x4E5F;&#x662F;&#x95EE;&#x9898;, &#x5982;pip&#x548C;ipython&#x7B49;&#x5FC5;&#x5907;&#x5305;&#x7EC4;&#x4EF6;, &#x800C;&#x4E14;&#x5728;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x4E2D;&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x4E0D;&#x540C;&#x7684;&#x5305;&#x73AF;&#x5883;&#x4E92;&#x4E0D;&#x5E72;&#x6270;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x95EE;&#x9898;.</li>
+</ol>
+<p>&#x90A3;&#x4E48;&#x6709;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x7EC8;&#x6781;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x80FD;&#x5728;&#x7BA1;&#x7406;&#x4E0D;&#x540C;&#x89E3;&#x91CA;&#x5668;&#x7248;&#x672C;&#x7684;&#x540C;&#x65F6;&#x63A7;&#x5236;&#x4E0D;&#x540C;&#x7684;&#x5305;&#x73AF;&#x5883;&#x5462;? &#x6709;&#x7684;, &#x5C31;&#x662F;pyenv.</p>
+<h2 id="&#x4E8C;&#x3001;pyenv&#x662F;&#x4EC0;&#x4E48;-&#x80FD;&#x5E72;&#x4EC0;&#x4E48;">&#x4E8C;&#x3001;pyenv&#x662F;&#x4EC0;&#x4E48;? &#x80FD;&#x5E72;&#x4EC0;&#x4E48;?</h2>
+<p>pyenv&#x662F;&#x4E00;&#x4E2A;forked&#x81EA;ruby&#x793E;&#x533A;&#x7684;&#x7B80;&#x5355;&#x3001;&#x4F4E;&#x8C03;&#x3001;&#x9075;&#x5FAA;UNIX&#x54F2;&#x5B66;&#x7684;Python&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;, &#x5B83;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5207;&#x6362;&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x7248;&#x672C;, &#x540C;&#x65F6;&#x7ED3;&#x5408;vitualenv&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x7BA1;&#x7406;&#x5BF9;&#x5E94;&#x7684;&#x5305;&#x6E90;.
+&#x6211;&#x4EEC;&#x77E5;&#x9053;, &#x5728;terminal&#x4E2D;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x6BD4;&#x5982;&#x2018;ls&#x2019;&#x65F6;, shell&#x4F1A;&#x4ECE;&#x5F53;&#x524D;&#x73AF;&#x5883;&#x7684;PATH&#x4E2D;&#x7684;&#x5404;&#x4E2A;&#x76EE;&#x5F55;&#x91CC;&#x770B;&#x662F;&#x4E0D;&#x662F;&#x6709;ls&#x8FD9;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;, &#x5982;&#x679C;&#x627E;&#x5230;&#x5C31;&#x6267;&#x884C;, &#x5426;&#x5219;&#x5C31;&#x4F1A;&#x62A5;&#x2018;command no found&#x2019; &#x7684;&#x9519;&#x8BEF;, &#x540C;&#x7406;, &#x53EA;&#x8981;&#x63A7;&#x5236;PATH&#x53D8;&#x91CF;&#x5C31;&#x80FD;&#x591F;&#x505A;&#x5230;python&#x7248;&#x672C;&#x7684;&#x5207;&#x6362;, pyenv&#x901A;&#x8FC7;&#x5728;PATH&#x5934;&#x90E8;&#x63D2;&#x5165;shims&#x8DEF;&#x5F84;&#x6765;&#x5B9E;&#x73B0;&#x5BF9;python&#x7248;&#x672C;&#x7684;&#x63A7;&#x5236;.</p>
+<h3 id="pyenv&#x548C;&#x6D41;&#x884C;&#x7684;pipenv&#x3001;virtualenv&#x7684;&#x5173;&#x7CFB;">pyenv&#x548C;&#x6D41;&#x884C;&#x7684;pipenv&#x3001;virtualenv&#x7684;&#x5173;&#x7CFB;</h3>
+<p>pipenv&#x662F;requests &#x4F5C;&#x8005; Kenneth Reitz&#x5927;&#x795E;&#x5199;&#x7684;&#x4E00;&#x4E2A;python&#x865A;&#x62DF;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;, &#x7ED3;&#x5408;&#x4E86;pip&#x548C;virtualenv&#x7684;&#x529F;&#x80FD;, &#x4FA7;&#x91CD;&#x70B9;&#x8FD8;&#x662F;&#x5728;&#x5305;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x4E0A;, &#x4F7F;&#x7528;&#x601D;&#x8DEF;&#x662F;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;python&#x7248;&#x672C;&#x7684;&#x73AF;&#x5883;, &#x7136;&#x540E;&#x5728;&#x6B64;&#x73AF;&#x5883;&#x4E0A;&#x5B89;&#x88C5;&#x76F8;&#x5E94;&#x7684;&#x5305;, &#x597D;&#x8BC4;&#x4E0D;&#x9519;, &#x770B;&#x5230;&#x5F88;&#x591A;&#x5927;&#x725B;&#x90FD;&#x5728;&#x63A8;&#x8350;.</p>
+<p>virtualenv&#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x4F20;&#x7EDF;&#x6210;&#x719F;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x4E86;, &#x7528;&#x7684;&#x4EBA;&#x4E5F;&#x6BD4;&#x8F83;&#x591A;, &#x601D;&#x8DEF;&#x4E5F;&#x662F;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x73AF;&#x5883;, &#x7136;&#x540E;&#x5B89;&#x88C5;&#x76F8;&#x5E94;&#x7684;&#x5305;, &#x8981;&#x8FDB;&#x5165;&#x73AF;&#x5883;&#x5C31;source&#x4E00;&#x4E0B;activate&#x811A;&#x672C;&#x6FC0;&#x6D3B;&#x4E00;&#x4E0B;, &#x5C3D;&#x7BA1;&#x6210;&#x719F;, &#x4F46;&#x662F;&#x6211;&#x4E2A;&#x4EBA;&#x4E0D;&#x592A;&#x559C;&#x6B22;&#x7528;, &#x5728;&#x90E8;&#x7F72;&#x9879;&#x76EE;&#x7684;&#x65F6;&#x5019;&#x8001;&#x662F;&#x5BB9;&#x6613;&#x51FA;&#x73B0;&#x4E00;&#x4E9B;&#x73AF;&#x5883;&#x95EE;&#x9898;.</p>
+<p>pyenv&#x76F8;&#x5BF9;&#x6765;&#x8BF4;&#x77E5;&#x540D;&#x5EA6;&#x5C31;&#x5DEE;&#x5F88;&#x591A;&#x4E86;, &#x4E0D;&#x8FC7;&#x4E5F;&#x5F88;&#x7A33;&#x5B9A;, &#x8FD9;&#x4E09;&#x4E2A;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x6211;&#x90FD;&#x7528;&#x8FC7;, &#x6211;&#x4E2A;&#x4EBA;&#x66F4;&#x559C;&#x6B22;pyenv, &#x7406;&#x7531;&#x5982;&#x4E0B;:</p>
+<p>&#x76F8;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x4E24;&#x4E2A;&#x5DE5;&#x5177;, pyenv&#x66F4;&#x4FA7;&#x91CD;&#x5728;python &#x89E3;&#x91CA;&#x5668;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x4E0A;, &#x6BD4;&#x5305;&#x7BA1;&#x7406;&#x66F4;&#x5927;&#x4E00;&#x4E2A;&#x5C42;&#x7EA7;, &#x4F7F;&#x7528;pyenv&#x6211;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x4E0B;&#x8F7D;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684;python&#x89E3;&#x91CA;&#x5668;, pypy, anaconda&#x7B49;, &#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x81EA;&#x7531;&#x7684;&#x5728;shell&#x73AF;&#x5883;&#x4E2D;&#x672C;&#x5730;&#x3001;&#x5168;&#x5C40;&#x5207;&#x6362;python&#x89E3;&#x91CA;&#x5668;
+&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x9700;&#x8981;&#x9650;&#x5B9A;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;, &#x53EA;&#x9700;&#x8981;&#x5728;&#x90E8;&#x7F72;&#x7684;&#x65F6;&#x5019;&#x7528;pyenv&#x6307;&#x5B9A;&#x67D0;&#x4E2A;&#x7248;&#x672C;&#x5C31;&#x597D;&#x4E86;
+pyenv&#x5207;&#x6362;&#x89E3;&#x91CA;&#x5668;&#x7248;&#x672C;&#x7684;&#x65F6;&#x5019;, pip&#x548C;ipython&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x5305;&#x73AF;&#x5883;&#x90FD;&#x662F;&#x4E00;&#x8D77;&#x5207;&#x6362;&#x7684;, &#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x8981;&#x540C;&#x65F6;&#x8FD0;&#x884C;ipython2.x&#x548C;ipython3.x&#x591A;&#x4E2A;&#x89E3;&#x91CA;&#x5668;&#x9A8C;&#x8BC1;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x65F6;&#x5C31;&#x5F88;&#x65B9;&#x4FBF;
+pyenv&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x597D;&#x6307;&#x5B9A;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;, &#x4F46;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x76EE;&#x5F55;, &#x81EA;&#x7531;&#x5EA6;&#x66F4;&#x9AD8;, &#x4F7F;&#x7528;&#x4E5F;&#x7B80;&#x5355;</p>
+<h2 id="&#x4E09;&#x3001;&#x5B89;&#x88C5;pyenv">&#x4E09;&#x3001;&#x5B89;&#x88C5;pyenv</h2>
+<ol>
+<li>&#x5728;&#x5BB6;&#x76EE;&#x5F55;&#x91CC;clone&#x9879;&#x76EE;:</li>
+</ol>
+<pre><code> $ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+# MacOS&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;homebrew&#x5B89;&#x88C5;
+$ brew update
+$ brew install pyenv
+</code></pre><ol>
+<li>&#x6DFB;&#x52A0;shell&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x8FFD;&#x52A0;&#x5982;&#x4E0B;: (&#x5982;zshrc)</li>
+</ol>
+<pre><code>export PYENV_ROOR=&quot;$HOME/.pyenv&quot;
+export PATH=$PYENV_ROOT/shims:$PATH
+eval &quot;$(pyenv init -)&quot;
+eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre><ol>
+<li>source&#x4E00;&#x4E0B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;, &#x8F93;&#x5165;pyenv --version&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;</li>
+</ol>
+<h2 id="&#x56DB;&#x3001;&#x7B80;&#x5355;&#x4F7F;&#x7528;">&#x56DB;&#x3001;&#x7B80;&#x5355;&#x4F7F;&#x7528;</h2>
+<pre><code># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7248;&#x672C;
+pyenv version
+
+# &#x67E5;&#x770B;&#x6240;&#x6709;&#x7248;&#x672C;
+pyenv versions
+
+# &#x67E5;&#x770B;&#x6240;&#x6709;&#x53EF;&#x5B89;&#x88C5;&#x7684;&#x7248;&#x672C;
+pyenv install --list
+
+# &#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;
+pyenv install 3.6.5
+# &#x5B89;&#x88C5;&#x65B0;&#x7248;&#x672C;&#x540E;rehash&#x4E00;&#x4E0B;
+pyenv rehash
+
+# &#x5220;&#x9664;&#x6307;&#x5B9A;&#x7248;&#x672C;
+pyenv uninstall 3.5.2
+
+# &#x6307;&#x5B9A;&#x5168;&#x5C40;&#x7248;&#x672C;
+pyenv global 3.6.5
+
+# &#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x5168;&#x5C40;&#x7248;&#x672C;, 3&#x7248;&#x672C;&#x4F18;&#x5148;
+pyenv global 3.6.5 2.7.14
+
+# &#x5B9E;&#x9645;&#x4E0A;&#x5F53;&#x4F60;&#x5207;&#x6362;&#x7248;&#x672C;&#x540E;, &#x76F8;&#x5E94;&#x7684;pip&#x548C;&#x5305;&#x4ED3;&#x5E93;&#x90FD;&#x662F;&#x4F1A;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x8FC7;&#x53BB;&#x7684;
+</code></pre><h2 id="&#x4E94;&#x3001;&#x5305;&#x7BA1;&#x7406;&#x63D2;&#x4EF6;pyenv-virtualenv">&#x4E94;&#x3001;&#x5305;&#x7BA1;&#x7406;&#x63D2;&#x4EF6;pyenv-virtualenv</h2>
+<p>&#x9996;&#x5148;&#x4E0B;&#x8F7D;:</p>
+<pre><code>$ git clone https://github.com/pyenv/pyenv-virtualenv.git $.pyenv/plugins/pyenv-virtualenv
+</code></pre><p>&#x514B;&#x9686;&#x5B8C;&#x6210;&#x540E;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5230;shell&#x914D;&#x7F6E;&#x6587;&#x4EF6;(mac&#x7684;&#x8BDD;&#x662F;.zshrc)</p>
+<pre><code>$ echo &apos;eval &quot;$(pyenv virtualenv-init -)&quot;&apos; &gt;&gt; ~/.bash_profile
+</code></pre><p>&#x5B9E;&#x9645;&#x4E0A;mac&#x7528;&#x6237;&#x76F4;&#x63A5;brew&#x5B89;&#x88C5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;...</p>
+<pre><code>$ brew install pyenv-virtualenv
+$ eval &quot;$(pyenv init -)&quot;
+$ eval &quot;$(pyenv virtualenv-init -)&quot;
+</code></pre><p>&#x4F7F;&#x7528;:</p>
+<pre><code># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;3.6.5&#x7248;&#x672C;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;, &#x547D;&#x540D;&#x4E3A;v365env, &#x7136;&#x540E;&#x6FC0;&#x6D3B;&#x865A;&#x62DF;&#x73AF;&#x5883;
+$ pyenv virtualenv 3.6.5 v365env
+$ pyenv activate v365env
+# &#x5173;&#x95ED;&#x865A;&#x62DF;&#x73AF;&#x5883;
+$ pyenv deactivate v365env
+</code></pre><p>&#x5F53;&#x5207;&#x6362;python&#x89E3;&#x91CA;&#x5668;&#x7684;&#x65F6;&#x5019;&#x5BF9;&#x5E94;&#x7684;pip&#x548C;&#x5305;&#x5E93;&#x4E5F;&#x4F1A;&#x4E00;&#x5E76;&#x5207;&#x6362;&#x8FC7;&#x53BB;, &#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x4E3A;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684;&#x89E3;&#x91CA;&#x5668;&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x6240;&#x9700;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;, &#x5207;&#x6362;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x5F02;&#x5E38;&#x7B80;&#x5355;, &#x4E2A;&#x4EBA;&#x5E38;&#x7528;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4E3A;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x7684;&#x865A;&#x62DF;&#x73AF;&#x5883;, &#x5F53;&#x8FDB;&#x5165;&#x8BE5;&#x73AF;&#x5883;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x53EF;&#x4EE5;&#x968F;&#x4FBF;&#x6D6A;&#x800C;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x5F71;&#x54CD;&#x5230;&#x5176;&#x5B83;&#x9879;&#x76EE;, &#x642D;&#x914D;Pycharm&#x4F7F;&#x7528;&#x6548;&#x679C;&#x66F4;&#x4F73;.</p>
+<h2 id="&#x516D;&#x3001;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4F7F;&#x7528;&#x59FF;&#x52BF;">&#x516D;&#x3001;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4F7F;&#x7528;&#x59FF;&#x52BF;</h2>
+<p>pyenv&#x9879;&#x76EE;&#x5730;&#x5740;:</p>
+<p>pyenv/pyenv
+&#x200B;github.com/pyenv/pyenv.git</p>
+<p>pyenv-vitualenv&#x63D2;&#x4EF6;&#x5730;&#x5740;:</p>
+<p>pyenv/pyenv-virtualenv
+&#x200B;github.com/pyenv/pyenv-virtualenv.git</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../git/dailygit.html" class="navigation navigation-prev " aria-label="Previous page: git常用命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../windows/cmd.html" class="navigation navigation-next " aria-label="Next page: Windows命令行乱码问题解决">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python版本管理神器-pyenv","level":"1.3.10","depth":2,"next":{"title":"Windows命令行乱码问题解决","level":"1.3.11","depth":2,"path":"docs/windows/cmd.md","ref":"./docs/windows/cmd.md","articles":[]},"previous":{"title":"git常用命令","level":"1.3.9","depth":2,"path":"docs/git/dailygit.md","ref":"./docs/git/dailygit.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/python/pyenv.md","mtime":"2021-11-16T21:12:09.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-05T16:23:20.114Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

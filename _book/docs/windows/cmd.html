@@ -1,0 +1,820 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Windows命令行乱码问题解决 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../go/gomod.html" />
+    
+    
+    <link rel="prev" href="../python/pyenv.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    踩坑记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="print.html">
+            
+                <a href="print.html">
+            
+                    
+                    Windows中使用C#写打印程序踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../face/go-face-tour.html">
+            
+                <a href="../face/go-face-tour.html">
+            
+                    
+                    go-face人脸识别踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../npm/npm-registry.html">
+            
+                <a href="../npm/npm-registry.html">
+            
+                    
+                    npm淘宝镜像与官方源切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../java/java-env.html">
+            
+                <a href="../java/java-env.html">
+            
+                    
+                    java环境管理工具jenv和sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../go/gvm.html">
+            
+                <a href="../go/gvm.html">
+            
+                    
+                    GoLang语言多版本管理工具--GVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../text/text-corner-mark.html">
+            
+                <a href="../text/text-corner-mark.html">
+            
+                    
+                    文字角标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../frp/frp-common-use.html">
+            
+                <a href="../frp/frp-common-use.html">
+            
+                    
+                    go-frp内网穿透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../git/centos源码安装git.html">
+            
+                <a href="../git/centos源码安装git.html">
+            
+                    
+                    Centos下源码安装git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../git/git_use_issue.html">
+            
+                <a href="../git/git_use_issue.html">
+            
+                    
+                    git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../git/win-git-use.html">
+            
+                <a href="../git/win-git-use.html">
+            
+                    
+                    windows下git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../git/dailygit.html">
+            
+                <a href="../git/dailygit.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../python/pyenv.html">
+            
+                <a href="../python/pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.11" data-path="cmd.html">
+            
+                <a href="cmd.html">
+            
+                    
+                    Windows命令行乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../go/gomod.html">
+            
+                <a href="../go/gomod.html">
+            
+                    
+                    go mod版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../gitbook/gitbook-use.html">
+            
+                <a href="../gitbook/gitbook-use.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../mdbook/mdbook-use.html">
+            
+                <a href="../mdbook/mdbook-use.html">
+            
+                    
+                    mdBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../makefile/makefile.html">
+            
+                <a href="../makefile/makefile.html">
+            
+                    
+                    Makefile编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    grpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../grpc/grpc-go.html">
+            
+                <a href="../grpc/grpc-go.html">
+            
+                    
+                    go grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    MYSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../mysql/mysql_common_use.html">
+            
+                <a href="../mysql/mysql_common_use.html">
+            
+                    
+                    mysql临时关闭安全更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../redis/Redis.html">
+            
+                <a href="../redis/Redis.html">
+            
+                    
+                    Redis从小白到大白笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../java/tools.html">
+            
+                <a href="../java/tools.html">
+            
+                    
+                    java tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    加密解密
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../encrypt/go-java-encrypt.html">
+            
+                <a href="../encrypt/go-java-encrypt.html">
+            
+                    
+                    go语言和java语言加密解密对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    系统设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../device-check/device-check.html">
+            
+                <a href="../device-check/device-check.html">
+            
+                    
+                    设备管控中间件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    系统配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../sys-settings/mac-library.html">
+            
+                <a href="../sys-settings/mac-library.html">
+            
+                    
+                    Mac 中显示资源库（Library）文件夹目录的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    安卓
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../android/android-service-forever.html">
+            
+                <a href="../android/android-service-forever.html">
+            
+                    
+                    安卓中一个进程如何在转入后台后不被系统杀死
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../bigdata/common-use-command.html">
+            
+                <a href="../bigdata/common-use-command.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../bigdata/mgmt-pages.html">
+            
+                <a href="../bigdata/mgmt-pages.html">
+            
+                    
+                    大数据组件自带管理界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Windows命令行乱码问题解决</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="windows&#x547D;&#x4EE4;&#x884C;&#x4E71;&#x7801;&#x95EE;&#x9898;&#x89E3;&#x51B3;">Windows&#x547D;&#x4EE4;&#x884C;&#x4E71;&#x7801;&#x95EE;&#x9898;&#x89E3;&#x51B3;</h1>
+<p>&#x547D;&#x4EE4; chcp<br>&#x529F;&#x80FD;&#xFF1A;<br>&#x663E;&#x793A;&#x6216;&#x8BBE;&#x7F6E;&#x6D3B;&#x52A8;&#x4EE3;&#x7801;&#x9875;&#x7F16;&#x53F7;   </p>
+<pre><code>&#x3000;&#x3000;CHCP [nnn] 
+&#x3000;&#x3000;nnn &#x6307;&#x5B9A;&#x4EE3;&#x7801;&#x9875;&#x7F16;&#x53F7;&#x3002; 
+&#x3000;&#x3000;&#x4E0D;&#x52A0;&#x53C2;&#x6570;&#x952E;&#x5165; CHCP &#x663E;&#x793A;&#x6D3B;&#x52A8;&#x4EE3;&#x7801;&#x9875;&#x7F16;&#x53F7;&#x3002; 
+&#x3000;&#x3000;nnn&#x6307;&#x5B9A;&#x4E00;&#x5DF2;&#x6709;&#x7684;&#x7CFB;&#x7EDF;&#x5B57;&#x7B26;&#x96C6;&#xFF0C;&#x8BE5;&#x5B57;&#x7B26;&#x96C6;&#x5728;CONFIG.SYS&#x6587;&#x4EF6;&#x4E2D;&#x7531;COUNTRY&#x547D;&#x4EE4;&#x5B9A;&#x4E49;&#x3002; 
+&#x3000;&#x3000;&#x5728;DOS&#x4E0B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;mode&#x547D;&#x4EE4;&#x6765;&#x8BBE;&#x7F6E;&#x4EE3;&#x7801;&#x9875;&#x3002; 
+&#x3000;&#x3000;&#x9009;&#x5B9A;&#x4EE3;&#x7801;&#x9875;:&#x3000;MODE CON[:] CP SELECT=yyy 
+&#x3000;&#x3000;&#x4EE3;&#x7801;&#x9875;&#x72B6;&#x6001;:&#x3000;MODE CON[:] CP [/STATUS] 
+&#x3000;&#x3000;&#x6309;Windows+R&#x7EC4;&#x5408;&#x952E;&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;cmd&#x6216;&#x8005;command&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x63D0;&#x793A;&#x7B26;&#x3002; 
+&#x3000;&#x3000;&#x6BD4;&#x5982;&#x8F93;&#x5165;&#xFF1A;mode con cp select=936&#xFF0C;&#x5219;&#x8868;&#x793A;&#x663E;&#x793A;&#x7B80;&#x4F53;&#x4E2D;&#x6587;&#x3002;&#x5982;&#x679C;&#x8F93;&#x5165;mode con cp select=437&#xFF0C;&#x5219;&#x8868;&#x793A;&#x663E;&#x793A;MS-DOS &#x7F8E;&#x56FD;&#x82F1;&#x8BED;&#xFF0C;&#x800C;&#x4E2D;&#x6587;&#x663E;&#x793A;&#x5C06;&#x4F1A;&#x662F;?&#x3002; 
+&#x3000;&#x3000;MS-DOS&#x4E3A;&#x4EE5;&#x4E0B;&#x56FD;&#x5BB6;&#x548C;&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x5B57;&#x7B26;&#x96C6;&#xFF1A; 
+&#x3000;&#x3000;&#x4EE3;&#x7801;&#x9875;&#x63CF;&#x8FF0; 
+&#x3000;&#x3000;1258 &#x8D8A;&#x5357;&#x8BED; 
+&#x3000;&#x3000;1257 &#x6CE2;&#x7F57;&#x7684;&#x8BED; 
+&#x3000;&#x3000;1256 &#x963F;&#x62C9;&#x4F2F;&#x8BED; 
+&#x3000;&#x3000;1255 &#x5E0C;&#x4F2F;&#x6765;&#x8BED; 
+&#x3000;&#x3000;1254 &#x571F;&#x8033;&#x5176;&#x8BED; 
+&#x3000;&#x3000;1253 &#x5E0C;&#x814A;&#x8BED; 
+&#x3000;&#x3000;1252 &#x62C9;&#x4E01; 1 &#x5B57;&#x7B26; (ANSI) 
+&#x3000;&#x3000;1251 &#x897F;&#x91CC;&#x5C14;&#x8BED; 
+&#x3000;&#x3000;1250 &#x4E2D;&#x6B27;&#x8BED;&#x8A00; 
+&#x3000;&#x3000;950 &#x7E41;&#x4F53;&#x4E2D;&#x6587; 
+&#x3000;&#x3000;949 &#x671D;&#x9C9C;&#x8BED; 
+&#x3000;&#x3000;936 &#x7B80;&#x4F53;&#x4E2D;&#x6587;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09; 
+&#x3000;&#x3000;932 &#x65E5;&#x8BED; 
+&#x3000;&#x3000;874 &#x6CF0;&#x56FD;&#x8BED; 
+&#x3000;&#x3000;850 &#x591A;&#x8BED;&#x79CD; (MS-DOS Latin1) 
+&#x3000;&#x3000;437 MS-DOS &#x7F8E;&#x56FD;&#x82F1;&#x8BED;
+</code></pre><p>dos&#x6307;&#x4EE4;:<br>chcp 65001 &#x5C31;&#x662F;&#x6362;&#x6210;UTF-8&#x4EE3;&#x7801;&#x9875;<br>chcp 936 &#x53EF;&#x4EE5;&#x6362;&#x56DE;&#x9ED8;&#x8BA4;&#x7684;GBK<br>chcp 437 &#x662F;&#x7F8E;&#x56FD;&#x82F1;&#x8BED;<br>&#x5982;&#x4F55;&#x5728;DOS&#x7A97;&#x53E3;&#x4E2D;&#x663E;&#x793A;UTF-8&#x5B57;&#x7B26;<br>&#x5728;&#x4E2D;&#x6587;Windows&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x662F;UTF-8&#x7F16;&#x7801;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5728;CMD.exe&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF08;&#x6240;&#x8C13;&#x7684;DOS&#x7A97;&#x53E3;&#xFF09;&#x4E2D;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x9875;&#x662F;&#x4E2D;&#x6587;&#x6216;&#x8005;&#x7F8E;&#x56FD;&#x7684;&#xFF0C;&#x5373;&#x7F16;&#x7801;&#x662F;&#x4E2D;&#x6587;&#x5B57;&#x7B26;&#x96C6;&#x6216;&#x8005;&#x897F;&#x6587;&#x5B57;&#x7B26;&#x96C6;&#x3002;  </p>
+<p>&#x5982;&#x679C;&#x60F3;&#x6B63;&#x786E;&#x663E;&#x793A;UTF-8&#x5B57;&#x7B26;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#x64CD;&#x4F5C;&#xFF1A;<br>1&#x3001;&#x6253;&#x5F00;CMD.exe&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;<br>2&#x3001;&#x901A;&#x8FC7; chcp&#x547D;&#x4EE4;&#x6539;&#x53D8;&#x4EE3;&#x7801;&#x9875;&#xFF0C;UTF-8&#x7684;&#x4EE3;&#x7801;&#x9875;&#x4E3A;65001<br>chcp 65001<br>&#x6267;&#x884C;&#x8BE5;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x4EE3;&#x7801;&#x9875;&#x5C31;&#x88AB;&#x53D8;&#x6210;UTF-8&#x4E86;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5728;&#x7A97;&#x53E3;&#x4E2D;&#x4ECD;&#x65E7;&#x4E0D;&#x80FD;&#x6B63;&#x786E;&#x663E;&#x793A;UTF-8&#x5B57;&#x7B26;&#x3002;<br>3&#x3001;&#x4FEE;&#x6539;&#x7A97;&#x53E3;&#x5C5E;&#x6027;&#xFF0C;&#x6539;&#x53D8;&#x5B57;&#x4F53;<br>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x6807;&#x9898;&#x680F;&#x4E0A;&#x70B9;&#x51FB;&#x53F3;&#x952E;&#xFF0C;&#x9009;&#x62E9;&quot;&#x5C5E;&#x6027;&quot;-&gt;&quot;&#x5B57;&#x4F53;&quot;&#xFF0C;&#x5C06;&#x5B57;&#x4F53;&#x4FEE;&#x6539;&#x4E3A;True Type&#x5B57;&#x4F53;&quot;Lucida Console&quot;&#xFF0C;&#x7136;&#x540E;&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x5C06;&#x5C5E;&#x6027;&#x5E94;&#x7528;&#x5230;&#x5F53;&#x524D;&#x7A97;&#x53E3;&#x3002;<br>&#x8FD9;&#x65F6;&#x4F7F;&#x7528;type&#x547D;&#x4EE4;&#x5C31;&#x53EF;&#x4EE5;&#x663E;&#x793A;UTF-8&#x6587;&#x672C;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x4E86;&#xFF1A;<br>type filename.txt<br>4&#x3001;&#x901A;&#x8FC7;&#x4EE5;&#x4E0A;&#x64CD;&#x4F5C;&#x5E76;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x56E0;&#x4E3A;&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x6709;&#x53EF;&#x80FD;&#x4E0D;&#x5B8C;&#x5168;&#x3002;&#x53EF;&#x4EE5;&#x5148;&#x6700;&#x5C0F;&#x5316;&#xFF0C;&#x7136;&#x540E;&#x6700;&#x5927;&#x5316;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x5C31;&#x5B8C;&#x6574;&#x7684;&#x663E;&#x793A;&#x51FA;&#x6765;&#x4E86;&#x3002;  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../python/pyenv.html" class="navigation navigation-prev " aria-label="Previous page: Python版本管理神器-pyenv">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../go/gomod.html" class="navigation navigation-next " aria-label="Next page: go mod版本管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Windows命令行乱码问题解决","level":"1.3.11","depth":2,"next":{"title":"go mod版本管理","level":"1.3.12","depth":2,"path":"docs/go/gomod.md","ref":"./docs/go/gomod.md","articles":[]},"previous":{"title":"Python版本管理神器-pyenv","level":"1.3.10","depth":2,"path":"docs/python/pyenv.md","ref":"./docs/python/pyenv.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/windows/cmd.md","mtime":"2022-03-16T19:58:51.719Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-05T16:23:20.114Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

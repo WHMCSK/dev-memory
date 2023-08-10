@@ -154,6 +154,6 @@ func recordRequestLatency(method, path string) Middleware {
 
 接着，我们创建了一个自定义中间件 recordRequestLatency，用于记录请求的响应时间。最后，我们通过 kithttp.NewServer 方法将服务端点绑定到对应的 URL 上，并在请求处理之前调用该中间件。
 
-4. 总结
+### 4. 总结
 
 prometheus 监控系统是云原生领域非常流行的一种解决方案。go-kit 框架提供了 prometheus 包来支持用户实现自定义度量指标，方便开发者监测微服务的运行状态。本文简要介绍了 go-kit 中如何使用 prometheus 监控指标，并给出了示例代码作为参考。

@@ -31,10 +31,31 @@ docker run -d --name lehm -p 20010:80 lehm:v1.12 /bin/sh -c "/data/start.sh"    
 
 ```
 docker exec -it hadoop-master bash
-docker exec -it f61 ls /    // 查看容器里面的文件
+docker exec -it f61 ls /    // 查看容器里面的文件, 使用docker exec命令可以在已经运行的容器内部执行命令，而无需进入容器。具体语法如下
 docker exec -it f0a164f20b20 /bin/bash  // 执行容器中的/bin/bash，当前命令行转为容器内命令行
 docker exec -it mynginx /bin/sh /root/runoob.sh  // 在运行的容器中执行命令
 ```
+
+其中，OPTIONS是一些可选参数，如-d指定后台运行；CONTAINER是容器的名称或ID；COMMAND是要在容器内执行的命令，ARG是命令的参数。其中，-it参数表示交互式进入容器，并打开一个终端。
+
+```
+docker attach [OPTIONS] CONTAINER
+```
+
+其中，OPTIONS是一些可选参数，如--sig-proxy=false表示关闭信号代理；CONTAINER是容器的名称或ID。
+
+例如，要进入名为my_container的容器，可以使用以下命令：
+
+```
+docker attach my_container
+```
+
+使用docker attach命令进入容器时，需要注意以下几点：
+1. 如果容器中的进程没有输出，则该命令将没有任何响应。
+2. 如果使用Ctrl+C退出容器，容器中的进程也会被终止。
+3. 如果多个终端同时连接到同一个容器中，则容器中的进程会同时响应所有连接。
+
+总的来说，使用docker exec命令可以在容器内执行命令，而不需要进入容器；而使用docker attach命令可以进入容器中已经运行的进程，并将当前终端连接到该进程的标准输入、输出和错误流
 
 ### docker cp
 

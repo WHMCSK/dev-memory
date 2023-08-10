@@ -1,0 +1,989 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Prometheus应用监控 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../makefile/makefile.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    踩坑记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../windows/print.html">
+            
+                <a href="../windows/print.html">
+            
+                    
+                    Windows中使用C#写打印程序踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../face/go-face-tour.html">
+            
+                <a href="../face/go-face-tour.html">
+            
+                    
+                    go-face人脸识别踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../npm/npm-registry.html">
+            
+                <a href="../npm/npm-registry.html">
+            
+                    
+                    npm淘宝镜像与官方源切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../java/java-env.html">
+            
+                <a href="../java/java-env.html">
+            
+                    
+                    java环境管理工具jenv和sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../go/gvm.html">
+            
+                <a href="../go/gvm.html">
+            
+                    
+                    GoLang语言多版本管理工具--GVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../text/text-corner-mark.html">
+            
+                <a href="../text/text-corner-mark.html">
+            
+                    
+                    文字角标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../frp/frp-common-use.html">
+            
+                <a href="../frp/frp-common-use.html">
+            
+                    
+                    go-frp内网穿透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../git/centos源码安装git.html">
+            
+                <a href="../git/centos源码安装git.html">
+            
+                    
+                    Centos下源码安装git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../git/git_use_issue.html">
+            
+                <a href="../git/git_use_issue.html">
+            
+                    
+                    git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../git/win-git-use.html">
+            
+                <a href="../git/win-git-use.html">
+            
+                    
+                    windows下git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../git/dailygit.html">
+            
+                <a href="../git/dailygit.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../python/pyenv.html">
+            
+                <a href="../python/pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../windows/cmd.html">
+            
+                <a href="../windows/cmd.html">
+            
+                    
+                    Windows命令行乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../go/gomod.html">
+            
+                <a href="../go/gomod.html">
+            
+                    
+                    go mod版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../gitbook/gitbook-use.html">
+            
+                <a href="../gitbook/gitbook-use.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../mdbook/mdbook-use.html">
+            
+                <a href="../mdbook/mdbook-use.html">
+            
+                    
+                    mdBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../makefile/makefile.html">
+            
+                <a href="../makefile/makefile.html">
+            
+                    
+                    Makefile编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.16" data-path="prometheus.html">
+            
+                <a href="prometheus.html">
+            
+                    
+                    Prometheus应用监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    grpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../grpc/grpc-go.html">
+            
+                <a href="../grpc/grpc-go.html">
+            
+                    
+                    go grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    MYSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../mysql/mysql_common_use.html">
+            
+                <a href="../mysql/mysql_common_use.html">
+            
+                    
+                    mysql临时关闭安全更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../redis/Redis.html">
+            
+                <a href="../redis/Redis.html">
+            
+                    
+                    Redis从小白到大白笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../java/tools.html">
+            
+                <a href="../java/tools.html">
+            
+                    
+                    java tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    加密解密
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../encrypt/go-java-encrypt.html">
+            
+                <a href="../encrypt/go-java-encrypt.html">
+            
+                    
+                    go语言和java语言加密解密对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    系统设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../device-check/device-check.html">
+            
+                <a href="../device-check/device-check.html">
+            
+                    
+                    设备管控中间件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    系统配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../sys-settings/mac-library.html">
+            
+                <a href="../sys-settings/mac-library.html">
+            
+                    
+                    Mac 中显示资源库（Library）文件夹目录的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    安卓
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../android/android-service-forever.html">
+            
+                <a href="../android/android-service-forever.html">
+            
+                    
+                    安卓中一个进程如何在转入后台后不被系统杀死
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../bigdata/common-use-command.html">
+            
+                <a href="../bigdata/common-use-command.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../bigdata/mgmt-pages.html">
+            
+                <a href="../bigdata/mgmt-pages.html">
+            
+                    
+                    大数据组件自带管理界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../spark/spark.html">
+            
+                <a href="../spark/spark.html">
+            
+                    
+                    熟悉spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../docker/docker.html">
+            
+                <a href="../docker/docker.html">
+            
+                    
+                    docker试用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../docker/Docker%20Desktop%204.18新特性.md">
+            
+                <span>
+            
+                    
+                    Docker Desktop 4.18 发布，带来了大量新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Prometheus应用监控</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="prometheus">Prometheus</h1>
+<p>&#x5728;&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;&#x4E2D;&#xFF0C;&#x76D1;&#x63A7;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x73AF;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x53CA;&#x65F6;&#x53D1;&#x73B0;&#x548C;&#x89E3;&#x51B3;&#x7CFB;&#x7EDF;&#x95EE;&#x9898;&#xFF0C;&#x63D0;&#x9AD8;&#x7CFB;&#x7EDF;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x548C;&#x53EF;&#x9760;&#x6027;&#x3002;&#x800C;&#x5728; go &#x8BED;&#x8A00;&#x4E2D;&#xFF0C;go-kit &#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86; prometheus &#x76D1;&#x63A7;&#x6307;&#x6807;&#x6765;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x76D1;&#x6D4B;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x5C06;&#x4ECB;&#x7ECD; go-kit &#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528; prometheus &#x76D1;&#x63A7;&#x6307;&#x6807;&#xFF0C;&#x5E76;&#x7ED9;&#x51FA;&#x4E00;&#x4E9B;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5E2E;&#x52A9;&#x8BFB;&#x8005;&#x7406;&#x89E3;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x3002;</p>
+<p><img src="assets/WX20230810-095321@2x.png" alt=""></p>
+<p><img src="assets/architecture.svg" alt=""></p>
+<h3 id="1-&#x4EC0;&#x4E48;&#x662F;-prometheus">1. &#x4EC0;&#x4E48;&#x662F; prometheus</h3>
+<p>prometheus &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x548C;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x5E93;&#x3002;&#x5B83;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x4E8E;&#x4E91;&#x539F;&#x751F;&#x9886;&#x57DF;&#xFF0C;&#x80FD;&#x591F;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x8005;&#x6536;&#x96C6;&#x548C;&#x5B58;&#x50A8;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x76D1;&#x63A7;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x4E30;&#x5BCC;&#x7684;&#x67E5;&#x8BE2;&#x548C;&#x53EF;&#x89C6;&#x5316;&#x529F;&#x80FD;&#x3002;</p>
+<p>prometheus &#x91C7;&#x7528; pull &#x65B9;&#x5F0F;&#x83B7;&#x53D6;&#x76D1;&#x63A7;&#x6570;&#x636E;&#xFF0C;&#x5373;&#x901A;&#x8FC7; HTTP &#x8BF7;&#x6C42;&#x5468;&#x671F;&#x6027;&#x5730;&#x83B7;&#x53D6;&#x88AB;&#x76D1;&#x63A7;&#x5BF9;&#x8C61;&#x4EA7;&#x751F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5B58;&#x50A8;&#x5230;&#x672C;&#x5730;&#x65F6;&#x95F4;&#x5E8F;&#x5217;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x5B83;&#x8FD8;&#x652F;&#x6301;&#x591A;&#x79CD;&#x65B9;&#x5F0F;&#x5BFC;&#x51FA;&#x6570;&#x636E;&#xFF08;&#x4F8B;&#x5982; Grafana&#x3001;Alertmanager &#x7B49;&#xFF09;&#xFF0C;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#x8005;&#x5BF9;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x5B9E;&#x65F6;&#x5206;&#x6790;&#x548C;&#x9884;&#x8B66;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="2-go-kit-&#x4E2D;&#x7684;-prometheus-&#x76D1;&#x63A7;&#x6307;&#x6807;">2. go-kit &#x4E2D;&#x7684; prometheus &#x76D1;&#x63A7;&#x6307;&#x6807;</h3>
+<p>go-kit &#x63D0;&#x4F9B;&#x4E86; prometheus &#x5305;&#x6765;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x5EA6;&#x91CF;&#x6307;&#x6807;&#x3002;&#x901A;&#x8FC7;&#x8BE5;&#x5305;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x521B;&#x5EFA;&#x5404;&#x79CD;&#x5EA6;&#x91CF;&#x5668;&#xFF08;&#x4F8B;&#x5982;&#x8BA1;&#x6570;&#x5668;&#x3001;&#x76F4;&#x65B9;&#x56FE;&#x7B49;&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x4E0E; HTTP &#x5904;&#x7406;&#x5668;&#x3001;RPC &#x670D;&#x52A1;&#x7B49;&#x7ED1;&#x5B9A;&#x8D77;&#x6765;&#x3002;</p>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C;&#x5B83;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528; go-kit &#x7684; prometheus &#x5305;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x8BA1;&#x6570;&#x5668;&#xFF1A;</p>
+<pre><code>// &#x521B;&#x5EFA;&#x5EA6;&#x91CF;&#x5668;&#x5BF9;&#x8C61;&#x3002;
+var (
+    requests = prometheus.NewCounter(
+        prometheus.CounterOpts{
+            Name: &quot;example_requests_total&quot;,
+            Help: &quot;The total number of requests to the example service.&quot;,
+        })
+)
+
+func main() {
+    // &#x6CE8;&#x518C;&#x5EA6;&#x91CF;&#x5668;&#x5230;&#x9ED8;&#x8BA4;&#x7684;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x3002;
+    r := prometheus.NewRegistry()
+    r.MustRegister(requests)
+
+    // &#x521B;&#x5EFA;&#x8DEF;&#x7531;&#x548C;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;
+    r := mux.NewRouter()
+    r.Use(promhttp.HandlerFor(r, promhttp.HandlerOpts{}).ServeHTTP)
+
+    // &#x6CE8;&#x518C;&#x670D;&#x52A1;&#x7AEF;&#x70B9;&#x3002;
+    svc := stringService{}
+    e := endpoints.Endpoints{
+        UppercaseEndpoint: endpoints.MakeUppercaseEndpoint(svc),
+        CountEndpoint:     endpoints.MakeCountEndpoint(svc),
+    }
+
+    // &#x5C06;&#x670D;&#x52A1;&#x7AEF;&#x70B9;&#x6CE8;&#x518C;&#x5230;&#x8DEF;&#x7531;&#x5668;&#x4E0A;&#xFF0C;&#x5E76;&#x5728;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x65F6;&#x66F4;&#x65B0;&#x8BA1;&#x6570;&#x5668;&#x503C;&#x3002;
+    r.Path(&quot;/uppercase&quot;).Methods(&quot;GET&quot;).Handler(kithttp.NewServer(
+        e.UppercaseEndpoint,
+        decodeUppercaseRequest,
+        encodeResponse,
+        options...,
+    )).Before(countRequests)
+    r.Path(&quot;/count&quot;).Methods(&quot;POST&quot;).Handler(kithttp.NewServer(
+        e.CountEndpoint,
+        decodeCountRequest,
+        encodeResponse,
+        options...,
+    )).Before(countRequests)
+
+    // &#x542F;&#x52A8; HTTP &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x5C06;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x66B4;&#x9732;&#x7ED9; Prometheus &#x62C9;&#x53D6;&#x3002;
+    http.Handle(&quot;/metrics&quot;, promhttp.HandlerFor(r, promhttp.HandlerOpts{Registry: r}))
+    http.ListenAndServe(&quot;:8080&quot;, nil)
+}
+
+// &#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x66F4;&#x65B0;&#x8BA1;&#x6570;&#x5668;&#x503C;&#x3002;
+func countRequests(next http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+        requests.Inc()
+        next.ServeHTTP(w, r)
+    })
+}
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; requests &#x7684;&#x8BA1;&#x6570;&#x5668;&#x5BF9;&#x8C61;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5176;&#x6CE8;&#x518C;&#x5230;&#x9ED8;&#x8BA4;&#x7684; prometheus &#x6CE8;&#x518C;&#x8868;&#x4E2D;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; promhttp.HandlerFor &#x65B9;&#x6CD5;&#x5C06;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x66B4;&#x9732;&#x7ED9; Prometheus &#x62C9;&#x53D6;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6; countRequests&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6BCF;&#x6B21;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x65F6;&#x66F4;&#x65B0;&#x8BA1;&#x6570;&#x5668;&#x503C;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7; kithttp.NewServer &#x65B9;&#x6CD5;&#x5C06;&#x670D;&#x52A1;&#x7AEF;&#x70B9;&#x7ED1;&#x5B9A;&#x5230;&#x5BF9;&#x5E94;&#x7684; URL &#x4E0A;&#xFF0C;&#x5E76;&#x5728;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x8BE5;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<h3 id="3-prometheus-&#x5EA6;&#x91CF;&#x5668;&#x7C7B;&#x578B;">3. prometheus &#x5EA6;&#x91CF;&#x5668;&#x7C7B;&#x578B;</h3>
+<p>&#x9664;&#x4E86;&#x8BA1;&#x6570;&#x5668;&#x5916;&#xFF0C;prometheus &#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x5EA6;&#x91CF;&#x5668;&#x7C7B;&#x578B;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x5EA6;&#x91CF;&#x5668;&#x7C7B;&#x578B;&#x53CA;&#x5176;&#x7B80;&#x8981;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x8BA1;&#x6570;&#x5668;&#xFF08;Counter&#xFF09;&#xFF1A;&#x9012;&#x589E;&#x7684;&#x6574;&#x6570;&#x6216;&#x6D6E;&#x70B9;&#x578B;&#x503C;&#x3002;</li>
+<li>&#x76F4;&#x65B9;&#x56FE;&#xFF08;Histogram&#xFF09;&#xFF1A;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x5206;&#x5E03;&#x60C5;&#x51B5;&#xFF0C;&#x5305;&#x62EC;&#x91C7;&#x6837;&#x6570;&#x636E;&#x3001;&#x6876;&#x548C;&#x7D2F;&#x79EF;&#x503C;&#x7B49;&#x3002;</li>
+<li>&#x6458;&#x8981;&#xFF08;Summary&#xFF09;&#xFF1A;&#x7C7B;&#x4F3C;&#x4E8E;&#x76F4;&#x65B9;&#x56FE;&#xFF0C;&#x4F46;&#x6458;&#x8981;&#x53EA;&#x4FDD;&#x7559;&#x5177;&#x6709;&#x56FA;&#x5B9A;&#x5927;&#x5C0F;&#x7A97;&#x53E3;&#x7684;&#x6837;&#x672C;&#x3002;</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C;&#x5B83;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528; go-kit &#x7684; prometheus &#x5305;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x76F4;&#x65B9;&#x56FE;&#xFF1A;</p>
+<pre><code>// &#x521B;&#x5EFA;&#x5EA6;&#x91CF;&#x5668;&#x5BF9;&#x8C61;&#x3002;
+var (
+    requestLatency = prometheus.NewHistogramVec(
+        prometheus.HistogramOpts{
+            Name: &quot;example_request_latency_seconds&quot;,
+            Help: &quot;The latency of requests to the example service.&quot;,
+            Buckets: []float64{0.1, 0.5, 1, 2.5, 5},
+        },
+        []string{&quot;method&quot;, &quot;path&quot;},
+    )
+)
+
+func main() {
+    // &#x6CE8;&#x518C;&#x5EA6;&#x91CF;&#x5668;&#x5230;&#x9ED8;&#x8BA4;&#x7684;&#x6CE8;&#x518C;&#x8868;&#x4E2D;&#x3002;
+    r := prometheus.NewRegistry()
+    r.MustRegister(requestLatency)
+
+    // &#x521B;&#x5EFA;&#x8DEF;&#x7531;&#x548C;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;
+    r := mux.NewRouter()
+    r.Use(promhttp.HandlerFor(r, promhttp.HandlerOpts{}).ServeHTTP)
+
+    // &#x6CE8;&#x518C;&#x670D;&#x52A1;&#x7AEF;&#x70B9;&#x3002;
+    svc := stringService{}
+    e := endpoints.Endpoints{
+        UppercaseEndpoint: endpoints.MakeUppercaseEndpoint(svc),
+        CountEndpoint:     endpoints.MakeCountEndpoint(svc),
+    }
+
+    // &#x5C06;&#x670D;&#x52A1;&#x7AEF;&#x70B9;&#x6CE8;&#x518C;&#x5230;&#x8DEF;&#x7531;&#x5668;&#x4E0A;&#xFF0C;&#x5E76;&#x5728;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x65F6;&#x66F4;&#x65B0;&#x76F4;&#x65B9;&#x56FE;&#x6570;&#x636E;&#x3002;
+    r.Path(&quot;/uppercase&quot;).Methods(&quot;GET&quot;).Handler(kithttp.NewServer(
+        e.UppercaseEndpoint,
+        decodeUppercaseRequest,
+        encodeResponse,
+        options...,
+    )).Before(recordRequestLatency(&quot;GET&quot;, &quot;/uppercase&quot;))
+    r.Path(&quot;/count&quot;).Methods(&quot;POST&quot;).Handler(kithttp.NewServer(
+        e.CountEndpoint,
+        decodeCountRequest,
+        encodeResponse,
+        options...,
+    )).Before(recordRequestLatency(&quot;POST&quot;, &quot;/count&quot;))
+
+    // &#x542F;&#x52A8; HTTP &#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x5C06;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x66B4;&#x9732;&#x7ED9; Prometheus &#x62C9;&#x53D6;&#x3002;
+    http.Handle(&quot;/metrics&quot;, promhttp.HandlerFor(r, promhttp.HandlerOpts{Registry: r}))
+    http.ListenAndServe(&quot;:8080&quot;, nil)
+}
+
+// &#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x8BF7;&#x6C42;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x3002;
+func recordRequestLatency(method, path string) Middleware {
+    return func(next http.Handler) http.Handler {
+        return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+            start := time.Now()
+            next.ServeHTTP(w, r)
+            requestLatency.WithLabelValues(method, path).Observe(time.Since(start).Seconds())
+        })
+    }
+}
+</code></pre><p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; requestLatency &#x7684;&#x76F4;&#x65B9;&#x56FE;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; prometheus.HistogramOpts &#x5B9A;&#x4E49;&#x5176;&#x6876;&#x8303;&#x56F4;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5176;&#x6CE8;&#x518C;&#x5230;&#x9ED8;&#x8BA4;&#x7684; prometheus &#x6CE8;&#x518C;&#x8868;&#x4E2D;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; promhttp.HandlerFor &#x65B9;&#x6CD5;&#x5C06;&#x76D1;&#x63A7;&#x6307;&#x6807;&#x66B4;&#x9732;&#x7ED9; Prometheus &#x62C9;&#x53D6;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6; recordRequestLatency&#xFF0C;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x8BF7;&#x6C42;&#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7; kithttp.NewServer &#x65B9;&#x6CD5;&#x5C06;&#x670D;&#x52A1;&#x7AEF;&#x70B9;&#x7ED1;&#x5B9A;&#x5230;&#x5BF9;&#x5E94;&#x7684; URL &#x4E0A;&#xFF0C;&#x5E76;&#x5728;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x8BE5;&#x4E2D;&#x95F4;&#x4EF6;&#x3002;</p>
+<ol>
+<li>&#x603B;&#x7ED3;</li>
+</ol>
+<p>prometheus &#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x662F;&#x4E91;&#x539F;&#x751F;&#x9886;&#x57DF;&#x975E;&#x5E38;&#x6D41;&#x884C;&#x7684;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;go-kit &#x6846;&#x67B6;&#x63D0;&#x4F9B;&#x4E86; prometheus &#x5305;&#x6765;&#x652F;&#x6301;&#x7528;&#x6237;&#x5B9E;&#x73B0;&#x81EA;&#x5B9A;&#x4E49;&#x5EA6;&#x91CF;&#x6307;&#x6807;&#xFF0C;&#x65B9;&#x4FBF;&#x5F00;&#x53D1;&#x8005;&#x76D1;&#x6D4B;&#x5FAE;&#x670D;&#x52A1;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x3002;&#x672C;&#x6587;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x4E86; go-kit &#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528; prometheus &#x76D1;&#x63A7;&#x6307;&#x6807;&#xFF0C;&#x5E76;&#x7ED9;&#x51FA;&#x4E86;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4F5C;&#x4E3A;&#x53C2;&#x8003;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../makefile/makefile.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Makefile编写规则">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Prometheus应用监控","level":"1.3.16","depth":2,"next":{"title":"grpc","level":"1.4","depth":1,"ref":"","articles":[{"title":"go grpc","level":"1.4.1","depth":2,"path":"docs/grpc/grpc-go.md","ref":"./docs/grpc/grpc-go.md","articles":[]}]},"previous":{"title":"Makefile编写规则","level":"1.3.15","depth":2,"path":"docs/makefile/makefile.md","ref":"./docs/makefile/makefile.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/prometheus/prometheus.md","mtime":"2023-08-10T13:19:33.548Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-10T13:20:57.776Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

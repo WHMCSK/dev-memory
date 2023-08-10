@@ -20,6 +20,7 @@
     * [gitbook的使用](./docs/gitbook/gitbook-use.md)
     * [mdBook](./docs/mdbook/mdbook-use.md)
     * [Makefile编写规则](./docs/makefile/makefile.md)
+    * [Prometheus应用监控](./docs/prometheus/prometheus.md)
 * grpc
     * [go grpc](./docs/grpc/grpc-go.md)
 * MYSql

@@ -119,3 +119,27 @@ plt.show()
 ## 画布设置
 
 ![](./assets/canves.png)
+
+示例代码：
+
+```
+# 散点图，
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv('./data/bike-sharing-demand/train.csv')
+x = df['datetime'][0:10]
+y = df['temp'][0:10]
+# plt.plot(x, y, 'ro', color='black')
+# plt.plot(x, y, 'bv', color='black')
+# plt.plot(x, y, 'bv') # 这里的'bv'中b代表blue，v代表下三角形状
+# plt.plot(x, y, 'bo')
+# plt.plot(x, y, marker='o')
+# plt.plot(x, y, marker='o', color='red')
+plt.figure(facecolor='yellow', figsize=(15,6))
+plt.plot(x, y, marker='o', color='red', markerfacecolor='w') # markerfacecolor可以简写成mfc
+y = df['temp'][10:20]
+plt.plot(x, y, marker='o', color='red', mfc='white') # markerfacecolor可以简写成mfc
+plt.show()
+
+```

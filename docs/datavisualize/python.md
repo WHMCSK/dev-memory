@@ -33,6 +33,27 @@ plt.show()
 2. 标记样式
     * marker参数，设置标记样式
 
+示例代码：
+```
+# 散点图，
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv('./data/bike-sharing-demand/train.csv')
+x = df['datetime'][0:10]
+y = df['temp'][0:10]
+# plt.plot(x, y, 'ro', color='black')
+# plt.plot(x, y, 'bv', color='black')
+# plt.plot(x, y, 'bv') # 这里的'bv'中b代表blue，v代表下三角形状
+# plt.plot(x, y, 'bo')
+# plt.plot(x, y, marker='o')
+# plt.plot(x, y, marker='o', color='red')
+plt.plot(x, y, marker='o', color='red', markerfacecolor='w') # markerfacecolor可以简写成mfc
+plt.plot(x, y, marker='o', color='red', mfc='white') # markerfacecolor可以简写成mfc
+plt.show()
+
+```
+
 ### matplotlib.pyplot.plot的color参数没置袋条顔色
 1. 通用颜色
 2. 其它颜色

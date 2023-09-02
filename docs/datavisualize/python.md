@@ -147,3 +147,59 @@ plt.show()
 ## 设置坐标轴和网格线
 
 ![Alt text](./assets/xy.png)
+
+示例代码：
+```
+# 散点图，
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv('./data/bike-sharing-demand/train.csv')
+x = df['datetime'][0:10]
+y = df['temp'][0:10]
+plt.rcParams['font.sans-serif'] = 'SimHei'
+plt.figure(facecolor='yellow', figsize=(15,6))
+plt.xlabel('time')
+plt.ylabel('温度')
+plt.plot(x, y, marker='o', color='red', markerfacecolor='w') # markerfacecolor可以简写成mfc
+y = df['temp'][10:20]
+plt.plot(x, y, marker='o', color='red', mfc='white') # markerfacecolor可以简写成mfc
+plt.show()
+
+```
+
+示例代码：
+```
+# 坐标轴刻度
+import matplotlib.pyplot as plt
+import random
+
+x = [i for i in range(1,11)] # 列表生成式
+y = [random.randint(1,10) for _ in range(1,11)]
+plt.rcParams['font.sans-serif'] = 'SimHei'
+plt.plot(x,y, marker='o', mfc='w')
+month = [str(i) + '月' for i in range(1,11)]
+plt.xticks(range(1,11), month) # 设置x轴坐标轴刻度
+plt.yticks(range(1,11)) # 设置y轴坐标轴刻度
+plt.show()
+```
+
+示例代码：
+```
+import matplotlib.pyplot as plt
+import random
+
+x = [i for i in range(1,11)] # 列表生成式
+y = [random.randint(1,10) for _ in range(1,11)]
+plt.rcParams['font.sans-serif'] = 'SimHei'
+plt.plot(x,y, marker='o', mfc='w')
+month = [str(i) + '月' for i in range(1,11)]
+plt.xticks(range(1,11), month) # 设置x轴坐标轴刻度
+plt.yticks(range(1,11)) # 设置y轴坐标轴刻度
+plt.ylim(1,12)
+plt.xlim(1,12)
+# plt.grid(color='0.5', linestyle='--', linewidth=2)
+# plt.grid(color='0.5', linestyle='--', linewidth=2, axis='x') # 隐藏x轴网格线
+plt.grid(color='0.5', linestyle='--', linewidth=1, axis='y') # 隐藏x轴网格线
+plt.show()
+```

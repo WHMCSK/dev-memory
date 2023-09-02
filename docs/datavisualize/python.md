@@ -22,6 +22,12 @@ plt.show()
 
 ## 图表的常用设置
 
+* linestyle
+* color
+* marker
+* markerfacecolor
+
+
 ![](./assets/linestyle-marker.png)
 
 ### matplotilb.pyplot.plot的linestyle参数设置颜色设置线条样式
@@ -54,7 +60,10 @@ plt.show()
 
 ```
 
-### matplotlib.pyplot.plot的color参数没置袋条顔色
+### matplotlib.pyplot.plot的color参数设置线条顔色
+
+![](./assets/line-collor.png)
+
 1. 通用颜色
 2. 其它颜色
     * 浮点形式的RGB或RGBA元组

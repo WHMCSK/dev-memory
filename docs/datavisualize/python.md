@@ -143,3 +143,7 @@ plt.plot(x, y, marker='o', color='red', mfc='white') # markerfacecolor可以简�
 plt.show()
 
 ```
+
+## 设置坐标轴和网格线
+
+![Alt text](./assets/xy.png)

@@ -4,6 +4,8 @@
 * 踩坑记
     * [Windows中使用C#写打印程序踩坑记](./docs/windows/print.md)
     * [go-face人脸识别踩坑记](./docs/face/go-face-tour.md)  
+* 日常
+    * [Macbook日常管理](./docs/macbook/daily-maintain.md)
 * 工具 
     * [npm淘宝镜像与官方源切换](./docs/npm/npm-registry.md)
     * [java环境管理工具jenv和sdk](./docs/java/java-env.md)
@@ -29,6 +31,12 @@
     * [Redis从小白到大白笔记](./docs/redis/Redis.md)
 * java
     * [java tools](./docs/java/tools.md)
+* Python
+    * [Python版本管理工具](./docs/python/env-mgmt.md)
+    * [Python版本管理神器-pyenv](./docs/python/pyenv.md)
+    * [conda](./docs/python/conda.md)
+    * [Python面向对象](./docs/python/python-oo.md)
+    * [Python常用命令](./docs/python/common-use-command.md)
 * 加密解密
     * [go语言和java语言加密解密对比](./docs/encrypt/go-java-encrypt.md)  
 * 系统设计  
@@ -44,5 +52,13 @@
 * docker
     * [docker试用手册](./docs/docker/docker.md)
     * [Docker Desktop 4.18 发布，带来了大量新特性](./docs/docker/Docker%20Desktop%204.18新特性.md)
+    * [如何在dockerfile加载修改的.bashrc](./docs/docker/dockerfile-modify-bashrc.md)
+* 识别
+    * [车牌识别](./docs/licence-plate/licence-plate.md)
 * opencv
     * [opencv2](./docs/opencv/opencv.md)
+* ros
+    * [ros](./docs/ros/ros.md)
+* 数据可视化
+    * [Python数据可视化](./docs/datavisualize/python.md)
+    * [Dash](./docs/datavisualize/dash.md)

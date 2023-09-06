@@ -5,6 +5,9 @@
 * [Windows中使用C#写打印程序踩坑记](./docs/windows/print.md)
 * [go-face人脸识别踩坑记](./docs/face/go-face-tour.md)  
 
+## 日常
+* [Macbook日常管理](./docs/macbook/daily-maintain.md)
+
 ## 工具 
 
 * [npm淘宝镜像与官方源切换](./docs/npm/npm-registry.md)
@@ -24,6 +27,11 @@
 * [Makefile编写规则](./docs/makefile/makefile.md)
 * [Prometheus应用监控](./docs/prometheus/prometheus.md)
 
+## Markdown
+
+* [Markdown特殊字符](./docs/markdown/markdown-special-character.md)
+* [Markdown表格](./docs/markdown/markdown-table.md)
+
 ## grpc
 
 * [go grpc](./docs/grpc/grpc-go.md)
@@ -31,6 +39,7 @@
 ## MYSql
 
 * [mysql临时关闭安全更新](./docs/mysql/mysql_common_use.md)
+* [Mysql管理](./docs/mysql/mysql_mgmt.md)
 
 ## Redis
 
@@ -38,6 +47,15 @@
 
 ## java
 * [java tools](./docs/java/tools.md)
+
+## Python
+* [Python版本管理工具](./docs/python/env-mgmt.md)
+* [Python版本管理神器-pyenv](./docs/python/pyenv.md)
+* [conda](./docs/python/conda.md)
+* [Python面向对象](./docs/python/python-oo.md)
+* [Python常用命令](./docs/python/common-use-command.md)
+* [Python微服务框架比较](./docs/python/python-microservice.md)
+* [Python包和模块](./docs/python/package-module.md)
 
 ## 加密解密
 
@@ -77,3 +95,16 @@
 
 ## 数据可视化
 * [Python数据可视化](./docs/datavisualize/python.md)
+* [Dash](./docs/datavisualize/dash.md)
+* [数据可视化框架比较](./docs/datavisualize/data-visualize-framework.md)
+
+## 各类awesome
+
+* [awesome-python-cn](https://github.com/jobbole/awesome-python-cn)
+* [awesome-python](https://github.com/vinta/awesome-python)
+* [awesome-go](https://github.com/avelino/awesome-go)
+* [awesome-go-cn](https://github.com/jobbole/awesome-go-cn)
+* [go-awesome](https://github.com/shockerli/go-awesome)
+* [awesome-go-cn](https://github.com/yinggaozhen/awesome-go-cn)
+* [awesome-go-storage](https://github.com/gostor/awesome-go-storage)
+* [awesome-golang-algorithm](https://github.com/6boris/awesome-golang-algorithm)

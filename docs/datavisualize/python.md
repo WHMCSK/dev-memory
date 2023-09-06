@@ -203,3 +203,12 @@ plt.xlim(1,12)
 plt.grid(color='0.5', linestyle='--', linewidth=1, axis='y') # 隐藏x轴网格线
 plt.show()
 ```
+
+## 添加文本标签
+
+![](./assets/textlabell.png)
+
+示例代码：
+```
+
+```

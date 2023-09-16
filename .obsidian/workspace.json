@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "54099c09bdc4d863",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,6 +139,16 @@
                 "file": "docs/markdown/markdown-table.md"
               }
             }
+          },
+          {
+            "id": "31b3d8c6091786f5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ]
       }
@@ -146,8 +167,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "22c5a678e83a2154",
+  "active": "54099c09bdc4d863",
   "lastOpenFiles": [
+    "docs/qgis/geoserver.md",
+    "docs/datavisualize/pandas.md",
     "docs/markdown/markdown-table.md",
     "README.md",
     "docs/datavisualize/data-visualize-framework.md",

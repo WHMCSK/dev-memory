@@ -97,6 +97,18 @@
 * [Python数据可视化](./docs/datavisualize/python.md)
 * [Dash](./docs/datavisualize/dash.md)
 * [数据可视化框架比较](./docs/datavisualize/data-visualize-framework.md)
+* [Pandas](./docs/datavisualize/pandas.md)
+
+## GIS
+* [qgis](./docs/qgis/qgis.md)
+
+## 机器学习
+* [机器学习十大算法](./docs/ml/ml.md)
+
+## ESP8266
+* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp8266/esp8266-wifi-sniffer.md)
+* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口](./docs/esp8266/esp8266-wifi.md)
+* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口.pdf](./docs/esp8266/深入理解Arduino下的ESP8266_Non-OS_SDK%20API⑤%20Wi-Fi接口_51CTO博客_arduino+esp8266.pdf)
 
 ## 各类awesome
 

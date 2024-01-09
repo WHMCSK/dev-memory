@@ -110,6 +110,7 @@
 * [人工智能算力和硬件](./docs/ai/compute-capability.md)
 * [人工智能自研以及用于项目的可行性研究](./docs/ai/how-could-we-use-llm-reach.md)
 * [LLM QA](./docs/ai/llm-qa.md)
+* [大模型训练特点数据](./docs/ai/training-feature-data.md)
 
 
 ## ESP8266

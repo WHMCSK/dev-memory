@@ -55,3 +55,13 @@ text2vec-large-chinese：
 ![](./assets/text2sql-finetune.png)
 
 基于第三方的这些尝试和结论，我们不难得出结论：“我提个问，大模型能结合业务系统里面的数据给我一个答案”，当然这也需要合适的预训练以及fine-tune，不能说效果就像人一样，但是一定会带来不少惊艳。
+
+## 结论4: 给大模型提问，除了能出文字，也能出图形报表
+
+严格来说，报表的数据是大模型出的，而报表的呈现程序是工程师事先写好的。看如下效果图：
+
+![](./assets/result-to-graph1.gif)
+
+![](./assets/result-to-graph2.gif)
+
+![](./assets/result-to-graph3.gif)

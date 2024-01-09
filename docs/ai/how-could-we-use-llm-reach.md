@@ -26,5 +26,14 @@
 
 看看如上测试项目中做Embeding向量化库以及加载Embeding模型的时候使用的模型，是中文库：
 
+text2vec-base-chinese：
 ![](./assets/embeding-model.png)
+
+我们看看另外一个项目：https://github.com/eosphoros-ai/DB-GPT/blob/main/README.zh.md
+
+[DB-GPT介绍视频](https://www.bilibili.com/video/BV1au41157bj/?spm_id_from=333.337.search-card.all.click&vd_source=7792e22c03b7da3c556a450eb42c8a0f)
+
+text2vec-large-chinese：
+![](./assets/embeding-model1.png)
+![](./assets/embeding-model-repo.png)
 

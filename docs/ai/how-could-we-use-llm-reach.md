@@ -66,7 +66,7 @@ text2vec-large-chinese：
 
 ![](./assets/result-to-graph3.gif)
 
-## 结论5: 我们需要什么样的机器配置
+## 结论5: 如果我们购买真机，我们需要什么样的机器配置
 
 1. 先说结论：
 

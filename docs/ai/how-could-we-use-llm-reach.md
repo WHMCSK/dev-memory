@@ -19,3 +19,6 @@
 1. text to vector，文本向量化入向量数据库Chroma
 ![](./assets/text-to-vector.png)
 
+2. 加载向量库，加载大模型
+![](./assets/load-embeding-model.png)
+

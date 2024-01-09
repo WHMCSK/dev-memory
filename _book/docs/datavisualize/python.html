@@ -1,0 +1,1305 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python数据可视化 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dash.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    踩坑记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../windows/print.html">
+            
+                <a href="../windows/print.html">
+            
+                    
+                    Windows中使用C#写打印程序踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../face/go-face-tour.html">
+            
+                <a href="../face/go-face-tour.html">
+            
+                    
+                    go-face人脸识别踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    日常
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../macbook/daily-maintain.html">
+            
+                <a href="../macbook/daily-maintain.html">
+            
+                    
+                    Macbook日常管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../npm/npm-registry.html">
+            
+                <a href="../npm/npm-registry.html">
+            
+                    
+                    npm淘宝镜像与官方源切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../java/java-env.html">
+            
+                <a href="../java/java-env.html">
+            
+                    
+                    java环境管理工具jenv和sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../go/gvm.html">
+            
+                <a href="../go/gvm.html">
+            
+                    
+                    GoLang语言多版本管理工具--GVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../text/text-corner-mark.html">
+            
+                <a href="../text/text-corner-mark.html">
+            
+                    
+                    文字角标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../frp/frp-common-use.html">
+            
+                <a href="../frp/frp-common-use.html">
+            
+                    
+                    go-frp内网穿透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../git/centos源码安装git.html">
+            
+                <a href="../git/centos源码安装git.html">
+            
+                    
+                    Centos下源码安装git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../git/git_use_issue.html">
+            
+                <a href="../git/git_use_issue.html">
+            
+                    
+                    git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../git/win-git-use.html">
+            
+                <a href="../git/win-git-use.html">
+            
+                    
+                    windows下git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../git/dailygit.html">
+            
+                <a href="../git/dailygit.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../python/pyenv.html">
+            
+                <a href="../python/pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../windows/cmd.html">
+            
+                <a href="../windows/cmd.html">
+            
+                    
+                    Windows命令行乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../go/gomod.html">
+            
+                <a href="../go/gomod.html">
+            
+                    
+                    go mod版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../gitbook/gitbook-use.html">
+            
+                <a href="../gitbook/gitbook-use.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../mdbook/mdbook-use.html">
+            
+                <a href="../mdbook/mdbook-use.html">
+            
+                    
+                    mdBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../makefile/makefile.html">
+            
+                <a href="../makefile/makefile.html">
+            
+                    
+                    Makefile编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="../prometheus/prometheus.html">
+            
+                <a href="../prometheus/prometheus.html">
+            
+                    
+                    Prometheus应用监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    grpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../grpc/grpc-go.html">
+            
+                <a href="../grpc/grpc-go.html">
+            
+                    
+                    go grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    MYSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../mysql/mysql_common_use.html">
+            
+                <a href="../mysql/mysql_common_use.html">
+            
+                    
+                    mysql临时关闭安全更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../redis/Redis.html">
+            
+                <a href="../redis/Redis.html">
+            
+                    
+                    Redis从小白到大白笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../java/tools.html">
+            
+                <a href="../java/tools.html">
+            
+                    
+                    java tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../python/env-mgmt.html">
+            
+                <a href="../python/env-mgmt.html">
+            
+                    
+                    Python版本管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../python/pyenv.html">
+            
+                <a href="../python/pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../python/conda.html">
+            
+                <a href="../python/conda.html">
+            
+                    
+                    conda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../python/python-oo.html">
+            
+                <a href="../python/python-oo.html">
+            
+                    
+                    Python面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../python/common-use-command.html">
+            
+                <a href="../python/common-use-command.html">
+            
+                    
+                    Python常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    加密解密
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../encrypt/go-java-encrypt.html">
+            
+                <a href="../encrypt/go-java-encrypt.html">
+            
+                    
+                    go语言和java语言加密解密对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    系统设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../device-check/device-check.html">
+            
+                <a href="../device-check/device-check.html">
+            
+                    
+                    设备管控中间件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    系统配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../sys-settings/mac-library.html">
+            
+                <a href="../sys-settings/mac-library.html">
+            
+                    
+                    Mac 中显示资源库（Library）文件夹目录的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    安卓
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../android/android-service-forever.html">
+            
+                <a href="../android/android-service-forever.html">
+            
+                    
+                    安卓中一个进程如何在转入后台后不被系统杀死
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../bigdata/common-use-command.html">
+            
+                <a href="../bigdata/common-use-command.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../bigdata/mgmt-pages.html">
+            
+                <a href="../bigdata/mgmt-pages.html">
+            
+                    
+                    大数据组件自带管理界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../spark/spark.html">
+            
+                <a href="../spark/spark.html">
+            
+                    
+                    熟悉spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../docker/docker.html">
+            
+                <a href="../docker/docker.html">
+            
+                    
+                    docker试用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../docker/Docker%20Desktop%204.18新特性.md">
+            
+                <span>
+            
+                    
+                    Docker Desktop 4.18 发布，带来了大量新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../docker/dockerfile-modify-bashrc.html">
+            
+                <a href="../docker/dockerfile-modify-bashrc.html">
+            
+                    
+                    如何在dockerfile加载修改的.bashrc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    识别
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../licence-plate/licence-plate.html">
+            
+                <a href="../licence-plate/licence-plate.html">
+            
+                    
+                    车牌识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    opencv
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../opencv/opencv.html">
+            
+                <a href="../opencv/opencv.html">
+            
+                    
+                    opencv2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    ros
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../ros/ros.html">
+            
+                <a href="../ros/ros.html">
+            
+                    
+                    ros
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    数据可视化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.19.1" data-path="python.html">
+            
+                <a href="python.html">
+            
+                    
+                    Python数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="dash.html">
+            
+                <a href="dash.html">
+            
+                    
+                    Dash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Python数据可视化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python-&#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;">python &#x6570;&#x636E;&#x53EF;&#x89C6;&#x5316;</h1>
+<h2 id="matplotlib&#x7684;&#x5B89;&#x88C5;">Matplotlib&#x7684;&#x5B89;&#x88C5;</h2>
+<pre><code>pip install matplotlib
+</code></pre><h2 id="matplotlib&#x4E09;&#x6B65;&#x7ED8;&#x5236;&#x56FE;&#x8868;">Matplotlib&#x4E09;&#x6B65;&#x7ED8;&#x5236;&#x56FE;&#x8868;</h2>
+<ol>
+<li>&#x5F15;&#x5165;pyplot&#x6A21;&#x5757;</li>
+<li>&#x4F7F;&#x7528;Matplotlib&#x6A21;&#x5757;&#x7684;plot&#x65B9;&#x6CD5;&#x7ED8;&#x5236;&#x56FE;&#x8868;</li>
+<li>&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A; </p>
+<pre><code>import matplotlib.pyplot as plt
+
+plt.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+plt.show()
+</code></pre><h2 id="&#x56FE;&#x8868;&#x7684;&#x5E38;&#x7528;&#x8BBE;&#x7F6E;">&#x56FE;&#x8868;&#x7684;&#x5E38;&#x7528;&#x8BBE;&#x7F6E;</h2>
+<ul>
+<li>linestyle</li>
+<li>color</li>
+<li>marker</li>
+<li>markerfacecolor</li>
+</ul>
+<p><img src="assets/linestyle-marker.png" alt=""></p>
+<h3 id="matplotilbpyplotplot&#x7684;linestyle&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x6837;&#x5F0F;">matplotilb.pyplot.plot&#x7684;linestyle&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x6837;&#x5F0F;</h3>
+<ol>
+<li>&#x7EBF;&#x6761;&#x6837;&#x5F0F;&#x8BBE;&#x7F6E;<ul>
+<li>&#x5B9E;&#x7EBF;&apos;-&apos;</li>
+<li>&#x53CC;&#x5212;&#x7EBF;&apos;--&apos;</li>
+<li>&#x70B9;&#x5212;&#x7EBF;&apos;-.&apos;</li>
+<li>&#x865A;&#x7EBF;&apos;:&apos;</li>
+</ul>
+</li>
+<li>&#x6807;&#x8BB0;&#x6837;&#x5F0F;<ul>
+<li>marker&#x53C2;&#x6570;&#xFF0C;&#x8BBE;&#x7F6E;&#x6807;&#x8BB0;&#x6837;&#x5F0F;</li>
+</ul>
+</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code># &#x6563;&#x70B9;&#x56FE;&#xFF0C;
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv(&apos;./data/bike-sharing-demand/train.csv&apos;)
+x = df[&apos;datetime&apos;][0:10]
+y = df[&apos;temp&apos;][0:10]
+# plt.plot(x, y, &apos;ro&apos;, color=&apos;black&apos;)
+# plt.plot(x, y, &apos;bv&apos;, color=&apos;black&apos;)
+# plt.plot(x, y, &apos;bv&apos;) # &#x8FD9;&#x91CC;&#x7684;&apos;bv&apos;&#x4E2D;b&#x4EE3;&#x8868;blue&#xFF0C;v&#x4EE3;&#x8868;&#x4E0B;&#x4E09;&#x89D2;&#x5F62;&#x72B6;
+# plt.plot(x, y, &apos;bo&apos;)
+# plt.plot(x, y, marker=&apos;o&apos;)
+# plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;)
+plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;, markerfacecolor=&apos;w&apos;) # markerfacecolor&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;mfc
+plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;, mfc=&apos;white&apos;) # markerfacecolor&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;mfc
+plt.show()
+</code></pre><h3 id="matplotlibpyplotplot&#x7684;color&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x9854;&#x8272;">matplotlib.pyplot.plot&#x7684;color&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x9854;&#x8272;</h3>
+<p><img src="assets/line-collor.png" alt=""></p>
+<ol>
+<li>&#x901A;&#x7528;&#x989C;&#x8272;</li>
+<li>&#x5176;&#x5B83;&#x989C;&#x8272;<ul>
+<li>&#x6D6E;&#x70B9;&#x5F62;&#x5F0F;&#x7684;RGB&#x6216;RGBA&#x5143;&#x7EC4;</li>
+<li>&#x5341;&#x516D;&#x8FF8;&#x5236;&#x7684;RGB&#x6216;RGBA&#x5B57;&#x7B26;&#x4E32;</li>
+<li>0-1&#x4E4B;&#x95F4;&#x7684;&#x5C0F;&#x6570;&#x4F5C;&#x4E3A;&#x7684;&#x7070;&#x5EA6;&#x503C;</li>
+<li>{&apos;b&apos;, &apos;g&apos;, &apos;r&apos;, &apos;c&apos;,&apos;m&apos;, &apos;y&apos;, &apos;k&apos;, &apos;w&apos;}&#x5176;&#x4E2D;&#x4EFB;&#x53D6;</li>
+<li>X11/CSS4&#x4E2D;&#x898F;&#x5B9A;&#x7684;&#x9854;&#x8272;&#x540D;&#x79F0;</li>
+<li>Xkcd&#x4E2D;&#x6307;&#x5B9A;&#x7684;&#x9854;&#x8272;&#x540D;&#x79F0;</li>
+<li>Tableau&#x8ABF;&#x8272;&#x677F;&#x4E2D;&#x7684;&#x9854;&#x8272;{tab:blue&apos;tab:orange&apos;}</li>
+<li>CN&#x683C;&#x5F0F;&#x7684;&#x989C;&#x8272;&#x5FAA;&#x73AF;</li>
+</ul>
+</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code># &#x7EBF;&#x6761;&#x989C;&#x8272;&#x548C;&#x6837;&#x5F0F;
+import matplotlib.pyplot as plt
+
+# # &#x6298;&#x7EBF;&#x56FE;
+# plt.plot([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+# plt.show()
+
+# plt.plot([1, 2, 3, 4, 5], [3,9,10,2,5])
+# plt.show()
+
+# # &#x6563;&#x70B9;&#x56FE;
+# plt.plot([1, 2, 3, 4, 5], [3,9,10,2,5], &apos;ro&apos;)
+# plt.show()
+
+# # &#x7ED8;&#x5236;&#x7B80;&#x5355;&#x6298;&#x7EBF;
+# x = range(1, 15, 1)
+# y = range(1, 42, 3)
+# print(list(x))
+# plt.plot(x, y,)
+# plt.show()
+
+# &#x7ED8;&#x5236;&#x672A;&#x6765;15&#x5929;&#x5929;&#x6C14;&#x9884;&#x62A5;&#x6298;&#x7EBF;&#x56FE;
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv(&apos;./data/bike-sharing-demand/train.csv&apos;)
+# print(df.head())
+x = df[&apos;datetime&apos;][0:10]
+y = df[&apos;temp&apos;][0:10]
+plt.plot(x, y, color=&apos;0.1&apos;, linestyle=&apos;-.&apos;)
+y = df[&apos;temp&apos;][20:30]
+plt.plot(x, y, color=&apos;pink&apos;, linestyle=&apos;--&apos;)
+y = df[&apos;temp&apos;][10:20]
+# plt.plot(x, y, color=&apos;r&apos;)
+# plt.plot(x, y, color=&apos;0.1&apos;) # 0&#x5230;1&#x4E4B;&#x95F4;&#x8BBE;&#x7F6E;&#x7684;&#x662F;&#x7070;&#x5EA6;&#x503C;
+# plt.plot(x, y, color=&apos;#ffff00&apos;)
+plt.plot(x, y, color=&apos;0.1&apos;, linestyle=&apos;:&apos;)
+plt.show()
+</code></pre><h2 id="&#x753B;&#x5E03;&#x8BBE;&#x7F6E;">&#x753B;&#x5E03;&#x8BBE;&#x7F6E;</h2>
+<p><img src="assets/canves.png" alt=""></p>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code># &#x6563;&#x70B9;&#x56FE;&#xFF0C;
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv(&apos;./data/bike-sharing-demand/train.csv&apos;)
+x = df[&apos;datetime&apos;][0:10]
+y = df[&apos;temp&apos;][0:10]
+# plt.plot(x, y, &apos;ro&apos;, color=&apos;black&apos;)
+# plt.plot(x, y, &apos;bv&apos;, color=&apos;black&apos;)
+# plt.plot(x, y, &apos;bv&apos;) # &#x8FD9;&#x91CC;&#x7684;&apos;bv&apos;&#x4E2D;b&#x4EE3;&#x8868;blue&#xFF0C;v&#x4EE3;&#x8868;&#x4E0B;&#x4E09;&#x89D2;&#x5F62;&#x72B6;
+# plt.plot(x, y, &apos;bo&apos;)
+# plt.plot(x, y, marker=&apos;o&apos;)
+# plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;)
+plt.figure(facecolor=&apos;yellow&apos;, figsize=(15,6))
+plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;, markerfacecolor=&apos;w&apos;) # markerfacecolor&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;mfc
+y = df[&apos;temp&apos;][10:20]
+plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;, mfc=&apos;white&apos;) # markerfacecolor&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;mfc
+plt.show()
+</code></pre><h2 id="&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x548C;&#x7F51;&#x683C;&#x7EBF;">&#x8BBE;&#x7F6E;&#x5750;&#x6807;&#x8F74;&#x548C;&#x7F51;&#x683C;&#x7EBF;</h2>
+<p><img src="assets/xy.png" alt="Alt text"></p>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code># &#x6563;&#x70B9;&#x56FE;&#xFF0C;
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv(&apos;./data/bike-sharing-demand/train.csv&apos;)
+x = df[&apos;datetime&apos;][0:10]
+y = df[&apos;temp&apos;][0:10]
+plt.rcParams[&apos;font.sans-serif&apos;] = &apos;SimHei&apos;
+plt.figure(facecolor=&apos;yellow&apos;, figsize=(15,6))
+plt.xlabel(&apos;time&apos;)
+plt.ylabel(&apos;&#x6E29;&#x5EA6;&apos;)
+plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;, markerfacecolor=&apos;w&apos;) # markerfacecolor&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;mfc
+y = df[&apos;temp&apos;][10:20]
+plt.plot(x, y, marker=&apos;o&apos;, color=&apos;red&apos;, mfc=&apos;white&apos;) # markerfacecolor&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x6210;mfc
+plt.show()
+</code></pre><p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code># &#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;
+import matplotlib.pyplot as plt
+import random
+
+x = [i for i in range(1,11)] # &#x5217;&#x8868;&#x751F;&#x6210;&#x5F0F;
+y = [random.randint(1,10) for _ in range(1,11)]
+plt.rcParams[&apos;font.sans-serif&apos;] = &apos;SimHei&apos;
+plt.plot(x,y, marker=&apos;o&apos;, mfc=&apos;w&apos;)
+month = [str(i) + &apos;&#x6708;&apos; for i in range(1,11)]
+plt.xticks(range(1,11), month) # &#x8BBE;&#x7F6E;x&#x8F74;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;
+plt.yticks(range(1,11)) # &#x8BBE;&#x7F6E;y&#x8F74;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;
+plt.show()
+</code></pre><p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>import matplotlib.pyplot as plt
+import random
+
+x = [i for i in range(1,11)] # &#x5217;&#x8868;&#x751F;&#x6210;&#x5F0F;
+y = [random.randint(1,10) for _ in range(1,11)]
+plt.rcParams[&apos;font.sans-serif&apos;] = &apos;SimHei&apos;
+plt.plot(x,y, marker=&apos;o&apos;, mfc=&apos;w&apos;)
+month = [str(i) + &apos;&#x6708;&apos; for i in range(1,11)]
+plt.xticks(range(1,11), month) # &#x8BBE;&#x7F6E;x&#x8F74;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;
+plt.yticks(range(1,11)) # &#x8BBE;&#x7F6E;y&#x8F74;&#x5750;&#x6807;&#x8F74;&#x523B;&#x5EA6;
+plt.ylim(1,12)
+plt.xlim(1,12)
+# plt.grid(color=&apos;0.5&apos;, linestyle=&apos;--&apos;, linewidth=2)
+# plt.grid(color=&apos;0.5&apos;, linestyle=&apos;--&apos;, linewidth=2, axis=&apos;x&apos;) # &#x9690;&#x85CF;x&#x8F74;&#x7F51;&#x683C;&#x7EBF;
+plt.grid(color=&apos;0.5&apos;, linestyle=&apos;--&apos;, linewidth=1, axis=&apos;y&apos;) # &#x9690;&#x85CF;x&#x8F74;&#x7F51;&#x683C;&#x7EBF;
+plt.show()
+</code></pre><h2 id="&#x6DFB;&#x52A0;&#x6587;&#x672C;&#x6807;&#x7B7E;">&#x6DFB;&#x52A0;&#x6587;&#x672C;&#x6807;&#x7B7E;</h2>
+<p><img src="assets/textlabell.png" alt=""></p>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>
+
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="dash.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Dash">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python数据可视化","level":"1.19.1","depth":2,"next":{"title":"Dash","level":"1.19.2","depth":2,"path":"docs/datavisualize/dash.md","ref":"./docs/datavisualize/dash.md","articles":[]},"previous":{"title":"数据可视化","level":"1.19","depth":1,"ref":"","articles":[{"title":"Python数据可视化","level":"1.19.1","depth":2,"path":"docs/datavisualize/python.md","ref":"./docs/datavisualize/python.md","articles":[]},{"title":"Dash","level":"1.19.2","depth":2,"path":"docs/datavisualize/dash.md","ref":"./docs/datavisualize/dash.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/datavisualize/python.md","mtime":"2023-09-02T09:33:47.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T03:19:38.803Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

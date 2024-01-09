@@ -105,10 +105,21 @@
 ## 机器学习
 * [机器学习十大算法](./docs/ml/ml.md)
 
+## AI
+* [DB-GPT](./docs/ai/db-gpt.md)
+* [人工智能算力和硬件](./docs/ai/compute-capability.md)
+
+
 ## ESP8266
-* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp8266/esp8266-wifi-sniffer.md)
-* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口](./docs/esp8266/esp8266-wifi.md)
-* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口.pdf](./docs/esp8266/深入理解Arduino下的ESP8266_Non-OS_SDK%20API⑤%20Wi-Fi接口_51CTO博客_arduino+esp8266.pdf)
+* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp/esp8266-wifi-sniffer.md)
+* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口](./docs/esp/esp8266-wifi.md)
+* [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口.pdf](./docs/esp/深入理解Arduino下的ESP8266_Non-OS_SDK%20API⑤%20Wi-Fi接口_51CTO博客_arduino+esp8266.pdf)
+
+## ESP-Drone
+* [ESP-Drone笔记](./docs/esp/esp-drone.md)
+* [ESP-Drone官方文档](https://docs.espressif.com/projects/espressif-esp-drone/zh_CN/latest/gettingstarted.html)
+
+
 
 ## 各类awesome
 

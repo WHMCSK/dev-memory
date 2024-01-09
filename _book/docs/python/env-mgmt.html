@@ -1,0 +1,1203 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Python版本管理工具 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pyenv.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    踩坑记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../windows/print.html">
+            
+                <a href="../windows/print.html">
+            
+                    
+                    Windows中使用C#写打印程序踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../face/go-face-tour.html">
+            
+                <a href="../face/go-face-tour.html">
+            
+                    
+                    go-face人脸识别踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    日常
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../macbook/daily-maintain.html">
+            
+                <a href="../macbook/daily-maintain.html">
+            
+                    
+                    Macbook日常管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../npm/npm-registry.html">
+            
+                <a href="../npm/npm-registry.html">
+            
+                    
+                    npm淘宝镜像与官方源切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../java/java-env.html">
+            
+                <a href="../java/java-env.html">
+            
+                    
+                    java环境管理工具jenv和sdk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../go/gvm.html">
+            
+                <a href="../go/gvm.html">
+            
+                    
+                    GoLang语言多版本管理工具--GVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../text/text-corner-mark.html">
+            
+                <a href="../text/text-corner-mark.html">
+            
+                    
+                    文字角标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../frp/frp-common-use.html">
+            
+                <a href="../frp/frp-common-use.html">
+            
+                    
+                    go-frp内网穿透
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../git/centos源码安装git.html">
+            
+                <a href="../git/centos源码安装git.html">
+            
+                    
+                    Centos下源码安装git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../git/git_use_issue.html">
+            
+                <a href="../git/git_use_issue.html">
+            
+                    
+                    git push 到Total 2406 (delta 379), reused 0 (delta 0)就不动了
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../git/win-git-use.html">
+            
+                <a href="../git/win-git-use.html">
+            
+                    
+                    windows下git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../git/dailygit.html">
+            
+                <a href="../git/dailygit.html">
+            
+                    
+                    git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="pyenv.html">
+            
+                <a href="pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../windows/cmd.html">
+            
+                <a href="../windows/cmd.html">
+            
+                    
+                    Windows命令行乱码问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../go/gomod.html">
+            
+                <a href="../go/gomod.html">
+            
+                    
+                    go mod版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../gitbook/gitbook-use.html">
+            
+                <a href="../gitbook/gitbook-use.html">
+            
+                    
+                    gitbook的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../mdbook/mdbook-use.html">
+            
+                <a href="../mdbook/mdbook-use.html">
+            
+                    
+                    mdBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.15" data-path="../makefile/makefile.html">
+            
+                <a href="../makefile/makefile.html">
+            
+                    
+                    Makefile编写规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.16" data-path="../prometheus/prometheus.html">
+            
+                <a href="../prometheus/prometheus.html">
+            
+                    
+                    Prometheus应用监控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    grpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../grpc/grpc-go.html">
+            
+                <a href="../grpc/grpc-go.html">
+            
+                    
+                    go grpc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    MYSql
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../mysql/mysql_common_use.html">
+            
+                <a href="../mysql/mysql_common_use.html">
+            
+                    
+                    mysql临时关闭安全更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    Redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../redis/Redis.html">
+            
+                <a href="../redis/Redis.html">
+            
+                    
+                    Redis从小白到大白笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../java/tools.html">
+            
+                <a href="../java/tools.html">
+            
+                    
+                    java tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.9.1" data-path="env-mgmt.html">
+            
+                <a href="env-mgmt.html">
+            
+                    
+                    Python版本管理工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="pyenv.html">
+            
+                <a href="pyenv.html">
+            
+                    
+                    Python版本管理神器-pyenv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="conda.html">
+            
+                <a href="conda.html">
+            
+                    
+                    conda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="python-oo.html">
+            
+                <a href="python-oo.html">
+            
+                    
+                    Python面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="common-use-command.html">
+            
+                <a href="common-use-command.html">
+            
+                    
+                    Python常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    加密解密
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../encrypt/go-java-encrypt.html">
+            
+                <a href="../encrypt/go-java-encrypt.html">
+            
+                    
+                    go语言和java语言加密解密对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    系统设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../device-check/device-check.html">
+            
+                <a href="../device-check/device-check.html">
+            
+                    
+                    设备管控中间件设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" >
+            
+                <span>
+            
+                    
+                    系统配置
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../sys-settings/mac-library.html">
+            
+                <a href="../sys-settings/mac-library.html">
+            
+                    
+                    Mac 中显示资源库（Library）文件夹目录的几种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" >
+            
+                <span>
+            
+                    
+                    安卓
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../android/android-service-forever.html">
+            
+                <a href="../android/android-service-forever.html">
+            
+                    
+                    安卓中一个进程如何在转入后台后不被系统杀死
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    大数据
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../bigdata/common-use-command.html">
+            
+                <a href="../bigdata/common-use-command.html">
+            
+                    
+                    常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="../bigdata/mgmt-pages.html">
+            
+                <a href="../bigdata/mgmt-pages.html">
+            
+                    
+                    大数据组件自带管理界面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.3" data-path="../spark/spark.html">
+            
+                <a href="../spark/spark.html">
+            
+                    
+                    熟悉spark
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" >
+            
+                <span>
+            
+                    
+                    docker
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../docker/docker.html">
+            
+                <a href="../docker/docker.html">
+            
+                    
+                    docker试用手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.2" data-path="../docker/Docker%20Desktop%204.18新特性.md">
+            
+                <span>
+            
+                    
+                    Docker Desktop 4.18 发布，带来了大量新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15.3" data-path="../docker/dockerfile-modify-bashrc.html">
+            
+                <a href="../docker/dockerfile-modify-bashrc.html">
+            
+                    
+                    如何在dockerfile加载修改的.bashrc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
+                    识别
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../licence-plate/licence-plate.html">
+            
+                <a href="../licence-plate/licence-plate.html">
+            
+                    
+                    车牌识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" >
+            
+                <span>
+            
+                    
+                    opencv
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.17.1" data-path="../opencv/opencv.html">
+            
+                <a href="../opencv/opencv.html">
+            
+                    
+                    opencv2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" >
+            
+                <span>
+            
+                    
+                    ros
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.18.1" data-path="../ros/ros.html">
+            
+                <a href="../ros/ros.html">
+            
+                    
+                    ros
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" >
+            
+                <span>
+            
+                    
+                    数据可视化
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../datavisualize/python.html">
+            
+                <a href="../datavisualize/python.html">
+            
+                    
+                    Python数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../datavisualize/dash.html">
+            
+                <a href="../datavisualize/dash.html">
+            
+                    
+                    Dash
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Python版本管理工具</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python&#x7248;&#x672C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;">Python&#x7248;&#x672C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</h1>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;Python&#x5F00;&#x53D1;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x5F00;&#x53D1;&#x6846;&#x67B6;&#x6216;&#x5E94;&#x7528;&#x80AF;&#x5B9A;&#x4F1A;&#x6709;Python&#x591A;&#x7248;&#x672C;&#x5171;&#x5B58;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6B64;&#x65F6;Python&#x591A;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x5C31;&#x53EF;&#x4EE5;&#x5E2E;&#x4F60;&#x5FEB;&#x901F;&#x89E3;&#x51B3;&#x6B64;&#x95EE;&#x9898;&#xFF0C;&#x4EE5;&#x4FBF;&#x5C06;&#x7CBE;&#x529B;&#x4E13;&#x6CE8;&#x5F00;&#x53D1;&#x3002;&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x5E38;&#x7528;&#x7684;&#x591A;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF1A;</p>
+<ol>
+<li>Anaconda</li>
+<li>Virtualenv</li>
+<li>pyenv</li>
+<li>pythonbrew</li>
+<li>&#x4F7F;&#x7528;Docker&#x5BB9;&#x5668;&#x7BA1;&#x7406;Python&#x7248;&#x672C;</li>
+</ol>
+<h2 id="1anaconda">1.Anaconda</h2>
+<p>Anaconda&#x591A;&#x5E94;&#x7528;&#x5728;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x4E2D;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x5BF9;&#x5404;&#x4E2A;Python&#x73AF;&#x5883;&#x8FDB;&#x884C;&#x5207;&#x6362;&#xFF1B;&#x800C;&#x4E14;&#x81EA;&#x52A8;&#x5305;&#x7BA1;&#x7406;&#x5668;conda&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x591A;&#x4E2A;&#x7248;&#x672C;&#x548C;&#x4F9D;&#x8D56;&#x3002;&#x4ECE;&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x5305;&#x81EA;&#x884C;&#x5B89;&#x88C5;&#x5373;&#x53EF;&#x3002;&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>#&#x521B;&#x5EFA;Python&#x865A;&#x62DF;&#x73AF;&#x5883;
+conda create -n py36 python=3.6
+
+#&#x6FC0;&#x6D3B;Python&#x865A;&#x62DF;&#x73AF;&#x5883;
+source activate py36
+
+#&#x5B89;&#x88C5;&#x76F8;&#x5173;&#x4F9D;&#x8D56;&#xFF0C;&#x5E76;&#x6B63;&#x5E38;&#x4F7F;&#x7528;&#x6B64;&#x73AF;&#x5883;&#x4E0B;&#x7684;python&#x7248;&#x672C;&#x3002;
+pip install tensorflow
+
+#&#x9000;&#x51FA;&#x865A;&#x62DF;&#x73AF;&#x5883;
+source deactivate
+</code></pre><h2 id="2virtualenv">2.Virtualenv</h2>
+<p>Virtaulenv&#x7684;&#x539F;&#x7406;&#x662F;&#x628A;&#x7CFB;&#x7EDF;Python&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x5230;Virtualenv&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x7528;&#x547D;&#x4EE4;source venv/bin/activate&#x8FDB;&#x5165;&#x4E00;&#x4E2A;virtualenv&#x73AF;&#x5883;&#x65F6;&#xFF0C;virtualenv&#x4F1A;&#x4FEE;&#x6539;&#x76F8;&#x5173;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x8BA9;&#x547D;&#x4EE4;Python&#x548C;pip&#x5747;&#x6307;&#x5411;&#x5F53;&#x524D;&#x7684;virtualenv&#x73AF;&#x5883;&#x3002;Virtaulenv&#x76F8;&#x8F83;&#x4E8E;Anaconda&#xFF0C;&#x66F4;&#x591A;&#x5E94;&#x7528;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3002;&#x4EE5;&#x4E0B;&#x662F;virtualenv&#x7684;&#x5B89;&#x88C5;&#x548C;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;&#x3002;</p>
+<pre><code>#&#x5B89;&#x88C5;virtualenv
+pip install virtualenv
+
+#&#x521B;&#x5EFA;Python&#x865A;&#x62DF;&#x73AF;&#x5883;
+virtualenv -p /usr/bin/python2.7 py27env
+# &#x6216;&#x8005;
+virtualenv venv --python=python3.11
+
+#&#x6307;&#x5B9A;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x6210;&#x529F;&#x521B;&#x5EFA;Python&#x865A;&#x62DF;&#x73AF;&#x5883;
+source py27env/bin/activate
+
+#&#x5B89;&#x88C5;&#x76F8;&#x5173;&#x4F9D;&#x8D56;
+pip install -r requirements.txt
+
+#&#x9000;&#x51FA;&#x865A;&#x62DF;&#x73AF;&#x5883;
+deactivate
+</code></pre><h2 id="3pyenv">3.Pyenv</h2>
+<p>pyenv&#x662F;&#x4E00;&#x4E2A;forked&#x81EA;ruby&#x793E;&#x533A;&#x7684;&#x7B80;&#x5355;&#x3001;&#x4F4E;&#x8C03;&#x3001;&#x9075;&#x5FAA;UNIX&#x54F2;&#x5B66;&#x7684;Python&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;, &#x5B83;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5207;&#x6362;&#x5168;&#x5C40;&#x89E3;&#x91CA;&#x5668;&#x7248;&#x672C;, &#x540C;&#x65F6;&#x7ED3;&#x5408;vitualenv&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x7BA1;&#x7406;&#x5BF9;&#x5E94;&#x7684;&#x5305;&#x6E90;&#x3002;</p>
+<p>pipenv&#x662F;requests &#x4F5C;&#x8005; Kenneth Reitz&#x5927;&#x795E;&#x5199;&#x7684;&#x4E00;&#x4E2A;python&#x865A;&#x62DF;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x5DE5;&#x5177;, &#x7ED3;&#x5408;&#x4E86;pip&#x548C;virtualenv&#x7684;&#x529F;&#x80FD;, &#x4FA7;&#x91CD;&#x70B9;&#x8FD8;&#x662F;&#x5728;&#x5305;&#x73AF;&#x5883;&#x7BA1;&#x7406;&#x4E0A;, &#x4F7F;&#x7528;&#x601D;&#x8DEF;&#x662F;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;python&#x7248;&#x672C;&#x7684;&#x73AF;&#x5883;, &#x7136;&#x540E;&#x5728;&#x6B64;&#x73AF;&#x5883;&#x4E0A;&#x5B89;&#x88C5;&#x76F8;&#x5E94;&#x7684;&#x5305;&#x3002;</p>
+<pre><code># &#x67E5;&#x770B;&#x5F53;&#x524D;&#x7248;&#x672C;
+pyenv version
+
+# &#x67E5;&#x770B;&#x6240;&#x6709;&#x7248;&#x672C;
+pyenv versions
+
+# &#x67E5;&#x770B;&#x6240;&#x6709;&#x53EF;&#x5B89;&#x88C5;&#x7684;&#x7248;&#x672C;
+pyenv install --list
+
+# &#x5B89;&#x88C5;&#x6307;&#x5B9A;&#x7248;&#x672C;
+pyenv install 3.6.5
+# &#x5B89;&#x88C5;&#x65B0;&#x7248;&#x672C;&#x540E;rehash&#x4E00;&#x4E0B;
+pyenv rehash
+
+# &#x5220;&#x9664;&#x6307;&#x5B9A;&#x7248;&#x672C;
+pyenv uninstall 3.5.2
+
+# &#x6307;&#x5B9A;&#x5168;&#x5C40;&#x7248;&#x672C;
+pyenv global 3.6.5
+
+# &#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x5168;&#x5C40;&#x7248;&#x672C;, 3&#x7248;&#x672C;&#x4F18;&#x5148;
+pyenv global 3.6.5 2.7.14
+
+# &#x5B9E;&#x9645;&#x4E0A;&#x5F53;&#x4F60;&#x5207;&#x6362;&#x7248;&#x672C;&#x540E;, &#x76F8;&#x5E94;&#x7684;pip&#x548C;&#x5305;&#x4ED3;&#x5E93;&#x90FD;&#x662F;&#x4F1A;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x8FC7;&#x53BB;&#x7684;
+</code></pre><h2 id="4pythonbrew">4.pythonbrew</h2>
+<p>pythonbrew&#x662F;&#x53D7; perlbrew &#x548C; rvm &#x542F;&#x53D1;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x7684;$HOME&#x76EE;&#x5F55;&#x4E2D;&#x8FDB;&#x884C;python&#x6784;&#x5EFA;&#x548C;&#x5B89;&#x88C5;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x9879;&#x76EE;&#x3002;&#x53E6;&#x4E00;&#x884D;&#x751F;&#x7248;&#x672C; &#xFF1A; pythonz &#x3002;</p>
+<h2 id="5&#x4F7F;&#x7528;docker&#x5BB9;&#x5668;&#x7BA1;&#x7406;python&#x7248;&#x672C;">5.&#x4F7F;&#x7528;Docker&#x5BB9;&#x5668;&#x7BA1;&#x7406;Python&#x7248;&#x672C;</h2>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Docker&#x5BB9;&#x5668;&#x7BA1;&#x7406;Python&#x7248;&#x672C;&#x3002;Docker&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x5BB9;&#x5668;&#x5316;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0E;&#x5176;&#x6240;&#x6709;&#x7684;&#x4F9D;&#x8D56;&#x6027;&#xFF08;&#x5E93;&#x3001;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7B49;&#xFF09;&#x6253;&#x5305;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5B9E;&#x4F53;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x4EFB;&#x4F55;Docker&#x652F;&#x6301;&#x7684;&#x5E73;&#x53F0;&#x4E0A;&#x8FD0;&#x884C;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x4F7F;&#x7528;Docker&#x5BB9;&#x5668;&#x7BA1;&#x7406;Python&#x7248;&#x672C;&#x7684;&#x6B65;&#x9AA4;&#x3002;</p>
+<pre><code>#&#x5728;Docker&#x4E2D;&#x5B89;&#x88C5;Python&#x955C;&#x50CF;&#xFF0C;&#x521B;&#x5EFA;Python&#x7684;&#x5BB9;&#x5668;&#x3002;
+docker run -it python:3.6 /bin/bash
+
+#&#x5B89;&#x88C5;&#x76F8;&#x5173;&#x4F9D;&#x8D56;
+pip install tensorflow
+
+#&#x9000;&#x51FA;Docker&#x5BB9;&#x5668;
+exit
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="pyenv.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Python版本管理神器-pyenv">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python版本管理工具","level":"1.9.1","depth":2,"next":{"title":"Python版本管理神器-pyenv","level":"1.9.2","depth":2,"path":"docs/python/pyenv.md","ref":"./docs/python/pyenv.md","articles":[]},"previous":{"title":"Python","level":"1.9","depth":1,"ref":"","articles":[{"title":"Python版本管理工具","level":"1.9.1","depth":2,"path":"docs/python/env-mgmt.md","ref":"./docs/python/env-mgmt.md","articles":[]},{"title":"Python版本管理神器-pyenv","level":"1.9.2","depth":2,"path":"docs/python/pyenv.md","ref":"./docs/python/pyenv.md","articles":[]},{"title":"conda","level":"1.9.3","depth":2,"path":"docs/python/conda.md","ref":"./docs/python/conda.md","articles":[]},{"title":"Python面向对象","level":"1.9.4","depth":2,"path":"docs/python/python-oo.md","ref":"./docs/python/python-oo.md","articles":[]},{"title":"Python常用命令","level":"1.9.5","depth":2,"path":"docs/python/common-use-command.md","ref":"./docs/python/common-use-command.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/python/env-mgmt.md","mtime":"2023-09-02T16:24:19.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-09-21T03:19:38.803Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

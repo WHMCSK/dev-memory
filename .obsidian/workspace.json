@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "6b99e56154f0e25b",
+        "id": "19206f51d24db537",
         "type": "tabs",
         "children": [
           {
-            "id": "98edba4e94072bd7",
+            "id": "e14adf1f79b3080a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/markdown/markdown-table.md",
+                "file": "docs/go/gvm.md",
                 "mode": "preview",
                 "source": false
               }
             }
-          },
-          {
-            "id": "54099c09bdc4d863",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.12"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/markdown/markdown-table.md",
+                "file": "docs/go/gvm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/markdown/markdown-table.md",
+                "file": "docs/go/gvm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/markdown/markdown-table.md"
+                "file": "docs/go/gvm.md"
               }
             }
           },
@@ -167,8 +156,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54099c09bdc4d863",
+  "active": "e14adf1f79b3080a",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "Untitled.md",
+    "Untitled",
     "docs/qgis/geoserver.md",
     "docs/datavisualize/pandas.md",
     "docs/markdown/markdown-table.md",

@@ -1,0 +1,188 @@
+{
+  "main": {
+    "id": "b91db2a283e71df3",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b99e56154f0e25b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98edba4e94072bd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/markdown/markdown-table.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54099c09bdc4d863",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.12"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "427fb906f48853cf",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8c20a655df1f2fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "22c5a678e83a2154",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "65a2ac276928ca0b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "331de3bf6fa8c033",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "22552091621c5dc1",
+    "type": "split",
+    "children": [
+      {
+        "id": "45daa42f5f256815",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd222f5981bbb0a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/markdown/markdown-table.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "905b1a0b60b92bee",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/markdown/markdown-table.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3d2565efe3220a33",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dc59ca8cc70c837d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/markdown/markdown-table.md"
+              }
+            }
+          },
+          {
+            "id": "31b3d8c6091786f5",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "54099c09bdc4d863",
+  "lastOpenFiles": [
+    "docs/qgis/geoserver.md",
+    "docs/datavisualize/pandas.md",
+    "docs/markdown/markdown-table.md",
+    "README.md",
+    "docs/datavisualize/data-visualize-framework.md",
+    "docs/tools/markdown-special-character.md",
+    "docs/markdown/markdown-special-character.md",
+    "docs/markdown",
+    "docs/tools/markdown-special-character",
+    "docs/tools/markdown-specifial",
+    "docs/python/python-microservice.md",
+    "docs/python/Microservice.md",
+    "docs/README.md",
+    "docs/python/conda.md",
+    "docs/python/common-use-command.md"
+  ]
+}

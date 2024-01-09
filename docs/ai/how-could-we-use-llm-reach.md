@@ -99,10 +99,6 @@ text2vec-large-chinese：
 | RTX3090Ti 24G | ¥11999元 - ¥15900元 |
 | RTX3090 24G | ¥8699元 |
 
-方案三：
-
-在网上也有看到RTX3090四卡交火的组装方案，这种能具体完成什么样不太清楚。
-
 2. DB-GPT官方给出的配置要求可以参考
 
 ![](./assets/dbgpt-mechine.png)

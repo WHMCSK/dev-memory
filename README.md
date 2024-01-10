@@ -111,6 +111,7 @@
 * [人工智能自研以及用于项目的可行性研究](./docs/ai/how-could-we-use-llm-reach.md)
 * [LLM QA](./docs/ai/llm-qa.md)
 * [大模型训练特点数据](./docs/ai/training-feature-data.md)
+* [向量数据库](./docs/ai/voctor-db.md)
 
 
 ## ESP8266

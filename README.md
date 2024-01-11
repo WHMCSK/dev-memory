@@ -112,6 +112,7 @@
 * [LLM QA](./docs/ai/llm-qa.md)
 * [大模型训练特点数据](./docs/ai/training-feature-data.md)
 * [向量数据库](./docs/ai/voctor-db.md)
+* [ChatGLM3](./docs/ai/chat-glm3.md)
 
 
 ## ESP8266

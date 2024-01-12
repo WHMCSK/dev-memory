@@ -11,6 +11,8 @@ DB-GPT部署视频：https://www.bilibili.com/video/BV1mu411Y7ve/vd_source=4fed5
 DB-GPT支持大部分LLM在本地环境(6-24GB显存)部署，包含vicuna、chatglm、guanaco、gorilla、falcon和GPT4ALL等系列大模型。同时为降低部署成本，也提供了提供openai key直连GPT的方式，具体教程为https://db-gpt.readthedocs.io/projects/db-gpt-docs-zh-cn/zh_CN/latest/index.html 
 
  项目地址在：https://github.com/csunny/DB-GPT/blob/main/README.zh.md
+ 
+ conda activate dbgpt_env
 
  pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==3.19.0 duckdb chardet pymysql
 

@@ -8,6 +8,8 @@ DB-GPT使用文档：https://www.yuque.com/eosphoros/dbgpt-docs/kwg1ed88lu5fgawb
 
 视频中的安装文档链接：
 
+[使用AutoDL云服务器搭建DB-GPT的教程](https://r.mckt3.fashiontech.top/AI/DB-GPT/DB-GPT用私有化LLM技术定义数据库下一代交互方式/DB-GPT云服务器安装文档.pdf?OSSAccessKeyId=LTAI4Fy7h96gJaRHCAqzUkJN&Expires=1705379711&Signature=ACI8XdxR%2BkjcSLhYkIP95TxHevE%3D)
+
 DB-GPT部署视频：https://www.bilibili.com/video/BV1mu411Y7ve/vd_source=4fed55ef30f958576f5d0334c74bd1e8
 
 DB-GPT支持大部分LLM在本地环境(6-24GB显存)部署，包含vicuna、chatglm、guanaco、gorilla、falcon和GPT4ALL等系列大模型。同时为降低部署成本，也提供了提供openai key直连GPT的方式，具体教程为https://db-gpt.readthedocs.io/projects/db-gpt-docs-zh-cn/zh_CN/latest/index.html 
@@ -68,7 +70,9 @@ Exception: model vicuna-13b-v1.5@huggingface(172.17.0.5:6006) start failed, Erro
 这个好像是模型没有下载好
 
 ### 错误2:
-安装完成后，回答速度较慢。
+安装完成后，回答速度较慢。运行大模型框架提示：Current platform is windows, use avx2 as default cpu architecture
+
+cuda没有用上，需要检查cuda框架版本，torch框架版本是否对应
 
 
 

@@ -1,5 +1,9 @@
 # DB-GPT试用笔记
 
+开源网址：https://github.com/eosphoros-ai/DB-GPT
+
+开源网址：https://github.com/eosphoros-ai/DB-GPT-Hub
+
 传统的数据库交互需要用户掌握复杂的SQL语言，或者使用有限的图形界面，这些方式都不够直观和灵活。DB-GPT则允许用户通过自然语言来查询和更新数据库，无需编写任何代码，让更多的人可以快捷方便的去使用数据库。
 
 DB-GPT项目主页：https://github.com/csunny/DB-GPT/blob/main/README.zh.md

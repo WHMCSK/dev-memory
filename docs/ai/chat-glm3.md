@@ -1,5 +1,7 @@
 # ChatGLM3
 
+开源网址： https://github.com/THUDM/ChatGLM3
+
 为了保证 torch 的版本正确，请严格按照 [官方文档](https://pytorch.org/get-started/locally/) 的说明安装。
 
 ```

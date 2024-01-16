@@ -1,5 +1,7 @@
 # CUDA安装 （windows版）
 
+## 一、前言
+
 windows10 版本安装 CUDA ，首先需要下载两个安装包
 
 * CUDA toolkit（toolkit就是指工具包）
@@ -12,6 +14,8 @@ windows10 版本安装 CUDA ，首先需要下载两个安装包
 CUDA [https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 
 cuDNN [https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installwindows](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#installwindows)
+
+## 二、安装工具的准备
 
 安装工具的准备:
 
@@ -45,7 +49,7 @@ https://developer.nvidia.com/rdp/cudnn-download
 
 https://developer.nvidia.com/rdp/cudnn-archive
 
-CUDA 安装与配置过程
+## 三、 CUDA 安装与配置过程
 
 1. 双击“exe文件”，选择下载路径（推荐默认路径）
 
@@ -54,10 +58,93 @@ CUDA 安装与配置过程
 如果你是第一次安装，尽量全选  
 如果你是第n次安装，尽量只选择第一个，不然会出现错误  
 
+![](./assets/cuda-setup-options.png)
+
 不要选Visual Studio Integration，即使选了也不能成功安装
+
+![](./assets/cuda-setup-customer-options.png)
 
 如果本机的驱动版本(当前版本)小于cuda对应的版本（新版本），则选择，否则不选。如果当前版本小于新版本，并且不覆盖安装，之后电脑会频繁蓝屏或死机
 
 3. 记住安装位置，tensorflow要求配置环境
 
+![](./assets/cuda-setup-path.png)
+
+```
 重点提醒：一定要记住这个路径，把这个路径保留下来，后面我们还会用到！！！
+```
+
+4. 安装进行
+
+5. 安装完成
+
+查看系统变量中是否添加了路径，如果没有需要自己添加
+
+![](./assets/cuda-sys-env-path.png)
+
+测试环境是否安装成功
+
+运行cmd，输入nvcc --version 即可查看版本号；  
+set cuda，可以查看 CUDA 设置的环境变量。  
+
+![](./assets/cuda-nvcc.png)
+
+## 四、cuDNN配置
+
+1. 解压
+
+cuDNN叫配置更为准确，我们先把下载的 cuDNN 解压缩，会得到下面的文件：
+
+cuDNN 解压缩后的文件
+
+![](./assets/cuDNN-files.png)
+
+下载后发现其实cudnn不是一个exe文件，而是一个压缩包，解压后，有三个文件夹，把三个文件夹拷贝到cuda的安装目录下。
+
+CUDA 的安装路径在前面截图中有，或者打开电脑的环境变量查看，默认的安装路径如下：
+
+```
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1
+```
+后面那个v11.1是你自己的版本号
+
+CUDA 安装目录文件：
+
+![](./assets/cuda-path.png)
+
+拷贝时看到，CUDA 的安装目录中，有和 cuDNN 解压缩后的同名文件夹，这里注意，不需要担心，直接复制即可。cuDNN 解压缩后的同名文件夹中的配置文件会添加到 CUDA安装目录中的同名文件夹中。
+
+现在大家应该可以理解，cuDNN 其实就是 CUDA 的一个补丁而已，专为深度学习运算进行优化的。然后再参加环境变量
+
+2. 添加至系统变量
+
+往系统环境变量中的 path 添加如下路径（根据自己的路径进行修改）
+
+```
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin
+
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include
+
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\lib
+
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\libnvvp
+```
+
+验证安装是否成功
+
+配置完成后，我们可以验证是否配置成功，主要使用CUDA内置的deviceQuery.exe 和 bandwidthTest.exe：
+首先win+R启动cmd，cd到安装目录下的 …\extras\demo_suite,然后分别执行bandwidthTest.exe和deviceQuery.exe,应该得到下图:
+
+![](./assets/cuDNN-check-1.png)
+
+![](./assets/cuDNN-check-2.png)
+
+参考博客：
+
+https://blog.csdn.net/mao_hui_fei/article/details/104246466
+
+https://www.pianshen.com/article/8647746165/
+
+https://blog.csdn.net/weixin_45494025/article/details/100746025
+
+https://blog.csdn.net/u011473714/article/details/95042856

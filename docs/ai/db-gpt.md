@@ -74,7 +74,11 @@ Exception: model vicuna-13b-v1.5@huggingface(172.17.0.5:6006) start failed, Erro
 
 cuda没有用上，需要检查cuda框架版本，torch框架版本是否对应
 
+### 错误3:
 
+提问报错：RuntimeError: "addmm_impl_cpu_" not implemented for 'Half'
+
+提问报这个错误，可能是cuda没有用上，需要检查cuda框架版本，torch框架版本是否对应
 
 
 积卷神经网络（CNN）

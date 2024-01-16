@@ -5,7 +5,7 @@ windows10 版本安装 CUDA ，首先需要下载两个安装包
 * CUDA toolkit（toolkit就是指工具包）
 * cuDNN
 
-注：cuDNN 是用于配置深度学习使用
+注：[cuDNN](https://so.csdn.net/so/search?q=cuDNN&spm=1001.2101.3001.7020) 是用于配置深度学习使用
 
 官方教程：
 

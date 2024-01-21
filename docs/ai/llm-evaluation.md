@@ -1,5 +1,6 @@
 # 大模型评估
 
+## 评估行情的了解
 
 1. LLM 实时排行，来自 UC伯克利：https://lmsys.org/blog/2023-06-22-leaderboard/
 
@@ -23,3 +24,10 @@ Awesome Chinese LLM #JGitHubitft: https://github.com/HqWu-HITCS/Awesome-Chinese-
 | 名称 | 网址 | 介绍 |
 | --- | --- | --- |
 | C-Eval | 源码：https://github.com/hkust-nlp/ceval  官网：https://cevalbenchmark.com/#home | C-Eval是全面的中文基础模型评估套件，涵盖了52个不同学科的13948个多项选择题，分为四个难度级别 |
+
+.C-Eval：构造中文大模型的知识评估基准，其榜单是一个全面的中文基础 模型评估 套件（多层次、多学科的语文评价基础模型套件）。它由13948个选择题组成 问题跨越52个不同的学科和四个难度级 别，测试集用于模型评估（简单来说就是针对中文模型的综合测试机），目的是C-Eval能够帮助开发人员跟踪模型开发的进展，以及分析开发中模型的优点和弱
+点。
+
+C-Eval #GitHubttht: https://github.com/hkust-n|p/ceval,
+
+论文地址：https://arxiv.org/pdf/2305.08322v1.pdf

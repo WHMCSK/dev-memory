@@ -115,6 +115,7 @@
 * [向量数据库](./docs/ai/voctor-db.md)
 * [ChatGLM3](./docs/ai/chat-glm3.md)
 * [大模型评估](./docs/ai/llm-evaluation.md)
+* [大模型如何应用](./docs/ai/llm-app.md)
 
 ## ESP8266
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp/esp8266-wifi-sniffer.md)

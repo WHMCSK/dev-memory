@@ -45,3 +45,18 @@ ChatGLM-6B为例：
 4090不支持nvlink，所以多卡训练返回效率变低
 
 
+![](./assets/compute-capability-01.png)
+
+![](./assets/compute-capability-02.png)
+
+![](./assets/compute-capability-03.png)
+
+![](./assets/compute-capability-04.png)
+
+![](./assets/compute-capability-05.png)
+
+![](./assets/compute-capability-06.png)
+
+![](./assets/compute-capability-07.png)
+
+![](./assets/compute-capability-08.png)

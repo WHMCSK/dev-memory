@@ -53,7 +53,7 @@ Prompt模块是用来丰富用户提出的核心问题的，增加上下文信�
 
 它包含一个Prompt模板大概长这样
 
-![](./assets/prompt-templates-01.png)
+![](./assets/prompt-demo-01.jpg)
 
 
 然后，我们把这些片段按照一定格式进行编码，比如BERT的输入格式。编码的过程主要是把每个片段按照BERT的输入格式进行编码，比如把每个片段按照[CLS]、[SEP]、[MASK]等标记进行标记。

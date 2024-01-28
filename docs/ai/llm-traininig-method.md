@@ -29,6 +29,31 @@ LlamaIndex主要是解决本地知识库的整理，切片，索引。我们来�
 
 ## 3. LangChain
 
+它是一个用于构建自然语言处理应用的框架，其重点在于多个模块协同工作。
+
+我们简单来看一下它的核心模块。
+
+### 3.1 Prompt模块
+
+Prompt模块是用来丰富用户提出的核心问题的，增加上下文信息、历史聊天信息、背景知识等等。通过它可以方便的定义自己的Prompt模板
+
+![](./assets/prompt-templates-01.png)
+
+![](./assets/prompt-code-01.png)
+
+### 3.2 chains模块
+
+通过Prompt模板封装出来一系列的调用，如数据库、API、本地知识库等等。chains提供了标准的接口和设置来组合这些调用
+
+![](./assets/langchain-theory-01.jpg)
+
+### 3.3 agent模块
+
+主要是用来接收并执行大模型输出的指令，使得LLM有了自己的行为动作。
+
+它包含一个Prompt模板大概长这样
+
+![](./assets/prompt-templates-01.png)
 
 
 然后，我们把这些片段按照一定格式进行编码，比如BERT的输入格式。编码的过程主要是把每个片段按照BERT的输入格式进行编码，比如把每个片段按照[CLS]、[SEP]、[MASK]等标记进行标记。

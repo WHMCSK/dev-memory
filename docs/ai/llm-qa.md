@@ -84,6 +84,16 @@
 [为什么Transformer 需要进行 Multi-head Attention？](https://www.zhihu.com/question/341222779)
  注解：简单回答就是，多头保证了transformer可以关注到不同子空间的信息，捕捉到更加丰富的特征信息。 
 
+十九、有哪些训练方法？
+
+1. LoRA(Low Rank Adaptation of Large Language Models)大语言模型的低秩自适应。
+2. LM-BFF(Language Model Bias-Free Fine-tuning)语言模型的偏差无偏微调。
+3. LM-adapt(Language Model Adaptation)语言模型的适应。
+4. LM-RTD(Language Model Retraining with Teacher-Student Distillation)语言模型的教师-学生蒸馏。
+5. LM-KD(Language Model Knowledge Distillation)语言模型的知识蒸馏。
+6. LM-AT(Language Model Augmentation Training)语言模型的增强训练。
+7. LM-FT(Language Model Fine-tuning)语言模型的微调。
+8. LM-AT(Language Model Augmentation Training)语言模型的增强训练。
 
 Instruction tuning stage
 

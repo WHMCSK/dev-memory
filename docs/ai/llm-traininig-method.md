@@ -25,7 +25,7 @@ LlamaIndex主要是解决本地知识库的整理，切片，索引。我们来�
 
 ![](./assets/LlamaIndex-theory-01.png)
 
-![](./assets/LlamaIndex-theory-02.png)
+![](./assets/LlamaIndex-theory-02.jpg)
 
 ## 3. LangChain
 

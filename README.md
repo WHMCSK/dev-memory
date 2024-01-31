@@ -118,6 +118,9 @@
 * [大模型如何应用](./docs/ai/llm-app.md)
 * [Vicuna13B大模型推理监控：RTX 3090(24GB) * 1运行监控](./docs/ai/autodl_1RTX3090_Vicuna13B.md)
 * [大模型训练方法](./docs/ai/llm-traininig-method.md)
+* [关于AI大模型机器的远程控制](./docs/ai/remote-control.md)
+* [Ubuntu桌面上玩耍AI大模型](./docs/ai/ai-on-ubuntu.md)
+* [安装jupyter notebook](./docs/ai/jupyter.md)
 
 ## ESP8266
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp/esp8266-wifi-sniffer.md)

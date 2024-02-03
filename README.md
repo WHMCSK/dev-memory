@@ -7,6 +7,7 @@
 
 ## 日常
 * [Macbook日常管理](./docs/macbook/daily-maintain.md)
+* [关于中国墙](./docs/offten-use/abroad.md)
 
 ## 工具 
 
@@ -122,6 +123,7 @@
 * [Ubuntu桌面上玩耍AI大模型](./docs/ai/ai-on-ubuntu.md)
 * [安装jupyter notebook](./docs/ai/jupyter.md)
 * [大模型测试问题语料分析](./docs/ai/test-questions.md)
+* [Stable Diffusion](./docs/ai/stable-diffusion.md)
 
 ## ESP8266
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp/esp8266-wifi-sniffer.md)

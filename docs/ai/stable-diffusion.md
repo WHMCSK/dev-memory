@@ -1,13 +1,5 @@
 # Stable Diffusion
 
-1. 汉化
-
-双语插件
-https://github.com/journey-ad/sd-webui-bilingual-Localization
-
-中文语言包
-https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN
-
 2. 启动
 
 ```
@@ -33,3 +25,21 @@ Pruned model(裁剪模型) 、 Full model (完整模型)
 ![](./assets/sd-parameter.jpg)
 
 ![](./assets/sd-parameter-compare.jpg)
+
+4. 插件
+
+4.1 修复脸崩手崩：
+
+https://github.com/Bing-su/adetailer.git
+
+4.2 提示词自动翻译插件：
+
+https://github.com/Physton/sd-webui-prompt-all-in-one
+
+4.3. 汉化插件
+
+双语插件
+https://github.com/journey-ad/sd-webui-bilingual-Localization
+
+中文语言包
+https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN

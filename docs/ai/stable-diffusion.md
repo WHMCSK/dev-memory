@@ -20,7 +20,7 @@ webui.sh： 是stable diflusion的启动脚本。
 
 --listen，--no-half-vae都是参数，关于参数的说明可以到我的另一个视频中了解：《Stable Diffusion fp16（半精）vs fp.32（单精），Pruned model vs Full mod，出图速度对比，图片质量对比》&：是一个特殊符号，用于将命令放在后台运行，使终端可以继续输入其他命令。
 
-tail -† nohup.out
+tail -f nohup.out
 
 tall： 用于显示文件的末尾内容。f：是"Yollw”的缩写，用于实时追踪文件的变化。
 

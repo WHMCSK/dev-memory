@@ -56,8 +56,14 @@ https://github.com/civitai/civitai/wiki/How-to-use-models#lora
 
 6. 指定显卡
 
+Stable Diffusion是一款强大的绘图工具，但在处理复杂的任务时，单张显卡可能会显得有些力不从心。通过利用多显卡，您可以轻松提高程序的加速性能，让您的创作更加高效。
+
 ```
 export CUDA_VISIBLE_DEVICES=0,1  // 这将使Stable Diffusion使用编号为0和1的两张显卡来共同完成任务，从而加速处理过程。
 export CUDA_VISIBLE_DEVICES=0,1,3,4,5,6,7  // 如果您想要排除一些显卡，只使用剩余的显卡设备，也是可行的。例如，如果您想排除第2号显卡，使用其他所有可用显卡
 export CUDA_VISIBLE_DEVICES=0  // 这将使Stable Diffusion仅使用编号为0的显卡进行计算。这对于较小的任务可能足够了
 ```
+
+设置CUDA_VISIBLE_DEVICES环境变量后，您只需运行Stable Diffusion的launch.py脚本，程序将会自动检测并使用您指定的显卡设备进行计算。这样，您就能够更充分地利用多显卡堆积的性能，加速绘图和其他计算任务。
+
+通过利用多显卡堆积，您可以显著提高Stable Diffusion的性能，加速绘图和其他计算任务。这个简单的设置可以让您更高效地进行创作和实验，将Stable Diffusion的潜力充分发挥出来。

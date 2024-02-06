@@ -43,3 +43,21 @@ https://github.com/journey-ad/sd-webui-bilingual-Localization
 
 中文语言包
 https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN
+
+5. Civitia
+
+Civitia源码：
+
+https://github.com/civitai/civitai
+
+How to use models：
+
+https://github.com/civitai/civitai/wiki/How-to-use-models#lora
+
+6. 指定显卡
+
+```
+export CUDA_VISIBLE_DEVICES=0,1  // 这将使Stable Diffusion使用编号为0和1的两张显卡来共同完成任务，从而加速处理过程。
+export CUDA_VISIBLE_DEVICES=0,1,3,4,5,6,7  // 如果您想要排除一些显卡，只使用剩余的显卡设备，也是可行的。例如，如果您想排除第2号显卡，使用其他所有可用显卡
+export CUDA_VISIBLE_DEVICES=0  // 这将使Stable Diffusion仅使用编号为0的显卡进行计算。这对于较小的任务可能足够了
+```

@@ -1,6 +1,6 @@
 # ChatGLM3
 
-重要网站：
+## 重要网站：
 
 - Github仓库: https://github.com/THUDM/ChatGLM3
 - Github仓库: https://github.com/THUDM
@@ -9,6 +9,18 @@
 - 智谱清言：https://chatglm.cn
 - 论文：https://arxiv.org/abs/2203.08674
 - 说明文档：https://zhipu-ai.feishu.cn/wiki/HIj5wVxGqiUg3rkbQ1OcVEe5n9g
+
+## 用到的工具
+
+1. bwm-ng
+
+bwm-ng 查看你hf模型下载速度
+
+```
+sudo apt-get update
+sudo apt-get install bwm-ng
+bwm-ng
+```
 
 ## 安装说明
 

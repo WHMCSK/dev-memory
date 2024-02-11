@@ -30,7 +30,7 @@ bwm-ng
 
 为了安装过程顺畅，建议先安装以下依赖包：
 ```
- pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==4.25.1 duckdb chardet pymysql
+ pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==4.25.1 duckdb chardet pymysql peft jieba ruamel_yaml datasets rouge_chinese
 ```
 
 2. 克隆代码

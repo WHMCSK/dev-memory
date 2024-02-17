@@ -29,7 +29,7 @@ conda activate dbgpt_env
 
 ## 先决条件
 ```
- pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==3.19.0 duckdb chardet pymysql chromadb openai
+ pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==3.19.0 duckdb chardet pymysql chromadb openai charset-normalizer
 
  pip install -U langchain-community
 ```
@@ -57,7 +57,7 @@ nvidia-smi获得机器支持最高cuda版本信息，nvcc -V获得当前安装cu
 ```
  python dbgpt/app/dbgpt_server.py --port 6006
 ```
-或者
+或者/home/ps/llm/DB-GPT
 ```
 dbgpt start webserver --port 6006
 ```
@@ -83,6 +83,26 @@ cuda没有用上，需要检查cuda框架版本，torch框架版本是否对应
 提问报错：RuntimeError: "addmm_impl_cpu_" not implemented for 'Half'
 
 提问报这个错误，可能是cuda没有用上，需要检查cuda框架版本，torch框架版本是否对应
+
+### 错误4:
+
+提问报错：AttributeError: ‘charset_normalizer‘ has no attribute ‘md__mypyc‘
+
+从字面理解，可能是程序包遭到破坏、或者是版本不匹配，需要重新安装charset-normalizer。
+
+修复方法：
+
+强制指定charset-normalizer的版本，
+```
+pip install --force-reinstall charset-normalizer==3.1.0
+```
+
+或者
+```
+pip install charset-normalizer  // 重新安装charset-normalizer，有可能是程序包遭到破坏
+```
+
+或者重装全部先决条件依赖包。
 
 
 积卷神经网络（CNN）

@@ -258,6 +258,21 @@ Prompt template：
 
 而LoRA训练在最低6GB的设备上也可以进行
 
+目前最流行的LoRA训练项目框架：https://github.com/bmaltais/kohya_ss
+
+Run the gui with:
+```
+./gui.sh --share --headless
+./gui.sh --username USERNAME --password PASSWORD --share --headless  // 开启用户名密码登陆
+```
+
+or with this if you expose 7860 directly via the runpod configuration
+```
+./gui.sh --listen=0.0.0.0 --headless
+```
+
+
+
 ## 提示词
 
 提示词分为：正向提示词、反向提示词

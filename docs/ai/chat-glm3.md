@@ -267,3 +267,75 @@ print(response)
 因为我们已经将ChatGLM3-6B的模型权重下载到本地了，所以此处可以直接指向我们下载的Chatglm3-6b模型的存储路径来进行推理测试。
 
 对于其他参数来说，model 有一个eval模式，就是评估的方法，模型基本就是两个阶段的事，一个是训练，一个是推理，计算的量更大，它需要把输入的值做一个推理，如果是一个有监督的模型，那必然存在一个标签值，也叫真实值，这个值会跟模型推理的值做一个比较，这个过程是正向传播。差异如果很大，就说明这个模型的能力还远远不够，既然效果不好，就要调整参数来不断地修正，通过不断地求导，链式法则等方式进行反向传播。当模型训练好了，模型的参数就不会变了，形成一个静态的文件，可以下载下来，当我们使用的时候，就不需要这个反向传播的过程，只需要做正向的推理就好了，此处设置model.eval（就是说明这个过程。而trust_remote_code=True 表示信任远程代码（如果有），device='cuda'表示将模型加载到CUDA设备上以便使用GPU加速，这两个就很好理解了。
+
+## OpenAI风格API调用方法
+
+ChatGLM3-6B模型提供了OpenAI风格的API调用方法。正如此前所说，在OpenAI几乎定义了整个前沿AI应用开发标准的当下，提供一个OpenAI风格的API调用方法，毫无疑问可以让ChatGLM3模型无縫接入OpenAI开发生态。所谓的OpenAI风格的AP调用，指的是借助OpenAI库中的ChatCompletion函数进行ChatGLM3模型调用。而现在，我们只需要在model参数上输入chatglm3-6b，即可调用ChatGLM3模型。调用API风格的统一，无疑也将大幅提高开发效率。
+
+先决条件：
+
+1. 安装OpenAI库0.28版本
+2. 安装tiktoken包
+3. 降级 typing_extensions 依赖包到4.8.0
+4. 安装 sentence_transformers 依赖包
+5. 运行openaL_api.py脚本
+
+
+而要执行OpenAI风格的AP调用，则首先需要安装openai库，并提前运行openai_api.py脚本。具体执行流程如下：
+首先需要注意：OpenAI目前已将openai库更新至1X，但目前Chatglm3-6B仍需要使用旧版本0.28。所以需要确保当前环境的opena版本。
+
+检查openai库版本：
+
+```
+!openai -V // 查看当前环境的openai版本
+!pip install openai==0.28.1 // 如果版本为1.x，使用该命令降级
+```
+
+如果想要使用API特续调用Chatg/m3-6b模型，需要启动一个脚本，该脚本位于 open_api_demo 中。
+
+启动之前，需要安装tiktoken包，用于将文本分割成tokens。
+
+```
+pip` install tiktoken
+```
+
+同时，需要降级 typing_extensions 依赖包，否则会报错。
+
+
+```
+pip install typing_extensions==4.8.0
+```
+
+最后，还需要安装 sentence_transformers 依赖包，安装最新的即可。
+
+```
+pip install sentence_transformers
+```
+
+然后，启动脚本：
+
+```
+python open_api_demo.py
+```
+
+然后可以在客户端程序中调用模型：
+
+```
+import os
+import openai
+
+os.environ["OPENAI_API_KEY"] = "none"
+
+openai.api_base = "http://0.0.0.0:8000/v1"
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+response = openai.ChatCompletion.create(
+    model = 'chatglm3-6b',
+    message = [
+        {"role": "user", "content": "你好，你能为我写一首诗吗？"}
+    ]
+)
+print(reponse["choices"][0]["message"]["content"])
+```
+
+除此之外，大家还可以去测试ChatGLM3-6B的Function Calling等更高级的用法时的性能情况。我们推荐大家使用OpenAI风格的AP调用方法是进行学习和尝试构造高级的AlAgent，同时积极参与国产大型模型的开源社区，共同增强国内在这一领域的实力和影响力。

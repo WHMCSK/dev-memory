@@ -226,6 +226,7 @@ conda env list
 
 ```
 conda activate chatglm3
+```
 
 在该环境中安装ipykernel软件包。这个软件包将允许JupyterNotebook使用特定环境的Python版本。运行以下命令：
 

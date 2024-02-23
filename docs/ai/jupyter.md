@@ -10,6 +10,11 @@ conda install notebook
 conda install -c conda-forge jupyter_contrib_nbextensions jupyterlab
 ```
 
+安装进度条扩展ipywidgets
+```
+conda install ipywidgets
+```
+
 ### 启动jupyter
 
 ```

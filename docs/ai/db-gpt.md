@@ -45,8 +45,8 @@ python
 import torch
 torch.cuda.is_available()
 
-返回False，说明是cuda和pytorch的冲突问题，cuda不可用。
-返回Trues，说明cuda可用。
+// 返回False，说明是cuda和pytorch的冲突问题，cuda不可用。
+// 返回Trues，说明cuda可用。
 ```
 
 解决方案：

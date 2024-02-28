@@ -1,5 +1,36 @@
 # ChatGLM3
 
+## conda
+
+升级Conda到最新版本，是为了我们后面安装依赖包的时候不会出现其他的兼容的问题
+```
+conda update conda
+```
+
+更新完成后，再次检查 Conda的版本来确认更新是否成功。
+
+```
+conda --version
+```
+
+更新完 Conda后，需要更新环境中的所有包，以确保所有软件包都是最新的。避免产生未知的依赖问题，使用以下命令来更新所有安装的包
+
+```
+conda update --all
+```
+
+使用Conda创建独立的隔离环境
+
+创建一个新环境用于多卡部署启动ChatGLM3-6B，避免与现有环境中的包发生冲突。使用以下命令创建一个新环境（我这里设置的环境名为 chatglm3_multi，大家根据需要更改虚拟环境的名称）：
+
+```
+conda create --name chatglm3_multi python=3.11
+```
+
+进入隔离环境
+
+创建完成后，使用 conda activate 进入该虚拟环境。
+
 ## 重要网站：
 
 - Github仓库: https://github.com/THUDM/ChatGLM3
@@ -66,6 +97,8 @@ pip install -r requirements.txt
 ```
 
 5. 下载模型
+
+注：需要开科学上网才能进入Hugging Face官网执行下载，如果没有，可以选择进入 ModelScope 魔搭社区，按照教程执行下载。
 
 经过Step 3的克隆代码操作过程，我们下载到的只是ChatGLM3-6B的一些运行文件和项目代码，并不包含ChatGLM3-6B这个模型。这里我们需要进入到 HuggingFace 下载。Hugging Face是一个丰富的模型库，开发者可以上传和共享他们训练好的机器学习模型。这些模型通常是经过大量数据训练的，并且很大，因此需要特殊的存储和托管服务
 
@@ -339,3 +372,321 @@ print(reponse["choices"][0]["message"]["content"])
 ```
 
 除此之外，大家还可以去测试ChatGLM3-6B的Function Calling等更高级的用法时的性能情况。我们推荐大家使用OpenAI风格的AP调用方法是进行学习和尝试构造高级的AlAgent，同时积极参与国产大型模型的开源社区，共同增强国内在这一领域的实力和影响力。
+
+## 单机多卡启动ChatGLM3-6B模型
+
+单机多卡（多个 GPU）环境相较于单机单卡（一个GPU），可以提供更高的计算能力，但同时也会存在更复杂的资源管理和更复杂的程序代码。比如我们需要考虑如何使所有的GPU 的负载均衡，如果某个 GPU 负载过重，而其他GPU 空闲，这会导致资源浪费和性能瓶颈，除此之外，还要考虑每个 GPU 的内存不会被过度使用及模型训练过程中GPU 之间的同步和通信。
+
+尽管如此，单机多卡或者多机多卡往往才是工业界实际使用的方式，单机单卡的瓶颈非常有限，所以这方面的内容还是非常有必要掌握的。而如果初次接触，我们需要做的就是：学会有效的使用简单的GPU监控工具来帮助配置一些重要的超参数，例如批大小（batch size），像出现 GPU 内存溢出（即显存不足）等情况，去考虑减小批大小等等。
+
+### 查看GPU状态信息
+
+* 查看当前机器的GPU数量
+
+方式一：Ispci 命令。这是最常用的方法之一，这个命令会显示与图形相关的设备信息，列出所有PCI设备，包括GPU，其执行命令如下：
+
+```
+lspci | grep VGA
+```
+
+方式二：Nvidia-smi 命令。如果系统中安装的是 NVIDIA GPU 和驱动程序，最熟知且最直观的 nvidia-smi命令。这个命令可以查看当前机器上所有GPU的使用情况，包括显存占用情况，执行命令如下：
+
+```
+nvidia-smi
+```
+
+* GPU性能参数
+
+持续模式：耗能大，但是在新的GPU应用启动时，花费的时间更少，这里显示的是off的状态。
+
+性能状态：从PO到P12，PO表示最大性能，P12表示状态最小性能。
+
+除了直接运行 nvidia-smi 命令之外，还可以加一些参数，来查看一些本机GPU 使用的实时情况，这种方式也是在执行训练过程中最简单直观且比较常用的一种监测方式，执行命令如下：
+
+```
+watch -n 1 nvidia-smi
+```
+
+### 单机多卡启动ChatGLM3-6B模型服务
+
+在 Linux 系统中想要在多GPU环境下启动一个应用服务，并且指定使用某些特定的GPU，主要有两种方式：
+
+1. CUDA_VISIBLE_DEVICES环境变量
+使用 CUDA_VISIBLE_DEVICES 环境变量是最常用的方法之一。这个环境变量可以控制哪些GPU对CUDA程序可见。例如，如果系统有4个GPU（编号为0，1.2,3），而你只想使用编号为1和2的GPU，那么可以在命令行中这样设置：
+
+```
+CUDA_VISIBLE_DEVICES=1,2 python your_script.py
+```
+
+这会让 your_script.py 只看到并使用编号为1和2的GPU。
+
+2. 修改程序代码
+
+这种方式需要直接在代码中设置CUDA设备。例如，在PyTorch中，可以使用torch.cuda.set_device()函数来指定使用哪个GPU，除此之外，某些框架或工具提供也可能提供相关的参数或环境变量来控制GPU的使用，但都需要修改相关的启动代码。
+
+选择哪种方法取决于具体需求和使用的框架或工具。通常，CUDA_VISIBLE_DEVICES 是最简单和最直接的方式，而且它不需要修改代码，这使得它在不同环境和不同应用程序之间非常灵活。如果有控制多个服务并且每个服务需要使用不同GPU的需求，那么需要根据具体情况结合使用。
+
+接下来我们依次尝试上述两种方式来启动ChatGLM3-6B模型服务。
+
+* 根据GPU数量自动进行分布式启动
+
+这里我们以命令行的交互方式来进行多卡启动测试。官方提供的脚本名称是：cli_demo.py。
+
+在启动前，仅需要进行一处简单的修改，因为我们已经把ChatGLM3-6B这个模型下载到了本地，所以需要修改一下模型的加载路径。
+
+如果仅修改模型权重就执行启动，该过程会自动检测可用的 GPU 并将模型的不同部分映射到这些 GPU上
+
+模型服务运行后输入 Stop 退出启动程序，GPU资源就会立即被释放。
+
+默认启动会自动使用多块GPU的资源的原因，在于cli_demo.py 这个.py文件中的这行代码：
+
+```
+model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").eval()
+```
+
+参数 device_map="auto"， 这个参数指示 transformers 库自动检测可用的 GPU 并将模型的不同部分映射到这些GPU上。如果机器上有多个 GPU，模型会尝试在这些GPU 上进行分布式处理。其通过分析各个GPU 的当前负载和能力来完成。负载均衡的目标是最大化所有GPU的利用率，避免任何一个GPU过载。
+
+可以通过如下代码，查看当前环境下的GPU情况：
+
+```
+import torch
+
+# 检查 CUDA 是否可用
+cuda_available = torch.cuda.is_available()
+print(f"CUDA available: {cuda_available}")
+
+# 列出所有可用的 GPU
+if cuda_available:
+    num_gpus = torch.cuda.device_count()
+    print(f"Number of GPUs available: {num_gpus}")
+
+    for i in range(num_gpus):
+        print(f"GPU {i}: {torch.cuda.get_device_name(i)}")
+        # 获取当前默认 GPU
+    print(f"Current CUDA device: {torch.cuda.current_device()}")
+else:
+    print("No GPUs available.")
+```
+
+可以把上述代码写在一个py文件中，执行该文件后会输出当前机器上的GPU资源情况，方便我们对当前的资源情况有一个比较清晰的认知。
+
+* 如果想要指定使用某一块GPU，那么需要这样修改代码 cli_demo.py 中的代码：
+
+```
+import torch
+
+# 设置 GPU 设备
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+#model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto"). eval ()
+model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True).eval()
+
+# 将模型移到指定的 GPU
+model = model.to(device)
+```
+
+* 在代码程序中指定某几块GPU加载服务
+
+更多数人的情况是：比如当前机器中有4块GPU，我们只想使用前两块GPU做此次任务的加载，该如何选择呢？这很常见，其问题主要在于：如果某块GPU已经处于满载运行当中，这时我们再使用四块默认同时运行的话大概率会提示out ofmemory报错，或者提示显卡不平衡imblance的warning警告。
+
+如果是想在代码中指定多块卡运行该服务，需要在代码中添加这两行代码：
+
+```
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = ','.join(map(str, [0,1]))
+```
+
+## ChatGLM3-6B高效微调实践
+在大模型掀起新一轮的Al热潮以来，目前的形式就是大语言模型（LLM）百花齐放，工业界用于生产的算法模型由原来是几万，几十万的参数，到现在上升到上十亿，上百亿的情况。在这种情况下，因为显卡资源的因素，预训练大模型基本是大公司或者高校才可以做的事情，小公司或个人只能对大模型进行微调后使用。
+
+以前我们比较熟悉的都是全量微调，这个微调过程是对原始模型的所有参数全部做一个调整。但对于LLM，在消费级显卡上就做根本没有办法实现。所以目前对于大模型来说，主流的微调技术叫做高效微调，这种方式是通过微调大模型少量或者额外的一些参数，固定预训练模型（LLM）参数，以此来降低计算和存储成本，同时，还可以在一定程度上实现与全量参数微调相当的性能。
+
+### 主流的高效微调方法介绍
+
+* Freeze
+
+Freeze是冻结的意思，Freeze方法指的是参数冻结，对原始模型的大部分参数进行冻结，仅训练少部分的参数，这样就可以大大减少显存的占用，从而完成对大模型的微调。特别是在Bert模型出来的时候，比较会常用到Freeze的这样一个微调方法，比如Bert有12层，我们把前10层冻结了，只训练后两层。这是一种比较简单微调方法，由于冻结的参数是大部分，微调的参数是少部分，因此在代码中只需要设置需要微调的层的参数即可，把不需要参加训练的层数 requires_grad 设置为False，不让其进行更新，从而达到冻结的这样一个效果。
+
+### 官方案例
+
+更多请参考：  [ChatGLM3-6B 微调](./chat-glm3-funetune.md)
+
+目录： ChatGLM3/finetune_demo/
+
+本目录提供 ChatGLM3-6B 模型的微调示例，包括全量微调和 P-Tuning v2。格式上，提供多轮对话微调样例和输入输出格式微调样例。
+
+如果将模型下载到了本地，本文和代码中的 THUDM/chatglm3-6b 字段均应替换为相应地址以从本地加载模型。
+
+运行示例需要 python>=3.10，除基础的 torch 依赖外，示例代码运行还需要依赖。
+
+我们提供了 示例notebook 用于演示如何使用我们的微调代码。
+
+```
+pip install -r requirements.txt
+```
+
+测试硬件标准
+
+我们仅提供了单机多卡/多机多卡的运行示例，因此您需要至少一台具有多个 GPU 的机器。本仓库中的默认配置文件中，我们记录了显存的占用情况：
+
+* SFT 全量微调: 4张显卡平均分配，每张显卡占用 48346MiB 显存。
+* P-TuningV2 微调: 1张显卡，占用 18426MiB 显存。
+* LORA 微调: 1张显卡，占用 14082MiB 显存。
+
+```
+请注意，该结果仅供参考，对于不同的参数，显存占用可能会有所不同。请结合你的硬件情况进行调整。
+请注意，我们仅仅使用英伟达 Hopper(代表显卡：H100) 和 Ampère(代表显卡:A100) 架构和系列显卡做过测试。如果您使用其他架构的显卡，可能会出现
+
+未知的训练问题 / 显存占用与上述有误差。
+架构过低而不支持某些特性。
+推理效果问题。 > 以上三种情况为社区曾经遇到过的问题，虽然概率极地，如果您遇到了以上问题，可以尝试在社区中解决。
+```
+
+#### 多轮对话格式
+
+多轮对话微调示例采用 ChatGLM3 对话格式约定，对不同角色添加不同 loss_mask 从而在一遍计算中为多轮回复计算 loss。
+
+对于数据文件，样例采用如下格式
+
+如果您仅希望微调模型的对话能力，而非工具能力，您应该按照以下格式整理数据。
+
+```
+[
+  {
+    "conversations": [
+      {
+        "role": "system",
+        "content": "<system prompt text>"
+      },
+      {
+        "role": "user",
+        "content": "<user prompt text>"
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant response text>"
+      },
+      // ... Muti Turn
+      {
+        "role": "user",
+        "content": "<user prompt text>"
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant response text>"
+      }
+    ]
+  }
+  // ...
+]
+```
+
+请注意，这种方法在微调的step较多的情况下会影响到模型的工具调用功能
+
+如果您希望微调模型的对话和工具能力，您应该按照以下格式整理数据。
+
+```
+[
+  {
+    "tools": [
+      // available tools, format is not restricted
+    ],
+    "conversations": [
+      {
+        "role": "system",
+        "content": "<system prompt text>"
+      },
+      {
+        "role": "user",
+        "content": "<user prompt text>"
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant thought to text>"
+      },
+      {
+        "role": "tool",
+        "name": "<name of the tool to be called",
+        "parameters": {
+          "<parameter_name>": "<parameter_value>"
+        },
+        "observation": "<observation>"
+        // don't have to be string
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant response to observation>"
+      },
+      // ... Muti Turn
+      {
+        "role": "user",
+        "content": "<user prompt text>"
+      },
+      {
+        "role": "assistant",
+        "content": "<assistant response text>"
+      }
+    ]
+  }
+  // ...
+]
+```
+
+* 关于工具描述的 system prompt 无需手动插入，预处理时会将 tools 字段使用 json.dumps(..., ensure_ascii=False) 格式化后插入为首条 system prompt。
+
+* 每种角色可以附带一个 bool 类型的 loss 字段，表示该字段所预测的内容是否参与 loss 计算。若没有该字段，样例实现中默认对 system, user 不计算 loss，其余角色则计算 loss。
+
+* tool 并不是 ChatGLM3 中的原生角色，这里的 tool 在预处理阶段将被自动转化为一个具有工具调用 metadata 的 assistant 角色（默认计算 loss）和一个表示工具返回值的 observation 角色（不计算 loss）。
+
+* 目前暂未实现 Code interpreter 的微调任务。
+
+* system 角色为可选角色，但若存在 system 角色，其必须出现在 user 角色之前，且一个完整的对话数据（无论单轮或者多轮对话）只能出现一次 system 角色。
+
+
+
+## 大模型并行训练框架-DeepSpeed
+
+训练像ChatGL.M3-6B这种大的模型往往需要配备高价的多GPU、多节点的集群，但是，即便拥有了这些先进的硬件资源，实际的机器利用率往往只能达到其最大效率的一半左右。这意味着，仅仅拥有更加强大的硬件资源并不能保证更高的模型训练吞吐量。同样，即使系统具有更高的吞吐量，也并不能保证所训练出的模型具有更高的精度或更快的收敛速度。更重要的是，当前的开源软件的易用性也常常被用户诟病。
+
+DeepSpeed是一个开源深度学习优化库，专门设计来提高大型模型训练的效率和扩展性。这个库采用了一系列先进技术，如模型并行化、梯度累积、动态精度缩放和混合精度训练等，来实现快速训练。除此之外，DeepSpeed还搭载了一套强大的辅助工具集，涵盖分布式训练管理、内存优化以及模型压缩等功能，帮助开发者更有效地处理和优化大规模的深度学习任务。值得一提的是，DeepSpeed是基于PyTorch构建的，因此对于现有的PyTorch项目，开发者可以轻松地实施迁移。
+此库已在众多大规模深度学习应用中得到验证，涉及领域包括但不限于语言模型、图像分类和目标检测。
+
+其使用非常简单，其较强的易用性源于把该软件的构造难度交给开发者而不是用户，所以我们用起来是非常简单的，就是一个configs文件，然后在训练代码中反向传播后执行参数更新的时候加一两行代码就可以了。对于ChatGLM3-6B模型的微调，默认只是在全量微调的脚本中加入了deepspeed的代码，因硬件配置相差太大，即使是使用deepspeed也无法运行。但我们可以将其应用到高效微调的P-Turning v2中，只需要添加一行代码，其他的全部使用默认的即可。
+
+DeepSpeed已经在Github上开源，地址：https://github.com/microsoft/DeepSpeed
+
+这里在fineturn_pt.sh 中加入这样一行代码：
+
+
+Issues：
+
+* lora_finetune.ipynb，报错：
+
+```
+Traceback (most recent call last):
+  File "/home/ps/llm/ChatGLM3/finetune_demo/finetune_hf.py", line 148, in <module>
+    @dc.dataclass
+     ^^^^^^^^^^^^
+  File "/home/ps/anaconda3/envs/chatglm3/lib/python3.11/dataclasses.py", line 1230, in dataclass
+    return wrap(cls)
+           ^^^^^^^^^
+  File "/home/ps/anaconda3/envs/chatglm3/lib/python3.11/dataclasses.py", line 1220, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ps/anaconda3/envs/chatglm3/lib/python3.11/dataclasses.py", line 958, in _process_class
+    cls_fields.append(_get_field(cls, name, type, kw_only))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ps/anaconda3/envs/chatglm3/lib/python3.11/dataclasses.py", line 815, in _get_field
+    raise ValueError(f'mutable default {type(f.default)} for field '
+ValueError: mutable default <class 'transformers.training_args_seq2seq.Seq2SeqTrainingArguments'> for field training_args is not allowed: use default_factory
+```
+
+解决方法：
+
+找到代码中的@dc.dataclass, 和里面定义的dc.field()，将其中的default=xxx改为default_factory=xxx即可。
+
+```
+training_args: Seq2SeqTrainingArguments = dc.field(
+        default_factory=Seq2SeqTrainingArguments(output_dir='./output')
+    )
+```

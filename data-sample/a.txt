@@ -1,0 +1,21 @@
+Prefix dict has been built successfully.
+                                                                                
+{'eval_rouge-1': 29.68116, 'eval_rouge-2': 6.219114000000001, 'eval_rouge-l': 21.761787999999996, 'eval_bleu-4': 0.02678721715966885, 'eval_runtime': 21.4969, 'eval_samples_per_second': 2.326, 'eval_steps_per_second': 0.186, 'epoch': 0.0}
+  2%|▋                                      | 500/30000 [00:57<35:12, 13.96it/s]
+100%|█████████████████████████████████████████████| 4/4 [00:15<00:00,  4.07s/it]
+                                                                                Saving model checkpoint to ./output/Lora_temp_test/tmp-checkpoint-500
+tokenizer config file saved in ./output/Lora_temp_test/tmp-checkpoint-500/tokenizer_config.json
+Special tokens file saved in ./output/Lora_temp_test/tmp-checkpoint-500/special_tokens_map.json
+/home/ps/anaconda3/envs/chatglm3/lib/python3.11/site-packages/torch/utils/checkpoint.py:460: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+
+
+dict has been built successfully.
+                                                                                
+{'eval_rouge-1': 29.438044000000005, 'eval_rouge-2': 5.661042000000001, 'eval_rouge-l': 22.071056, 'eval_bleu-4': 0.02658810013458685, 'eval_runtime': 18.3051, 'eval_samples_per_second': 2.731, 'eval_steps_per_second': 0.219, 'epoch': 0.0}
+  0%|▏                                   | 500/100000 [00:54<1:59:24, 13.89it/s]
+100%|█████████████████████████████████████████████| 4/4 [00:12<00:00,  2.87s/it]
+                                                                                Checkpoint destination directory /mnt/sda/AmyGLM/finetune/output/Lora/checkpoint-500 already exists and is non-empty.Saving will proceed but saved results may be invalid.
+Saving model checkpoint to /mnt/sda/AmyGLM/finetune/output/Lora/checkpoint-5
+
+
+

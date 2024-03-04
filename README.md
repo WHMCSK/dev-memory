@@ -75,6 +75,10 @@
 
 * [安卓中一个进程如何在转入后台后不被系统杀死](./docs/android/android-service-forever.md)  
 
+## 鸿蒙
+
+* [鸿蒙手机无线调试](./docs/hormaryos/debug.md)
+
 ## 大数据
 * [常用命令](./docs/bigdata/common-use-command.md)
 * [大数据组件自带管理界面](./docs/bigdata/mgmt-pages.md)

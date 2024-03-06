@@ -78,6 +78,7 @@
 ## 鸿蒙
 
 * [鸿蒙手机无线调试](./docs/hormaryos/debug.md)
+* [鸿蒙开发进程跟不上，导致一些问题，例如新发布的api9，开发的程序在很多机型上卡到无法使用](./docs/hormaryos/slow-hormaryos.md)
 
 ## 大数据
 * [常用命令](./docs/bigdata/common-use-command.md)

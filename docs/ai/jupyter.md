@@ -50,6 +50,22 @@ jupyter lab
 jupyter notebook --generate-config
 ```
 
+### Jupyterlab4.0来了
+
+Jupyter 贡献者社区自豪地宣布 JupyterLab 4.0，这是我们功能齐全的开发环境的下一个主要版本。该软件包现在可在 PyPI 和 conda-forge 上使用。您可以通过运行
+
+```
+pip install --upgrade jupyterlab
+```
+
+或升级
+
+```
+conda install -c conda-forge jupyterlab
+```
+
+[JupyterLab 文档](https://jupyterlab.readthedocs.io/en/latest/index.html)已经更新了。
+
 ### 常见问题
 
 - NotebookApp] Blocking Cross Origin API request for /api/contents. Origin: http://xx/xx/xx/xx:123546, Host: 172.20.25.164

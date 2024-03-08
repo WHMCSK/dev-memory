@@ -7,13 +7,28 @@ conda install notebook
 
 ### 安装扩展包
 ```
-conda install -c conda-forge jupyter_contrib_nbextensions jupyterlab
+conda install -c conda-forge jupyter_contrib_nbextensions jupyterlab ipywidgets ipykernel
 ```
 
-安装进度条扩展ipywidgets
+ * ipywidgets：进度条扩展ipywidgets
+ * ipykernel：这个软件包将允许JupyterNotebook使用特定环境的Python版本
+
+### 安装ipykernel
+
+在该环境中安装ipykernel软件包。这个软件包将允许JupyterNotebook使用特定环境的Python版本。运行以下命令：
+
 ```
-conda install ipywidgets
+conda install ipykernel
 ```
+
+将该环境添加到JupyterNotebook中。运行以下命令：
+
+```
+#这里的env_name替换成需要使用的虚拟环境名称
+python -m ipykernel install --user --name=chatglm3 --display-name="Python(chatglm3)"
+python -m ipykernel install --user --name=dbgpt --display-name="Python(dbgpt)"
+```
+
 
 ### 启动jupyter
 

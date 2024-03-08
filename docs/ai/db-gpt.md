@@ -29,7 +29,7 @@ conda activate dbgpt_env
 
 ## 先决条件
 ```
- pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==3.19.0 duckdb chardet pymysql chromadb openai charset-normalizer
+ pip install sqlparse python-multipart fschat gitpython auto_gpt_plugin_template langchain sentence-transformers alembic accelerate protobuf==3.19.0 duckdb chardet pymysql chromadb openai charset-normalizer typeguard schedule tomlkit
 
  pip install -U langchain-community
 ```

@@ -1,5 +1,11 @@
 # Stable Diffusion
 
+## 安装python包
+
+```
+pip install modelscope xformers insightface
+```
+
 ## 安全
 
 1. sd自带的登陆界面
@@ -102,11 +108,45 @@ https://github.com/Physton/sd-webui-prompt-all-in-one
 
 3. 汉化插件
 
-双语插件
+* 双语插件
 https://github.com/journey-ad/sd-webui-bilingual-Localization
 
-中文语言包
+* 中文语言包
 https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN
+
+4. 图片裁剪插件：
+
+https://github.com/Physton/sd-webui-image-cropper
+
+5. 图片旋转插件：
+
+https://github.com/Physton/sd-webui-image-rotate
+
+6. 图片缩放插件：
+
+https://github.com/Physton/sd-webui-image-zoom
+
+7. 图片翻转插件：
+
+https://github.com/Physton/sd-webui-image-flip
+
+8. 图片滤镜插件：
+
+https://github.com/Physton/sd-webui-image-filter
+
+9. 图片美化插件：
+
+https://github.com/Physton/sd-webui-image-beautify
+
+10. 图片背景替换插件：
+
+https://github.com/Physton/sd-webui-image-background-replace
+
+11. 擦除插件：
+https://github.com/Physton/sd-webui-eraser
+
+12. 图片清理插件：
+https://github.com/novitalabs/sd-webui-cleaner
 
 ## 源码和社区
 

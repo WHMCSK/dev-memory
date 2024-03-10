@@ -129,6 +129,7 @@
 * [安装jupyter notebook](./docs/ai/jupyter.md)
 * [大模型测试问题语料分析](./docs/ai/test-questions.md)
 * [Stable Diffusion](./docs/ai/stable-diffusion.md)
+* [论文](./docs/ai/paper.md)
 
 ## ESP8266
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp/esp8266-wifi-sniffer.md)

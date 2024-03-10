@@ -54,3 +54,19 @@
 * 有代码的论文： “Talk is cheap, show me the code.”
 * 推荐网站： https://paperswithcode.com
 
+## 怎么找论文
+
+未知论文题目：依关键词搜索相关领域论
+
+1.知网：寻找优质综述，快入入门
+2.百度学术、google scholar
+3.arXiv: https://arxiv.org 论文预印本（preprint）平台
+4.顶会：CVPR、ECCV、ICCV、AAAI、NIPS、ICLR、ICML等
+
+是否优质，看IF
+IF（Impact Factor， 影响因子）：期刊前N年发表的论文被引数除以前N年发表的论文数，通常N=2或N=5
+JCR （Journal Citation Reports，期刊引证报告）：统计SCI期刊的论文引用数据，给出各期刊IF 
+
+SCI期刊分区：
+• JCR方式，一、二、三、四区各占25％
+• 中科院方式，一区为前5%，二区为5%-20%，三区为20%-50%，四区为50%-100%

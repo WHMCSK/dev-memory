@@ -6,10 +6,11 @@
 * [go-face人脸识别踩坑记](./docs/face/go-face-tour.md)  
 
 ## 日常
+
 * [Macbook日常管理](./docs/macbook/daily-maintain.md)
 * [关于中国墙](./docs/offten-use/abroad.md)
 
-## 工具 
+## 工具
 
 * [npm淘宝镜像与官方源切换](./docs/npm/npm-registry.md)
 * [java环境管理工具jenv和sdk](./docs/java/java-env.md)
@@ -47,9 +48,11 @@
 * [Redis从小白到大白笔记](./docs/redis/Redis.md)
 
 ## java
+
 * [java tools](./docs/java/tools.md)
 
 ## Python
+
 * [Python版本管理工具](./docs/python/env-mgmt.md)
 * [Python版本管理神器-pyenv](./docs/python/pyenv.md)
 * [conda](./docs/python/conda.md)
@@ -81,37 +84,46 @@
 * [鸿蒙开发进程跟不上，导致一些问题，例如新发布的api9，开发的程序在很多机型上卡到无法使用](./docs/hormaryos/slow-hormaryos.md)
 
 ## 大数据
+
 * [常用命令](./docs/bigdata/common-use-command.md)
 * [大数据组件自带管理界面](./docs/bigdata/mgmt-pages.md)
 * [熟悉spark](./docs/spark/spark.md)
 
 ## docker
+
 * [docker使用手册](./docs/docker/docker.md)
 * [Docker Desktop 4.18 发布，带来了大量新特性](./docs/docker/Docker%20Desktop%204.18新特性.md)
 * [如何在dockerfile加载修改的.bashrc](./docs/docker/dockerfile-modify-bashrc.md)
 
 ## 识别
+
 * [车牌识别](./docs/licence-plate/licence-plate.md)
 
 ## opencv
+
 * [opencv2](./docs/opencv/opencv.md)
 
 ## ros
+
 * [ros](./docs/ros/ros.md)
 
 ## 数据可视化
+
 * [Python数据可视化](./docs/datavisualize/python.md)
 * [Dash](./docs/datavisualize/dash.md)
 * [数据可视化框架比较](./docs/datavisualize/data-visualize-framework.md)
 * [Pandas](./docs/datavisualize/pandas.md)
 
 ## GIS
+
 * [qgis](./docs/qgis/qgis.md)
 
 ## 机器学习
+
 * [机器学习十大算法](./docs/ml/ml.md)
 
 ## AI
+
 * [CUDA安装](./docs/ai/cuda.md)
 * [DB-GPT试用笔记](./docs/ai/db-gpt.md)
 * [人工智能软硬件准备](./docs/ai/compute-capability.md)
@@ -131,13 +143,16 @@
 * [Stable Diffusion](./docs/ai/stable-diffusion.md)
 * [论文](./docs/ai/paper.md)
 * [Label Studio](./docs/ai/label-studio.md)
+* [PyTorch](./docs/ai/pytorch.md)
 
 ## ESP8266
+
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑥ Sniffer(混杂模式) 相关接口](./docs/esp/esp8266-wifi-sniffer.md)
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口](./docs/esp/esp8266-wifi.md)
 * [深入理解Arduino下的ESP8266_Non-OS_SDK API⑤ Wi-Fi接口.pdf](./docs/esp/深入理解Arduino下的ESP8266_Non-OS_SDK%20API⑤%20Wi-Fi接口_51CTO博客_arduino+esp8266.pdf)
 
 ## ESP-Drone
+
 * [ESP-Drone笔记](./docs/esp/esp-drone.md)
 * [ESP-Drone官方文档](https://docs.espressif.com/projects/espressif-esp-drone/zh_CN/latest/gettingstarted.html)
 

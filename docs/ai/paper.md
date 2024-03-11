@@ -171,12 +171,12 @@ endnote,Mendeley, Zotero, Citavi等
 
 ## 基础知识
 
-* Python 基础  
+### Python 基础  
 
 1.编程基础  
 2.机器学习库  
 
-* 神经网络基础知识  
+### 神经网络基础知识  
 
 一、神经网络与多层感知器  
 1.1 人工神经元：MP模型  
@@ -198,12 +198,12 @@ endnote,Mendeley, Zotero, Citavi等
 3.2 lstm 长短记忆循环神经网络  
 3.3 gru 门控循环单元  
 
-* 数学基础  
+### 数学基础  
 
 1.矩阵计算  
 2.概率论、信息论  
 
-* PyTorch 入门  
+### PyTorch 入门  
 
 1.PyTorch简介及安  
 2.PyTorch人名币分类  
@@ -216,7 +216,7 @@ endnote,Mendeley, Zotero, Citavi等
 9.PyTorch可视化TensorBoard  
 10.PyTorch实用技巧GPU/Finetune/保存加载  
 
-* CV图像基础  
+### CV图像基础  
 
 一、图像基础知识  
 1.1 数字图像  
@@ -251,7 +251,7 @@ endnote,Mendeley, Zotero, Citavi等
 5.4 光流法  
 5.5 背景减除法  
 
-* NLP 基础知识  
+### NLP 基础知识  
 
 一、文本特征  
 1.1 词袋 bag of words BOW  

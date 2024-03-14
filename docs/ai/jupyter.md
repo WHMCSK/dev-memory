@@ -29,6 +29,11 @@ python -m ipykernel install --user --name=chatglm3 --display-name="Python(chatgl
 python -m ipykernel install --user --name=dbgpt --display-name="Python(dbgpt)"
 ```
 
+另外删除kernel环境：
+
+```
+jupyter kernelspec remove 环境名称
+```
 
 ### 启动jupyter
 

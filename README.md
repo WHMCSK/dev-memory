@@ -144,6 +144,7 @@
 * [论文](./docs/ai/paper.md)
 * [Label Studio](./docs/ai/label-studio.md)
 * [PyTorch](./docs/ai/pytorch.md)
+* [Whisper](./docs/ai/whisper.md)
 
 ## ESP8266
 

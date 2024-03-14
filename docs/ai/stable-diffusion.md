@@ -148,6 +148,10 @@ https://github.com/Physton/sd-webui-eraser
 12. 图片清理插件：
 https://github.com/novitalabs/sd-webui-cleaner
 
+13. Civitai插件
+
+https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper#civitai-api-key
+
 ## 源码和社区
 
 1. Civitia源码：

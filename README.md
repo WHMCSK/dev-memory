@@ -145,6 +145,9 @@
 * [Label Studio](./docs/ai/label-studio.md)
 * [PyTorch](./docs/ai/pytorch.md)
 * [Whisper](./docs/ai/whisper.md)
+* [AmyGLM](./docs/ai/amy-glm.md)
+* [IP_LAP](./docs/ai/IP_LAP.md)
+* [Sad Talker](./docs/ai/sad-talker.md)
 
 ## ESP8266
 

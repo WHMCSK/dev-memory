@@ -265,3 +265,19 @@ endnote,Mendeley, Zotero, Citavi等
 2.2 序列标注  
 2.3 翻译、摘要生成、信息抽取等  
 2.4 文本生成NLG  
+
+
+## 最近看的论文
+
+### AutoGen
+
+code:
+
+https://github.com/microsoft/autogen
+
+cite paper:
+
+* [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)
+* [Cost-Effective Hyperparameter Optimization for Large Language Model Generation Inference](https://arxiv.org/abs/2303.04673)
+* [An Empirical Study on Challenging Math Problem Solving with GPT-4](https://arxiv.org/abs/2306.01337)
+

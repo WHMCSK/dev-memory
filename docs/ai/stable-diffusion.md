@@ -1,9 +1,10 @@
 # Stable Diffusion
 
-## 安装python包
+## 安装环境依赖
 
 ```
-pip install modelscope xformers insightface
+sudo apt-get install google-perftools
+pip install modelscope xformers insightface 
 ```
 
 ## 安全
@@ -13,7 +14,8 @@ pip install modelscope xformers insightface
 使用参数，sd启动之后就会首先访问登陆界面，输入用户名和密码，才能进入到sd的主界面。
 
 ```
-nohup ./webui.sh --gradio-auth username:password
+nohup ./webui.sh --enable-insecure-extension-access --xformers --gradio-auth username:password
+nohup ./webui.sh --enable-insecure-extension-access --gradio-auth username:password
 ```
 
 2. 也可以使用nginx进行访问控制

@@ -21,11 +21,11 @@ cuDNN [https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html#install
 
 1. CUDA toolkit Download
 
-https://developer.nvidia.com/cuda-toolkit-archive
+<https://developer.nvidia.com/cuda-toolkit-archive>
 
 官网安装：
 
-https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64
+<https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64>
 
 选择版本：
 
@@ -33,7 +33,7 @@ GA = General Availability,通用版本,指软件的通用版本。
 RC=Release Candidate,含义 是"发布候选版",它不是最终的版本,而是最终版(RTM=Release To Manufacture)之前的最后一个版本  
 
 官网说明文档，
-https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
+<https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html>
 
 CUDA的版本是跟显卡型号有关还是驱动有关？
 
@@ -43,11 +43,11 @@ CUDA的版本是跟显卡型号有关还是驱动有关？
 
 cuDNN地址如下，不过要注意的是，我们需要注册一个账号，才可以进入到下载界面。大家可以放心注册的。
 
-https://developer.nvidia.com/rdp/cudnn-download
+<https://developer.nvidia.com/rdp/cudnn-download>
 
 可以使用下面网址，查看适配的 cuDNN
 
-https://developer.nvidia.com/rdp/cudnn-archive
+<https://developer.nvidia.com/rdp/cudnn-archive>
 
 ## 三、 CUDA 安装与配置过程
 
@@ -106,6 +106,7 @@ CUDA 的安装路径在前面截图中有，或者打开电脑的环境变量查
 ```
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1
 ```
+
 后面那个v11.1是你自己的版本号
 
 CUDA 安装目录文件：
@@ -139,12 +140,100 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\libnvvp
 
 ![](./assets/cuDNN-check-2.png)
 
+## 五、CUDA纯净卸载（Ubuntu）
+
+1. 方法一：
+
+cd到安装目录的bin文件夹
+
+```
+cd /usr/local/cuda-11.6/bin
+```
+
+然后执行cuda自带卸载程序
+
+```
+sudo ./cuda-uninstaller
+```
+
+不一定管用，如果出现找不到：cuda-uninstaller的话，使用方法二（有的人能找到，我的也找不到）
+
+2. 方法二：
+
+执行Ubuntu的卸载删除程序3步：
+
+```
+sudo apt-get remove cuda
+sudo apt autoremove 
+sudo apt-get remove cuda*
+```
+
+ 程序卸载后会剩余安装包，所以cd到安装目录下：
+
+ ```
+  cd /usr/local/
+ ```
+
+ 删除原有的cuda文件夹
+
+```
+sudo rm -r cuda-11.6
+```
+
+这样的话可能会有残留文件，通过以下命令查找和删除残留：
+
+查看剩余残留：
+
+```
+sudo dpkg -l |grep cuda
+```
+
+卸载对应的残留 ：
+
+```
+sudo dpkg -P cuda-visual-tools-11-6
+```
+
+所有的查询到的残留都要删除~~
+
+```
+sudo dpkg -P 残留文件全称
+```
+
+这样就纯净卸载就都卸载干净了，可以安装需要的其他版本了。
+
+有时候也会用到如下方法：
+
+```
+sudo rm -rf /usr/local/cuda*
+```
+
+这个方法比较暴力，直接删除cuda相关的目录，包括安装目录，驱动，cuda缓存等等。
+
+## 六、CUDA纯净卸载（Windows）
+
+方法：
+
+1. 打开注册表，定位到：
+
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\NVIDIA Corporation\GPU Computing Toolkit\CUDA
+```
+
+2. 删除所有子项和值
+
+3. 删除安装目录：
+
+```
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA
+```
+
 参考博客：
 
-https://blog.csdn.net/mao_hui_fei/article/details/104246466
+<https://blog.csdn.net/mao_hui_fei/article/details/104246466>
 
-https://www.pianshen.com/article/8647746165/
+<https://www.pianshen.com/article/8647746165/>
 
-https://blog.csdn.net/weixin_45494025/article/details/100746025
+<https://blog.csdn.net/weixin_45494025/article/details/100746025>
 
-https://blog.csdn.net/u011473714/article/details/95042856
+<https://blog.csdn.net/u011473714/article/details/95042856>

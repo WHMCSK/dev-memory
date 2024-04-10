@@ -35,6 +35,12 @@ RC=Release Candidate,含义 是"发布候选版",它不是最终的版本,而是
 官网说明文档，
 <https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html>
 
+注意：CUDA toolkit安装完成后，会在.bashrc中设置环境变量，这时候可能执行nvcc -V，提示找不到nvcc，这种情况一般来说，需要自己手动执行一下source ~/.bashrc
+
+```
+source ~/.bashrc
+```
+
 CUDA的版本是跟显卡型号有关还是驱动有关？
 
 一般是驱动版本决定了能用的CUDA版本的上限，比如新版的显卡驱动可以支持老的CUDA runtime。但是老的显卡可能无法更新到最新的显卡驱动，比如Fermi显卡只能装到391驱动，因此只能用到CUDA9.1。除此之外，显卡硬件与CUDA compute capability相关，当然编译时也可以指定streaming multiprocessor。新的架构支持更多特性就是了。

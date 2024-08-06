@@ -24,7 +24,7 @@ Awesome Chinese LLM #JGitHubitft: https://github.com/HqWu-HITCS/Awesome-Chinese-
 
 | 名称 | 网址 | 介绍 |
 | --- | --- | --- |
-| C-Eval | 源码：https://github.com/hkust-nlp/ceval  官网：https://cevalbenchmark.com/#home  使用教程：https://github.com/hkust-nlp/ceval/blob/main/README_zh.md | C-Eval是全面的中文基础模型评估套件，涵盖了52个不同学科的13948个多项选择题，分为四个难度级别 \n通常你可以直接从模型的生成中使用正则表达式提取出答案选项（A,B,C,D)。在少样本测试中，模型通常会遵循少样本给出的固定格式，所以提取答案很简单。然而有时候，特别是零样本测试和面对没有做过指令微调的模型时，模型可能无法很好的理解指令，甚至有时不会回答问题。这种情况下我们推荐直接计算下一个预测token等于"A", "B", "C", "D"的概率，然后以概率最大的选项作为答案 -- 这是一种受限解码生成的方法，MMLU的官方测试代码中是使用了这种方法进行测试。注意这种概率方法对思维链的测试不适用。[更加详细的评测教程](https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fgithub.com%2Fhkust-nlp%2Fceval%2Fblob%2Fmain%2Fresources%2Ftutorial.md&source=article&objectId=2379575)。 |
+| C-Eval | 源码：https://github.com/hkust-nlp/ceval  官网：https://cevalbenchmark.com/#home  使用教程：https://github.com/hkust-nlp/ceval/blob/main/README_zh.md | C-Eval是全面的中文基础模型评估套件，涵盖了52个不同学科的13948个多项选择题，分为四个难度级别 <br> 通常你可以直接从模型的生成中使用正则表达式提取出答案选项（A,B,C,D)。在少样本测试中，模型通常会遵循少样本给出的固定格式，所以提取答案很简单。然而有时候，特别是零样本测试和面对没有做过指令微调的模型时，模型可能无法很好的理解指令，甚至有时不会回答问题。这种情况下我们推荐直接计算下一个预测token等于"A", "B", "C", "D"的概率，然后以概率最大的选项作为答案 -- 这是一种受限解码生成的方法，MMLU的官方测试代码中是使用了这种方法进行测试。注意这种概率方法对思维链的测试不适用。[更加详细的评测教程](https://cloud.tencent.com/developer/tools/blog-entry?target=https%3A%2F%2Fgithub.com%2Fhkust-nlp%2Fceval%2Fblob%2Fmain%2Fresources%2Ftutorial.md&source=article&objectId=2379575)。 |
 |  | 源码：  官网：  使用教程： |  |
 |  | 源码：  官网：  使用教程： |  |
 |  | 源码：  官网：  使用教程： |  |

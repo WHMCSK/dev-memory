@@ -132,6 +132,7 @@
 * [大模型训练特点数据](./docs/ai/training-feature-data.md)
 * [向量数据库](./docs/ai/voctor-db.md)
 * [ChatGLM3](./docs/ai/chat-glm3.md)
+* [大模型训练常见问题](./docs/ai/llm-training-qa.md)
 * [大模型评估](./docs/ai/llm-evaluation.md)
 * [大模型如何应用](./docs/ai/llm-app.md)
 * [Vicuna13B大模型推理监控：RTX 3090(24GB) * 1运行监控](./docs/ai/autodl_1RTX3090_Vicuna13B.md)

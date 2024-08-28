@@ -149,6 +149,9 @@
 * [AmyGLM](./docs/ai/amy-glm.md)
 * [IP_LAP](./docs/ai/IP_LAP.md)
 * [Sad Talker](./docs/ai/sad-talker.md)
+* [大模型面试问题记录](./docs/ai/interview.md)
+* [深度学习算法常识](./docs/ai/deeplearning-algorithm.md)
+* [vLLM部署](./docs/ai/vllm-deploy.md)
 
 ## ESP8266
 

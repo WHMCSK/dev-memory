@@ -154,6 +154,40 @@ https://github.com/novitalabs/sd-webui-cleaner
 
 https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper#civitai-api-key
 
+14. AnimateDiff
+
+AnimateDiff提示词动画
+
+使用动词可以驱动anime，例如walking、running、dancing、jumping、swimming、eating、drinking、talking、reading、writing、listening、playing、cooking、working、relaxing、sleeping、working out、exercising、reading books、painting、painting portraits、painting landscapes、painting sculptures、painting architecture、painting animals、painting monsters、painting fantasy、painting abstract、painting cityscapes、painting landmarks、painting landscapes、painting architecture、painting animals
+
+
+```
+masterpiece,best quality,(photorealistic:1.1),(detailed:1.2),a lady,walking,(cyborg:1.1),(abstract,science fiction,cyberpunk,alternate reality,vivid colors,neon lights:1.1),full body,skinny,large breasts,mechanical parts,cyberwear,short hair,blue eyes,<lora:add_detail:0.8>,(4dsh4t4r4n:0.8),armo
+```
+
+```
+Best quality,masterpiece,ultra high res,(photorealistic:1.2),raw photo,1girl,(smile:0.6),medium chest,running in the street,city streets in los angeles,solo,navel,short hair,(white tight_pants:1.1),black hair,realistic,looking at viewer,
+```
+
+```
+(masterpiece,best quality,hires,high resolution:1.2),extremely detailed,realistic,intricate details,highres,1girl,solo,light smile,blush,black hair,Top Knot with Accessories,(sunlight,cinematic lighting,perfect lighting,bloom),looking at viewer,neon light,stage lighting,brisk step,(waltz dance:1.2),ballroom,stage,(high_heels:1.2),thighhighs,lace-trimmed_dress,
+```
+
+```
+masterpiece,best quality,realistic,hand painted textures,intricate details,medieval,China Great Wall,2 ancient sexy Chinese warriors holding bronze spear,kung_fu,jumping,(fightting with each other:1.2),combat boots,wind,trees,<lora:more_details:0.8>,(smoke arround background:1.1),winter,
+```
+
+AnimateDiff提示词游历(Prompt Travel)
+
+Prompt Travel提示词游历语法：
+
+```
+帧数1: 提示词1,
+帧数2: 提示词2,
+```
+
+如果生成的时候日志显示"You are using prompt travel"，就代表提示词游历语法激活了。
+
 ## 源码和社区
 
 1. Civitia源码：

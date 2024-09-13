@@ -152,6 +152,10 @@
 * [大模型面试问题记录](./docs/ai/interview.md)
 * [深度学习算法常识](./docs/ai/deeplearning-algorithm.md)
 * [vLLM部署](./docs/ai/vllm-deploy.md)
+* [文本转语音](./docs/ai/tts.md)
+* [人声分离](./docs/ai/speech_separation.md)
+* [RAG](./docs/ai/rag.md)
+* [方言数据需求的解析思路——上海话](./docs/ai/dialect-shanghai.md)
 
 ## ESP8266
 

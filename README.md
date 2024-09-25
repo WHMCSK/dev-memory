@@ -156,6 +156,7 @@
 * [人声分离](./docs/ai/speech_separation.md)
 * [RAG](./docs/ai/rag.md)
 * [方言数据需求的解析思路——上海话](./docs/ai/dialect-shanghai.md)
+* [文本-语音转换技术问答](./docs/ai/text-speech-conversion.md)
 
 ## ESP8266
 
@@ -169,6 +170,9 @@
 * [ESP-Drone官方文档](https://docs.espressif.com/projects/espressif-esp-drone/zh_CN/latest/gettingstarted.html)
 
 
+## 参考论文
+
+Jaehyeon Kim, Jungil Kong, Juhee Son - [Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech](https://arxiv.org/abs/2106.06103). V1 Submited by Jaehyeon Kim on https://arxiv.org/ at Fri, 11 Jun 2021 01:07:12 UTC. cite as arXiv:2106.06103 [cs.SD] (or arXiv:2106.06103v1 [cs.SD] for this version).
 
 ## 各类awesome
 

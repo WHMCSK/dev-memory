@@ -334,26 +334,26 @@ GPT模型微调训练参数：
 
 4. 评估表格
 
-| 语音编号 | 文本内容 | 是否可用 | 备注 |
-| --- | --- | --- | --- |
-| ZH-1-1 | 车辆进站请注意安全。一二八纪念路江阳南路到了，请配合从后门下车，开门请当心。 |  |  |
-| ZH-1-2 | 车辆进站请注意安全。一二八纪念路江阳南路到了，请配合从后门下车，开门请当心。 |  |  |
-| ZH-1-3 | 车辆进站请注意安全。一二八纪念路江阳南路到了，请配合从后门下车，开门请当心。 |  |  |
-| ZH-2-1 | 车辆进站请注意安全。松塘路松梁路到了，请配合从后门下车，开门请当心。 |  |  |
-| ZH-2-2 | 车辆进站请注意安全。松塘路松梁路到了，请配合从后门下车，开门请当心。 |  |  |
-| ZH-2-3 | 车辆进站请注意安全。松塘路松梁路到了，请配合从后门下车，开门请当心。 |  |  |
-| ZH-3-1 | 车辆起步请拉好扶手，投币后请配合朝里走，下一站，共康东路阳泉路，请准备从后门下车。 |  |  |
-| ZH-3-2 | 车辆起步请拉好扶手，投币后请配合朝里走，下一站，共康东路阳泉路，请准备从后门下车。 |  |  |
-| ZH-3-3 | 车辆起步请拉好扶手，投币后请配合朝里走，下一站，共康东路阳泉路，请准备从后门下车。 |  |  |
-| EN-1-1 | We are arriving at 128 Ji Nian Road at South Jiangyang Road. |  |  |
-| EN-1-2 | We are arriving at 128 Ji Nian Road at South Jiangyang Road. |  |  |
-| EN-1-3 | We are arriving at 128 Ji Nian Road at South Jiangyang Road. |  |  |
-| EN-2-1 | We are arriving at Songtang Road at Songliang Road. |  |  |
-| EN-2-2 | We are arriving at Songtang Road at Songliang Road. |  |  |
-| EN-2-3 | We are arriving at Songtang Road at Songliang Road. |  |  |
-| EN-3-1 | Next stop is Tongnan Road at South Changjiang Road. |  |  |
-| EN-3-2 | Next stop is Tongnan Road at South Changjiang Road. |  |  |
-| EN-3-3 | Next stop is Tongnan Road at South Changjiang Road. |  |  |
+| 语音编号 | 文本内容 | 是否可用 | 是否组内最优 | 备注 |
+| --- | --- | --- | --- | --- |
+| ZH-1-1 | 车辆进站请注意安全。一二八纪念路江阳南路到了，请配合从后门下车，开门请当心。 |  |  |  |
+| ZH-1-2 | 车辆进站请注意安全。一二八纪念路江阳南路到了，请配合从后门下车，开门请当心。 |  |  |  |
+| ZH-1-3 | 车辆进站请注意安全。一二八纪念路江阳南路到了，请配合从后门下车，开门请当心。 |  |  |  |
+| ZH-2-1 | 车辆进站请注意安全。松塘路松梁路到了，请配合从后门下车，开门请当心。 |  |  |  |
+| ZH-2-2 | 车辆进站请注意安全。松塘路松梁路到了，请配合从后门下车，开门请当心。 |  |  |  |
+| ZH-2-3 | 车辆进站请注意安全。松塘路松梁路到了，请配合从后门下车，开门请当心。 |  |  |  |
+| ZH-3-1 | 车辆起步请拉好扶手，投币后请配合朝里走，下一站，共康东路阳泉路，请准备从后门下车。 |  |  |  |
+| ZH-3-2 | 车辆起步请拉好扶手，投币后请配合朝里走，下一站，共康东路阳泉路，请准备从后门下车。 |  |  |  |
+| ZH-3-3 | 车辆起步请拉好扶手，投币后请配合朝里走，下一站，共康东路阳泉路，请准备从后门下车。 |  |  |  |
+| EN-1-1 | We are arriving at 128 Ji Nian Road at South Jiangyang Road. |  |  |  |
+| EN-1-2 | We are arriving at 128 Ji Nian Road at South Jiangyang Road. |  |  |  |
+| EN-1-3 | We are arriving at 128 Ji Nian Road at South Jiangyang Road. |  |  |  |
+| EN-2-1 | We are arriving at Songtang Road at Songliang Road. |  |  |  |
+| EN-2-2 | We are arriving at Songtang Road at Songliang Road. |  |  |  |
+| EN-2-3 | We are arriving at Songtang Road at Songliang Road. |  |  |  |
+| EN-3-1 | Next stop is Tongnan Road at South Changjiang Road. |  |  |  |
+| EN-3-2 | Next stop is Tongnan Road at South Changjiang Road. |  |  |  |
+| EN-3-3 | Next stop is Tongnan Road at South Changjiang Road. |  |  |  |
 
 5. 样本参数：
 

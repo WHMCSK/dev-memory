@@ -1,0 +1,4 @@
+# Label Studio
+
+LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/files label-studio
+

@@ -1,4 +1,11 @@
 .DS_Store
+/**/._.DS_Store
+.obsidian/.*
+_book/.*
+docs/text/assets/.*
+docs/windows/assets/.*
+docs/markdown/.*
+docs/python/.*
 
 # Build and Release Folders
 bin-debug/

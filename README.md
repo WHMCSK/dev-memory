@@ -26,6 +26,7 @@
 * [mdBook](./docs/mdbook/mdbook-use.md)
 * [Makefile编写规则](./docs/makefile/makefile.md)
 * [Prometheus应用监控](./docs/prometheus/prometheus.md)
+* [搜索技巧](./docs/tools/search-skill.md)
 
 ## Markdown
 

@@ -47,6 +47,11 @@
 
 * [Redis从小白到大白笔记](./docs/redis/Redis.md)
 
+## Consul
+
+* [Consul入门](./docs/consul/consul-intro.md)
+* [consul健康检查源码分析一（http+interval模式）](./docs/consul/health-check.md)
+
 ## java
 
 * [java tools](./docs/java/tools.md)

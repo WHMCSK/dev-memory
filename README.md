@@ -138,6 +138,7 @@
 * [大模型训练特点数据](./docs/ai/training-feature-data.md)
 * [向量数据库](./docs/ai/voctor-db.md)
 * [ChatGLM3](./docs/ai/chat-glm3.md)
+* [大模型训练常见问题](./docs/ai/llm-training-qa.md)
 * [大模型评估](./docs/ai/llm-evaluation.md)
 * [大模型如何应用](./docs/ai/llm-app.md)
 * [Vicuna13B大模型推理监控：RTX 3090(24GB) * 1运行监控](./docs/ai/autodl_1RTX3090_Vicuna13B.md)
@@ -154,6 +155,14 @@
 * [AmyGLM](./docs/ai/amy-glm.md)
 * [IP_LAP](./docs/ai/IP_LAP.md)
 * [Sad Talker](./docs/ai/sad-talker.md)
+* [大模型面试问题记录](./docs/ai/interview.md)
+* [深度学习算法常识](./docs/ai/deeplearning-algorithm.md)
+* [vLLM部署](./docs/ai/vllm-deploy.md)
+* [文本转语音](./docs/ai/tts.md)
+* [人声分离](./docs/ai/speech_separation.md)
+* [RAG](./docs/ai/rag.md)
+* [方言数据需求的解析思路——上海话](./docs/ai/dialect-shanghai.md)
+* [文本-语音转换技术问答](./docs/ai/text-speech-conversion.md)
 
 ## 炼丹
 
@@ -171,6 +180,9 @@
 * [ESP-Drone官方文档](https://docs.espressif.com/projects/espressif-esp-drone/zh_CN/latest/gettingstarted.html)
 
 
+## 参考论文
+
+Jaehyeon Kim, Jungil Kong, Juhee Son - [Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech](https://arxiv.org/abs/2106.06103). V1 Submited by Jaehyeon Kim on https://arxiv.org/ at Fri, 11 Jun 2021 01:07:12 UTC. cite as arXiv:2106.06103 [cs.SD] (or arXiv:2106.06103v1 [cs.SD] for this version).
 
 ## 各类awesome
 

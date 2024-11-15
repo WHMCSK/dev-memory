@@ -1,5 +1,6 @@
 # 开发者笔记
 
+
 ## 踩坑记
 
 * [Windows中使用C#写打印程序踩坑记](./docs/windows/print.md)
@@ -153,6 +154,10 @@
 * [AmyGLM](./docs/ai/amy-glm.md)
 * [IP_LAP](./docs/ai/IP_LAP.md)
 * [Sad Talker](./docs/ai/sad-talker.md)
+
+## 炼丹
+
+* [炼丹](./docs/ai/alchemy/alchemy.md)
 
 ## ESP8266
 

@@ -29,6 +29,7 @@
 * [mdBook](./docs/mdbook/mdbook-use.md)
 * [Makefile编写规则](./docs/makefile/makefile.md)
 * [Prometheus应用监控](./docs/prometheus/prometheus.md)
+* [搜索技巧](./docs/tools/search-skill.md)
 
 ## Markdown
 
@@ -163,6 +164,7 @@
 * [RAG](./docs/ai/rag.md)
 * [方言数据需求的解析思路——上海话](./docs/ai/dialect-shanghai.md)
 * [文本-语音转换技术问答](./docs/ai/text-speech-conversion.md)
+* [虚拟数字人](./docs/ai/digital-human.md)
 
 ## 炼丹
 

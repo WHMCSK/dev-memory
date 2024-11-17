@@ -169,6 +169,7 @@
 ## 炼丹
 
 * [炼丹](./docs/ai/alchemy/alchemy.md)
+* [炼丹目录](./docs/list/AIAlchemy.md)
 
 ## ESP8266
 

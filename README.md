@@ -165,6 +165,7 @@
 * [方言数据需求的解析思路——上海话](./docs/ai/dialect-shanghai.md)
 * [文本-语音转换技术问答](./docs/ai/text-speech-conversion.md)
 * [虚拟数字人](./docs/ai/digital-human.md)
+* [ai-awesome](./docs/ai/ai-awesome.md)
 
 ## 炼丹
 

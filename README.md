@@ -30,6 +30,7 @@
 * [Makefile编写规则](./docs/makefile/makefile.md)
 * [Prometheus应用监控](./docs/prometheus/prometheus.md)
 * [搜索技巧](./docs/tools/search-skill.md)
+* [Supervisor](./docs/tools/supervisord.md)
 
 ## Markdown
 
@@ -166,6 +167,7 @@
 * [文本-语音转换技术问答](./docs/ai/text-speech-conversion.md)
 * [虚拟数字人](./docs/ai/digital-human.md)
 * [ai-awesome](./docs/ai/ai-awesome.md)
+* [cuda入门](./docs/cuda/cuda-start.md)
 
 ## 炼丹
 
